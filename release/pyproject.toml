@@ -83,7 +83,8 @@ glc-loader = "glc_loader.__main__:main"
 glc-serve = "glc_serve.server:main"
 
 [project.urls]
-Homepage = "https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-TBE"
+Homepage = "https://github.com/Tsotchke-Corporation/GeoRefine"
+Model = "https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-TBE"
 
 [tool.setuptools]
 zip-safe = false
