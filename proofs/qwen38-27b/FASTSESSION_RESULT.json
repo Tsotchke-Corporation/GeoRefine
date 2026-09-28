@@ -1,0 +1,47 @@
+{
+  "bundle_manifest_sha256": "237bdcda6d9b879868519277c4a0e3890f45e7941031e3b6b5c7292dcdd48824",
+  "candidate_commit": "cd6b54039",
+  "codec_decode_tok_s": 37.8803,
+  "codec_end_to_end_tok_s": 32.3139,
+  "decode_speed_ratio": 1.3391,
+  "dense_decode_tok_s": 28.2883,
+  "dense_end_to_end_tok_s": 25.7617,
+  "end_to_end_speed_ratio": 1.2543,
+  "hardware": "one NVIDIA RTX PRO 6000 Blackwell Server Edition (SM120, 96 GB)",
+  "limitations": [
+    "Only the RTX PRO 6000 SM120 tune is bundled and measured",
+    "Eight prompts and one synthetic image do not replace the full capability gates",
+    "CPU reference path is correct but much slower; other GPU/Metal fast paths unverified"
+  ],
+  "mtp_plain_tok_s": 37.743,
+  "mtp_same_image_tokens": true,
+  "mtp_same_text_tokens": true,
+  "mtp_spec5_tok_s": 68.8196,
+  "mtp_speed_ratio": 1.8234,
+  "parent_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "published_receipt_sha256": {
+    "dense": "4d73b4322376e12ddeb5163c4af67cdc9a7c0ed1f5f61a38179e95a8af64e83d",
+    "mtp": "0dd793359285c1b30f0f4ae6742b8e52899069598adb9ea03d46e1c8ff7c64cb",
+    "tbe": "4ac28ea1217b9873ea498ed167e9d6b21b38186dfc57278aaaceed5340f49bc5"
+  },
+  "receipt_sha256": {
+    "dense": "52b64b95ef5d41d2c60c5cc48d41ba2832017d7316e99487b0b780e0508f082c",
+    "mtp": "92a8f78fa2ba633f8aa748ecafc89ece9209544cca6c7994e84a738968958ce9",
+    "tbe": "74c4882c5cc19efc839206f8388d021a1c1fc156cda79f6a03fa09c4df753166"
+  },
+  "receipt_uris": {
+    "dense": "f4-fastsession-dense-bundled.json",
+    "mtp": "f4-fastsession-spec.json",
+    "tbe": "f4-fastsession-tbe-bundled.json"
+  },
+  "runtime": "Torch 2.11.0+cu130; Transformers 5.13.0; CUDA compiler 12.9",
+  "same_image_token_ids": true,
+  "same_text_content": 8,
+  "same_text_token_ids": 8,
+  "schema": "georefine.f4_source_free_fastsession_result.v1",
+  "scope": "8 fixed greedy prompts, 48-token cap; one synthetic image, 16-token cap; batch 1; MTP off for paired AR",
+  "source_result_sha256": "bed7b7cdb8ce29180b086ce85cef1dd1f7f5f250720addb99beda0483826a5a1",
+  "text_rows": 8,
+  "tune_sha256": "1c5375c91f6fc084a5263f7da9177faafbb17fd4bf2281fc520bca1f74ef8024",
+  "wheel_sha256": "eff9a974802b5f31446258877262834b3c0875bdd85f4e645c44f647e608d0ee"
+}

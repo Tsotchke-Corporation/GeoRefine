@@ -1,0 +1,18 @@
+# The sdist must carry the package and nothing else.  `release/` also holds
+# built model artifacts (release/public-models-*, release/week1-*, ...) that
+# are gigabytes each and are not part of this distribution.
+include README.md
+include pyproject.toml
+recursive-include glc_loader *.py *.cu *.metal
+recursive-include glc_serve *.py *.cu *.cuh *.cpp *.h *.json
+global-exclude *.pyc
+global-exclude .DS_Store
+prune glc_loader/__pycache__
+prune glc_loader/metal/__pycache__
+prune glc_loader/_tbe_mma_build
+prune glc_serve/__pycache__
+prune public-models-20260719
+prune qwen-certified-20260717
+prune rung3-four-stage-20260719
+prune week1-composed-artifact-20260718
+prune week1-qwen-flagship-20260725

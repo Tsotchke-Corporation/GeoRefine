@@ -1,0 +1,29 @@
+# georefine-verify -- CPU-only public verifier for GeoRefine TBE codec bundles.
+# Deliberately independent of glc_loader: no torch, no safetensors, no
+# huggingface_hub.  numpy plus the standard library, so every step of the check
+# is readable in four short files.
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "georefine-verify"
+version = "1.1.1"
+description = "Prove that a GeoRefine TBE codec bundle decodes bit for bit to the parent model's published safetensors (CPU only)"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Tsotchke Corporation" }]
+dependencies = ["numpy>=1.22"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0"]
+
+[project.scripts]
+georefine-verify = "georefine_verify.cli:main"
+georefine-export = "georefine_verify.export:main"
+
+[tool.setuptools]
+packages = ["georefine_verify"]
+
+[tool.setuptools.package-data]
+georefine_verify = ["NOTICE"]

@@ -1,0 +1,13 @@
+.scratch/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.whl
+*.tar.gz
+.venv/
+.env
+*.env
+.do.not.ever.commit.hf.env
