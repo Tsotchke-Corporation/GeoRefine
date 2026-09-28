@@ -252,4 +252,6 @@ info` reports whatever licence the artifact declares or ships, and reports
 `null` with a note when it declares none — which is the common case today.
 Check the source model before redistributing.
 
-This package is proprietary to Tsotchke Corporation.
+The `glc-loader` source is Copyright 2026 Tsotchke Corporation and licensed
+under Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE). The compressed
+weights retain the source model's license and attribution.

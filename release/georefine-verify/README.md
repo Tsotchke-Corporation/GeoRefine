@@ -1,5 +1,8 @@
 # GeoRefine TBE tools
 
+Copyright 2026 Tsotchke Corporation. This verifier and exporter are licensed
+under Apache-2.0; see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
 `georefine-verify` independently compares a GeoRefine TBE bundle with the
 published parent model, byte for byte. `georefine-export` restores a TBE bundle
 to ordinary Hugging Face safetensors without downloading or reading the parent.

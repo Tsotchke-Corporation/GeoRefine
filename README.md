@@ -1,5 +1,10 @@
 # GeoRefine codec
 
+GeoRefine is developed by **Tsotchke Corporation**.
+Copyright 2026 Tsotchke Corporation. The codec, runtime, and verifier source
+are licensed under Apache-2.0; see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+The Qwen model weights retain their upstream license and attribution.
+
 GeoRefine TBE stores pretrained BF16 weights in a reversible encoded format
 and serves them without keeping a dense copy of every coded weight resident.
 This repository contains the Apache-2.0 codec, runtime, verifier, and tests.
@@ -37,8 +42,8 @@ different performance contract from `FastSession`.
 
 | Path | Distribution | Purpose |
 |---|---|---|
-| [`release/`](release/) | `glc-loader` 1.1.0 | Portable TBE loader, CUDA FastSession, CPU reference, model tooling |
-| [`release/georefine-verify/`](release/georefine-verify/) | `georefine-verify` 1.1.1 | Independent CPU bit-exact verifier and BF16 exporter |
+| [`release/`](release/) | `glc-loader` 1.1.1 | Portable TBE loader, CUDA FastSession, CPU reference, model tooling |
+| [`release/georefine-verify/`](release/georefine-verify/) | `georefine-verify` 1.1.2 | Independent CPU bit-exact verifier and BF16 exporter |
 
 Install in an isolated environment with the hardware and Python dependencies
 listed in each package's README. From this source checkout:

@@ -111,7 +111,7 @@ from .tbe_stream_loader import (
     stream_place_tensors,
 )
 
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 
 __all__ = [
     "ARTIFACT_FORMAT",
