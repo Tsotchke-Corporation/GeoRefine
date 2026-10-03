@@ -29,7 +29,6 @@ import json
 import os
 import platform
 import shutil
-import signal
 import subprocess
 import sys
 import tarfile
@@ -37,6 +36,8 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+
+from glc_serve import _winenv
 
 PKG = Path(__file__).resolve().parent
 BENCH = PKG / "_bench"
@@ -56,6 +57,21 @@ LLAMACPP_INSTALL = """\
   cmake --build llama.cpp/build --config Release -j --target llama-server
 then re-run with:
   glc-bench --llama-server llama.cpp/build/bin/llama-server --llama-gguf <model.gguf>"""
+
+WSL_ADVICE = """\
+You are running native Windows Python.  The CUDA kernels in this package are
+JIT-built with nvcc and a host C++ compiler, and `triton` publishes no Windows
+wheel on PyPI; neither has ever been built on native Windows here.  The
+supported Windows path is WSL2, which is a real Linux kernel using your existing
+NVIDIA *Windows* driver -- no second driver, no CUDA toolkit download for torch:
+
+  PowerShell (Administrator), once:
+      wsl --install -d Ubuntu-24.04
+  reboot, open "Ubuntu 24.04" from the Start menu, then follow
+      %s
+
+`glc-bench --windows-check` runs every check that does not need CUDA, on either
+platform, and tells you what is missing.""" % _winenv.WINDOWS_README
 
 COST_SOURCES = """\
 $/M output token is ($/h of the card) / (steady tok/s) * 1e6 / 3600.  This script does
@@ -128,6 +144,41 @@ def preflight(a, log) -> dict:
     rep = {"platform": platform.platform(), "python": sys.version.split()[0],
            "argv": sys.argv[1:], "utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
     bad = []
+    warn = []
+
+    tc = _winenv.toolchain_report()
+    rep.update({"os_kind": tc["os_kind"], "nvcc": tc["nvcc"], "ninja": tc["ninja"],
+                "host_compiler": tc["host_compiler"]})
+    if tc["os_kind"] == "windows":
+        # Not a hard blocker: --windows-check and --cpu-smoke are useful here, and a
+        # person who has built MSVC + CUDA themselves should not be refused by name.
+        # It is the first thing printed, because it is the first thing to fix.
+        warn.append(("native Windows Python -- this is not the supported path",
+                     WSL_ADVICE))
+    if tc["os_kind"] == "wsl2":
+        rep["wsl_lib_present"] = tc.get("wsl_lib_present")
+        if not tc.get("wsl_lib_present"):
+            bad.append(("WSL is running but /usr/lib/wsl/lib is missing, so the GPU is "
+                        "not passed through",
+                        "this is WSL1, or the NVIDIA Windows driver is too old.  In "
+                        "PowerShell:\n"
+                        "    wsl --set-version Ubuntu-24.04 2\n"
+                        "    wsl --update\n"
+                        "  then install the current NVIDIA Windows driver (566 or newer) "
+                        "from nvidia.com.  Do NOT install a Linux driver inside WSL."))
+    if tc["nvcc"] is None:
+        warn.append(("nvcc is not on PATH; the JIT kernel builds will fail when the "
+                     "benchmark reaches them",
+                     "WSL2/Ubuntu:  sudo apt-get update && sudo apt-get install -y "
+                     "nvidia-cuda-toolkit build-essential ninja-build\n"
+                     "  (or the CUDA 12.x WSL repo, if you need a newer nvcc than Ubuntu "
+                     "ships -- see README-WINDOWS.md)"))
+    if tc["host_compiler"] is None:
+        warn.append(("no host C++ compiler (%s) on PATH" % tc["host_compiler_name"],
+                     "WSL2/Ubuntu:  sudo apt-get install -y build-essential ninja-build\n"
+                     "  native Windows:  install Visual Studio Build Tools with the "
+                     "\"Desktop development with C++\" workload, then run from the "
+                     "\"x64 Native Tools Command Prompt\""))
 
     if sys.version_info < (3, 10):
         bad.append(("python too old (%s)" % rep["python"],
@@ -171,11 +222,24 @@ def preflight(a, log) -> dict:
         rep["free_disk_gb"] = round(du.free / 1e9, 1)
         need = 0.0 if (a.bundle or a.skip_download or a.cpu_smoke) else BUNDLE_GB + 5
         rep["disk_needed_gb"] = need
+        if need:
+            log("")
+            log("   NOTE: the model artifact is about %.0f GB and is downloaded to"
+                % BUNDLE_GB)
+            log("         %s" % (a.work / "model"))
+            log("         With logs and build output, keep %.0f GB free on that volume."
+                % need)
+            log("         To put it somewhere else -- a second drive, which on Windows is")
+            log("         usually what has the room -- pass --work:")
+            log("             glc-bench --work D:/glc-bench-work        (native Windows)")
+            log("             glc-bench --work /mnt/d/glc-bench-work    (WSL2, same D:)")
         if rep["free_disk_gb"] < need:
-            bad.append(("only %.1f GB free, the artifact needs about %.0f GB"
-                        % (rep["free_disk_gb"], need),
+            bad.append(("only %.1f GB free on the volume holding %s, and the artifact "
+                        "needs about %.0f GB" % (rep["free_disk_gb"], a.work, need),
                         "free space, attach a larger disk, or point --work at a bigger "
-                        "volume, or pass --bundle <dir> if you already have the artifact"))
+                        "volume (`--work D:/glc-bench-work` on Windows, "
+                        "`--work /mnt/d/glc-bench-work` in WSL2), or pass --bundle <dir> "
+                        "if you already have the artifact"))
     except OSError:
         pass
 
@@ -191,15 +255,21 @@ def preflight(a, log) -> dict:
     rep["llama_server"] = a.llama_server or shutil.which("llama-server")
     rep["llama_gguf"] = str(a.llama_gguf) if a.llama_gguf else None
     rep["blockers"] = [{"problem": p, "fix": f} for p, f in bad]
+    rep["warnings"] = [{"problem": p, "fix": f} for p, f in warn]
 
     log("")
     log("== 1. environment ==")
-    for k in ("platform", "python", "torch", "torch_cuda_build", "cuda_available",
-              "device_name", "device_capability", "device_total_mem_gb",
-              "nvidia_smi_driver", "nvidia_smi_memory_total_mib", "free_disk_gb",
-              "huggingface_hub", "llama_server"):
+    for k in ("platform", "os_kind", "python", "torch", "torch_cuda_build",
+              "cuda_available", "device_name", "device_capability",
+              "device_total_mem_gb", "nvidia_smi_driver",
+              "nvidia_smi_memory_total_mib", "free_disk_gb", "nvcc", "host_compiler",
+              "ninja", "huggingface_hub", "llama_server"):
         if k in rep:
             log("   %-28s %s" % (k, rep[k]))
+    for b in rep["warnings"]:
+        log("")
+        log("   WARNING: " + b["problem"])
+        log("   FIX:     " + b["fix"].replace("\n", "\n   "))
     for b in rep["blockers"]:
         log("")
         log("   PROBLEM: " + b["problem"])
@@ -362,7 +432,11 @@ class Server:
 
     def stop(self):
         if self.p.poll() is None:
-            self.p.send_signal(signal.SIGTERM)
+            # `terminate()` is SIGTERM on POSIX and TerminateProcess on Windows, where
+            # there is no SIGTERM to deliver to another process; `send_signal(SIGTERM)`
+            # would raise there on older interpreters.  The server holds no state that
+            # has to be flushed -- every receipt is written before this point.
+            self.p.terminate()
             try:
                 self.p.wait(60)
             except subprocess.TimeoutExpired:
@@ -525,6 +599,10 @@ def build_parser():
     p.add_argument("--slo-tpot-ms", type=float, default=200.0)
     p.add_argument("--no-gates", action="store_true")
     p.add_argument("--no-fp16-ring", action="store_true")
+    p.add_argument("--windows-check", action="store_true",
+                   help="dry run: every check up to but NOT including CUDA execution -- "
+                        "platform, WSL detection, torch, driver, toolchain, disk, the "
+                        "install and the benchmark plumbing.  No download, no GPU work")
     p.add_argument("--cpu-smoke", action="store_true",
                    help="no GPU, no download: check the install, the console scripts and "
                         "the benchmark plumbing, then exit")
@@ -535,8 +613,11 @@ def cpu_smoke(a, log) -> int:
     log("== glc-bench --cpu-smoke ==")
     log("   This checks the INSTALL only.  It measures nothing about serving and proves")
     log("   nothing about a GPU.")
+    log("   os_kind: %s" % _winenv.os_kind())
+    if _winenv.os_kind() == "windows":
+        log("   On native Windows, read %s before going further." % _winenv.WINDOWS_README)
     fails = []
-    for mod in ("glc_loader", "glc_serve", "glc_serve.bidec_iface",
+    for mod in ("glc_loader", "glc_serve", "glc_serve._winenv", "glc_serve.bidec_iface",
                 "glc_serve.bidec_capacity", "glc_serve._bench"):
         try:
             __import__(mod)
@@ -573,16 +654,69 @@ def cpu_smoke(a, log) -> int:
     return 0
 
 
+def windows_check(a, log) -> int:
+    """Everything that can be checked without executing a CUDA kernel.
+
+    The point is to separate "this machine is not set up" from "the kernels do not
+    work on this card", because they arrive as the same traceback three hours into a
+    run otherwise.  A PASS here says the environment is ready; it says NOTHING about
+    whether the kernels build or the gates pass, and it never downloads the model.
+    """
+    log("== glc-bench --windows-check ==")
+    log("   Dry run.  No download, no CUDA execution, no measurement of serving.")
+    log("")
+    tc = _winenv.toolchain_report()
+    log("   os_kind                      %s" % tc["os_kind"])
+    if tc["os_kind"] == "windows":
+        log("")
+        log(WSL_ADVICE)
+        log("")
+
+    # Reuse the real preflight so this cannot drift from what `glc-bench` enforces;
+    # --skip-download keeps the 40 GB out of the disk requirement.
+    saved, a.skip_download = a.skip_download, True
+    rep = preflight(a, log)
+    a.skip_download = saved
+
+    log("")
+    log("== install and plumbing ==")
+    rc_smoke = cpu_smoke(a, log)
+
+    log("")
+    log("== verdict ==")
+    ready = not rep["blockers"] and rc_smoke == 0 and rep.get("cuda_available")
+    for b in rep["blockers"]:
+        log("   BLOCKER  " + b["problem"])
+    for b in rep["warnings"]:
+        log("   WARNING  " + b["problem"])
+    if not rep.get("cuda_available"):
+        log("   BLOCKER  torch reports no CUDA device, so the benchmark cannot run here")
+    if rc_smoke != 0:
+        log("   BLOCKER  the install itself did not pass --cpu-smoke")
+    if ready:
+        log("   READY: nothing further to install.  Run `glc-bench` (plus")
+        log("   --dollars-per-hour <rate> and --llama-gguf <file> if you have them).")
+        log("   The CUDA kernels still have to BUILD and the gates still have to PASS;")
+        log("   neither is checked here and neither has run on this card before.")
+        return 0
+    log("")
+    log("   NOT READY.  Fix the blockers above (each printed its own fix) and re-run")
+    log("   `glc-bench --windows-check`.")
+    return 2
+
+
 def main(argv=None) -> int:
     a = build_parser().parse_args(argv)
     a.work = a.work.resolve()
     a.work.mkdir(parents=True, exist_ok=True)
     log = Log(a.work / "glc-bench.log")
-    log("glc-bench  (glc-loader 1.2.0rc1)  %s"
+    log("glc-bench  (glc-loader 1.2.0rc2)  %s"
         % time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
 
     if a.cpu_smoke:
         return cpu_smoke(a, log)
+    if a.windows_check:
+        return windows_check(a, log)
 
     results = {"mark": MARK, "gates": {}, "rows": [], "not_run": []}
     results["preflight"] = rep = preflight(a, log)
@@ -598,7 +732,9 @@ def main(argv=None) -> int:
     for v in ("MIV_GEMV_BUILD_DIR", "MIV_TBE_BUILD_DIR", "MIV_KQ_BUILD_DIR",
               "BI_GEMM_BUILD_DIR"):
         env.setdefault(v, str(a.work / "build" / v.lower()))
-    env.setdefault("TMPDIR", str(a.work / "tmp"))
+    # TMPDIR is POSIX; Windows `tempfile` reads TMP/TEMP, and a run that sets only
+    # TMPDIR spills multi-GB temporaries back onto the system drive.
+    _winenv.temp_env(env, a.work / "tmp")
     for p in (a.work / "tmp", a.work / "torch_ext"):
         p.mkdir(parents=True, exist_ok=True)
 

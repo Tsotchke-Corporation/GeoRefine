@@ -11,10 +11,10 @@ the first thing you should read if you are deciding whether to use this.
 
 ---
 
-## New in 1.2.0rc1: multi-user serving, and one command that measures it
+## New in 1.2.0rc2: multi-user serving, and one command that measures it
 
 ```bash
-pip install "glc-loader[cuda] @ git+https://github.com/Tsotchke-Corporation/GeoRefine.git@v1.2.0-rc1#subdirectory=release"
+pip install "glc-loader[cuda] @ https://github.com/Tsotchke-Corporation/GeoRefine/releases/download/v1.2.0-rc2/glc_loader-1.2.0rc2-py3-none-any.whl"
 glc-bench
 ```
 
@@ -45,7 +45,7 @@ optional extras add accelerated serving; **neither is required to import the
 package**, and neither is a dependency of the other:
 
 ```bash
-pip install "glc-loader[cuda]"    # + triton, for the FWP1 GEMV backend
+pip install "glc-loader[cuda]"    # + triton (Linux only), for the FWP1 GEMV backend
 pip install "glc-loader[metal]"   # + mlx, mlx-lm, for Apple Silicon
 ```
 

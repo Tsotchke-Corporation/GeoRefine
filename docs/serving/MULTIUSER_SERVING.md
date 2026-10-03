@@ -1,6 +1,6 @@
 # GLC multi-user serving: audit, gates, and the measurement protocol
 
-2026-10-02, release `v1.2.0-rc1`. Written for an external tester and for whoever runs the
+2026-10-02, release `v1.2.0-rc1`. Written for whoever runs the
 GPU validation window. Every number in this document that is not labelled MEASURED is a
 protocol, not a result: the multi-user path has not yet run on a GPU.
 
@@ -356,7 +356,7 @@ python scripts/batchserve/make_tables.py results/*/summary_c*.json
 
 ### The ctx8k case is the one that matters
 
-`Selene/SERVING_COST_20260925.md` records llama.cpp at 8k context collapsing to **3–4 tok/s per
+An internal cost study records llama.cpp at 8k context collapsing to **3–4 tok/s per
 user with TTFT 45–139 s at 16–32 users**: a long prompt's prefill monopolises the device and
 starves every decoding request. That is a *scheduling* outcome, not a weights outcome, and it is
 exactly what `bidec`'s chunked prefill is built to avoid — prompt chunks share a step with

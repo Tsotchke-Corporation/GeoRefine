@@ -44,7 +44,7 @@ GEOMETRY (see the phase-3 owner brief for the full sweep):
     absorbed) copy of the tile's 6 plane words (default), OR lane 0 loads
     once and ``simd_broadcast``s to the rest (``broadcast_load=True``,
     exposed only on variant ``t1_g1`` / its broadcast twin for the
-    owner-brief's "measure both" comparison -- see
+    internal "measure both" comparison -- see
     ``scripts/tbe_metal_decode_bench_v3.py``).
 
 Both ``TPG`` and ``SPT`` are baked into the kernel source as compile-time

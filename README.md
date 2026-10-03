@@ -1,4 +1,4 @@
-# GeoRefine codec — v1.2.0-rc1 (multi-user serving preview)
+# GeoRefine codec — v1.2.0-rc2 (multi-user serving preview)
 
 GeoRefine is developed by **Tsotchke Corporation**.
 Copyright 2026 Tsotchke Corporation. The codec, runtime, and verifier source are
@@ -7,15 +7,25 @@ model weights retain their upstream license and attribution.
 
 ---
 
+## On Windows, start here
+
+**[README-WINDOWS.md](README-WINDOWS.md)** — the whole procedure for an NVIDIA card
+in a Windows machine, for someone who does not want to debug a toolchain. One
+PowerShell line, then three lines in Ubuntu. WSL2 is the supported path and the page
+says plainly what is and is not verified on native Windows.
+
 ## Two commands
 
 ```bash
-pip install "glc-loader[cuda] @ git+https://github.com/Tsotchke-Corporation/GeoRefine.git@v1.2.0-rc1#subdirectory=release"
+pip install "glc-loader[cuda] @ https://github.com/Tsotchke-Corporation/GeoRefine/releases/download/v1.2.0-rc2/glc_loader-1.2.0rc2-py3-none-any.whl"
 ```
 
 ```bash
 glc-bench
 ```
+
+Keep the double quotes: the `[cuda]` is a shell glob in `zsh` and a wildcard pattern
+in PowerShell.
 
 That is the whole thing. `glc-bench` takes **no required flags**. It checks your
 driver and torch, downloads the model, runs the correctness gates, benchmarks our
@@ -59,6 +69,7 @@ The three things that actually go wrong:
 | `torch is installed but reports no CUDA device` | You have a CPU-only torch wheel. `pip uninstall -y torch && pip install torch --index-url https://download.pytorch.org/whl/cu128` |
 | `llama-server is not on PATH` | The run continues with our side only. For the comparison, build llama.cpp (`glc-bench` prints the three commands), then re-run with `--llama-server <path> --llama-gguf <model.gguf>` |
 | Out of memory, or the server dies during load | `glc-bench --slots 16` (and `--slots 8` if that still OOMs) |
+| Not sure the machine is set up at all | `glc-bench --windows-check` — every check except executing a CUDA kernel: platform, WSL detection, torch, driver, `nvcc`, host compiler, free disk, install, plumbing. Downloads nothing. |
 
 `glc-bench --help` lists everything else. Two flags worth knowing:
 `--dollars-per-hour 1.23` fills in the $/M output column at the rate you are actually
@@ -76,10 +87,24 @@ alone. For Qwen3.8-27B the complete bundle is 39,832,462,895 encoded tensor byte
 against 55,562,855,904 BF16 tensor bytes (1.395× smaller), with 1,199/1,199 tensors
 and 10/10 sidecars matched by the independent verifier.
 
-**v1.2.0-rc1 adds the multi-user path**: a batched decoder with continuous batching,
+**v1.2.0-rc2 adds the multi-user path**: a batched decoder with continuous batching,
 paged KV, and a batch-invariance guarantee — a stream's output must not depend on who
 else happened to be in the batch with it. The gates in `glc-bench` are what check
 that claim.
+
+**What changed in rc2.** rc1 was verified on macOS CPU only and could not be
+installed at all on a Windows machine: the `[cuda]` extra required `triton`, which
+publishes no Win32 wheel, so `pip install` failed before anything else could be
+tried. rc2 fixes that (the Triton requirement is now Linux-only, and nothing in
+`glc-bench` imports it), passes MSVC's `/O2` rather than GCC's `-O3` to the host
+compiler in the JIT kernel builds, sets `TMP`/`TEMP` as well as `TMPDIR` so Windows
+temporaries do not spill onto the system drive, stops child servers with
+`terminate()` instead of a POSIX signal, detects WSL2 and native Windows in
+preflight, prints the 40 GB artifact size and the free space **before** downloading,
+and adds `glc-bench --windows-check`: every check up to but not including CUDA
+execution. Native-Windows wheel install, `--cpu-smoke` and `--windows-check` are
+checked in CI on `windows-latest` (no GPU there, so no kernel and no gate).
+Serving and codec behaviour are unchanged from rc1.
 
 **Be clear about the status.** This is a release candidate. The single-user
 `FastSession` path from v1.1.1 is unchanged and has been measured on an RTX PRO 6000
@@ -99,8 +124,9 @@ numbers should be read with that in mind.
 
 | Path | Distribution | Purpose |
 |---|---|---|
-| [`release/`](release/) | `glc-loader` 1.2.0rc1 | TBE loader, CUDA FastSession, batched multi-user server, CPU reference, benchmark |
+| [`release/`](release/) | `glc-loader` 1.2.0rc2 | TBE loader, CUDA FastSession, batched multi-user server, CPU reference, benchmark |
 | [`docs/serving/MULTIUSER_SERVING.md`](docs/serving/MULTIUSER_SERVING.md) | — | The engine audit, the exactness-gate design, and the measurement protocol |
+| [`README-WINDOWS.md`](README-WINDOWS.md) | — | WSL2-first Windows procedure, with a verified/unverified table for native Windows |
 
 Console scripts installed by the wheel:
 

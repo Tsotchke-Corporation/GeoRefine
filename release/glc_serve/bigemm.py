@@ -16,6 +16,8 @@ from __future__ import annotations
 
 import os
 import threading
+
+from glc_serve import _winenv
 from pathlib import Path
 from typing import List, Optional
 
@@ -56,7 +58,7 @@ def extension():
             _EXT = load(name=f"bi_gemm_sm{major}{minor}",
                         sources=[str(_CSRC / s) for s in ("bi_gemm_dense.cu", "bi_gemm_kq.cu", "bi_torch.cpp")],
                         extra_include_paths=[str(_CSRC), str(here / "miv_kq_csrc"), str(here / "miv_tbe_csrc")],
-                        extra_cflags=["-O3"],
+                        extra_cflags=_winenv.host_cflags(),
                         extra_cuda_cflags=["-O3", "--fmad=true", "-lineinfo", "-std=c++17"],
                         build_directory=str(_build_dir()),
                         verbose=bool(int(os.environ.get("BI_GEMM_VERBOSE", "0"))))

@@ -1,0 +1,117 @@
+# What this proves, and what it does not.
+#
+# PROVES: the published wheel installs into a clean native-Windows CPython, its
+# console scripts are on PATH, the package imports, and the two no-GPU entry points
+# (`--cpu-smoke`, `--windows-check`) run to a verdict instead of a traceback.  That
+# is exactly the part of a Windows run that used to break before any GPU was reached.
+#
+# DOES NOT PROVE: anything about CUDA.  GitHub's windows-latest runners have no
+# NVIDIA GPU, so no kernel is built and no gate is executed here.  `--windows-check`
+# is expected to report NOT READY on the runner for that reason, and this job asserts
+# the "no CUDA device" verdict rather than treating it as a failure.
+#
+# It also never downloads model weights: `--cpu-smoke` and `--windows-check` both
+# pass `--skip-download` semantics internally, and nothing here touches Hugging Face.
+name: windows-wheel
+
+on:
+  push:
+    branches: ["release/v1.2.0-rc2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install-and-smoke:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Build the wheel from this checkout
+        shell: pwsh
+        run: |
+          python -m pip install -U pip build
+          python -m build --wheel --outdir dist release
+          Get-ChildItem dist
+
+      - name: Install it the way the README says, extras and quoting included
+        shell: pwsh
+        run: |
+          $whl = (Get-ChildItem dist/glc_loader-*.whl)[0].FullName
+          # The quoted `[cuda]` extra is the documented spelling; unquoted, PowerShell
+          # treats the brackets as a wildcard pattern.  On Windows the extra must not
+          # drag in `triton`, which has no Win32 wheel on PyPI -- if that marker ever
+          # regresses, this step is where it fails.
+          python -m pip install "glc-loader[cuda] @ file:///$($whl -replace '\\','/')"
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip list
+
+      - name: triton must NOT have been installed on Windows
+        shell: pwsh
+        run: |
+          # `pip show <missing>` exits 1, and GitHub's pwsh wrapper propagates the last
+          # exit code, so asking that way fails the step for the RIGHT answer.  Ask for
+          # the installed set instead, which always exits 0.
+          $names = (python -m pip list --format=json | ConvertFrom-Json).name
+          if ($names -contains "triton") {
+            throw "triton was installed on native Windows; the [cuda] extra marker regressed"
+          }
+          Write-Host "ok: triton absent, as the platform marker intends"
+
+      - name: glc-bench --help
+        shell: pwsh
+        run: glc-bench --help
+
+      - name: console scripts are all on PATH
+        shell: pwsh
+        run: |
+          foreach ($c in @("glc-bench", "glc-loader", "glc-serve", "glc-multiuser")) {
+            if (-not (Get-Command $c -ErrorAction SilentlyContinue)) { throw "$c missing from PATH" }
+            Write-Host "ok: $c"
+          }
+
+      - name: glc-bench --cpu-smoke  (must PASS; no GPU, no download)
+        shell: pwsh
+        run: |
+          # `-notmatch` against an ARRAY filters it instead of returning a boolean, so
+          # every assertion below joins the captured lines into one string first.
+          glc-bench --cpu-smoke --work "$env:RUNNER_TEMP\glcwork" 2>&1 | Tee-Object -Variable lines
+          $rc = $LASTEXITCODE
+          $out = $lines -join "`n"
+          if ($rc -ne 0) { throw "cpu-smoke exited $rc" }
+          if ($out -notmatch "CPU SMOKE: PASS") { throw "cpu-smoke did not report PASS" }
+          if ($out -notmatch "os_kind: windows") { throw "native Windows was not detected" }
+          exit 0
+
+      - name: glc-bench --windows-check  (must reach a verdict, NOT READY without a GPU)
+        shell: pwsh
+        run: |
+          glc-bench --windows-check --work "$env:RUNNER_TEMP\glcwork" 2>&1 | Tee-Object -Variable lines
+          # Exit 2 == "not ready", which is the CORRECT verdict on a runner with no
+          # NVIDIA card.  Exit 0 here would mean the CUDA check is not checking anything,
+          # so the expected code is asserted rather than tolerated -- and then reset,
+          # because the step's own success is a different question from the tool's.
+          $rc = $LASTEXITCODE
+          $out = $lines -join "`n"
+          if ($rc -ne 2) { throw "expected the not-ready verdict (exit 2), got $rc" }
+          if ($out -notmatch "native Windows Python") { throw "the WSL2 advice was not printed" }
+          if ($out -notmatch "no CUDA device") { throw "the missing-GPU blocker was not reported" }
+          Write-Host "ok: reached the expected not-ready verdict with the expected blockers"
+          exit 0
+
+      - name: upload the logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-check-py${{ matrix.python }}
+          path: ${{ runner.temp }}/glcwork/glc-bench.log
+          if-no-files-found: warn

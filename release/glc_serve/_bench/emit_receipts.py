@@ -2,7 +2,7 @@
 """Assemble the production-serving receipts (ps1..ps4) from what the gates and the bench wrote.
 
 The ICC completion oracle ``georefine-production-serving`` fails on "receipt missing", not on a
-measurement that went the wrong way.  This script turns the artefacts an external tester already
+measurement that went the wrong way.  This script turns the artefacts a benchmark run already
 produces into ICC-shaped receipts under ``receipts/``, so one ``tar`` of that directory grades
 the oracle.
 

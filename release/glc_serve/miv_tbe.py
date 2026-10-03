@@ -24,6 +24,8 @@ from __future__ import annotations
 import json
 import os
 import threading
+
+from glc_serve import _winenv
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
@@ -101,7 +103,7 @@ def extension():
                 name=f"miv_tbe_sm{major}{minor}",
                 sources=[str(_CSRC / s) for s in _SOURCES],
                 extra_include_paths=[str(_CSRC)],
-                extra_cflags=["-O3"],
+                extra_cflags=_winenv.host_cflags(),
                 extra_cuda_cflags=["-O3", "--fmad=true", "-lineinfo"],
                 build_directory=str(_build_dir()),
                 verbose=bool(int(os.environ.get("MIV_TBE_VERBOSE", "0"))),

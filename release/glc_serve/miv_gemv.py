@@ -5,7 +5,7 @@
 depend on M.  Row ``m`` of an M=8 call is therefore bitwise identical to the
 M=1 call on that row -- the property a speculative verify step (M = k+1)
 needs to reproduce the plain M=1 decode bit for bit (design E1,
-``~/Desktop/Selene/KERNEL_DESIGN_ICC_20260924.md`` section 3).
+an internal kernel design note, section 3).
 
 The contract, instruction by instruction:
 

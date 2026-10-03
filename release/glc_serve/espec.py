@@ -12,7 +12,7 @@ near-tie flips a token.
 This module verifies ``k`` MTP drafts as ``k + 1`` SEQUENTIAL M=1 calls, so
 every target forward is exactly a plain-greedy decode step (same kernels, same
 shapes, same state), and on a rejection it rolls the Gated-DeltaNet state back
-LAZILY (design E4, ``KERNEL_DESIGN_ICC_20260924.md`` section 3):
+LAZILY (design E4, an internal kernel design note, section 3):
 
 * before the verify cycle it snapshots the per-layer conv/recurrent state S_0;
 * during the k+1 M=1 calls it records, per GDN layer and position, the exact

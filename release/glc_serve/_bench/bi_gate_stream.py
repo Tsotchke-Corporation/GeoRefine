@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""G3a-HTTP: the gate an external tester runs against a live multi-user server.
+"""G3a-HTTP: the gate that runs against a live multi-user server.
 
 Claim under test: a request's output does not depend on who else is being served.  For each
 probe prompt the gate records the reference stream with the server to itself (concurrency 1),

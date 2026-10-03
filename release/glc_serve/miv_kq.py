@@ -24,6 +24,8 @@ from __future__ import annotations
 
 import os
 import threading
+
+from glc_serve import _winenv
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
@@ -87,7 +89,7 @@ def extension():
             os.environ.setdefault("MAX_JOBS", "16")
             _EXT = load(name=f"miv_kq_sm{major}{minor}",
                         sources=[str(_CSRC / s) for s in _SOURCES],
-                        extra_include_paths=[str(_CSRC)], extra_cflags=["-O3"],
+                        extra_include_paths=[str(_CSRC)], extra_cflags=_winenv.host_cflags(),
                         extra_cuda_cflags=["-O3", "--fmad=true", "-lineinfo"],
                         build_directory=str(_build_dir()),
                         verbose=bool(int(os.environ.get("MIV_KQ_VERBOSE", "0"))))

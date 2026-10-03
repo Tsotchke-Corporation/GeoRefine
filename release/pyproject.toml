@@ -30,7 +30,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "glc-loader"
-version = "1.2.0rc1"
+version = "1.2.0rc2"
 description = "Read, verify and serve GLC-FWP1 and GLC-TBE compressed model artifacts without the repository that built them"
 readme = "README.md"
 license = { text = "Proprietary" }
@@ -75,7 +75,16 @@ dependencies = [
 # module-level `import mlx`.  `glc_loader.metal.*` DOES import `mlx.core` at
 # module scope -- that subpackage is what [metal] buys, and `glc_loader`'s own
 # `__init__` does not import it.
-cuda = ["triton>=2.1.0"]
+# `triton` publishes wheels on PyPI for Linux only -- not for native Win32 and
+# not for macOS -- so an unconditional requirement makes
+# `pip install "glc-loader[cuda]"` fail outright on a Windows machine, before the
+# person can even reach `--windows-check`, and for a dependency the multi-user
+# benchmark path never imports (only `glc_loader`'s optional FWP1 GEMV backend
+# does, and it refuses by name when Triton is absent).  WSL2 IS Linux, so the
+# supported Windows path still gets Triton with no marker exception.  A native
+# Windows user who wants the FWP1 Triton backend installs the community
+# `triton-windows` build themselves; nothing in `glc-bench` needs it.
+cuda = ['triton>=2.1.0; platform_system == "Linux"']
 metal = ["mlx>=0.26.0", "mlx-lm>=0.26.0"]
 dev = ["pytest>=7.0.0"]
 
@@ -85,7 +94,7 @@ glc-serve = "glc_serve.server:main"
 # the batched multi-user server: a console script so the documented command is the same whether
 # the wheel is installed or not (no `python -m` path juggling for the person running it)
 glc-multiuser = "glc_serve.bidec_serve:main"
-# the one command an external tester runs: environment check, model download, correctness
+# the one command to run on a target card: environment check, model download, correctness
 # gates, benchmark against llama.cpp, one table, one tarball.  Zero required flags.
 glc-bench = "glc_serve.glcbench:main"
 

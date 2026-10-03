@@ -26,7 +26,7 @@ dense, which is the point of a compressed weight format at batch 1.
 
 Phase 3 declined to build this, recording ``fused_gemv_prototype.attempted =
 false`` with the reason *"best decode throughput 60.7 GB/s is below the 150
-GB/s owner-brief threshold"* (``.icc/evidence/tbe-metal-decode-20260903/
+GB/s internal threshold"* (``.icc/evidence/tbe-metal-decode-20260903/
 bench_phase3.json``).  That threshold is met by its own terms at 279-289 GB/s,
 so the gate is open.
 
