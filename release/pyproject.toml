@@ -1,0 +1,118 @@
+# glc-loader -- the client-side reader for GLC-FWP1 and GLC-TBE artifacts.
+#
+# WHY THE PACKAGE ROOT IS `release/` AND NOT A NEW `src/` TREE.
+# Two import spellings already exist in this repository and both must keep
+# working, so the package cannot move:
+#
+#   from glc_loader import tbe_container            (tests/test_glc_tbe_release.py,
+#                                                    tests/test_glc_release.py,
+#                                                    tests/test_glc_carry_plan.py --
+#                                                    each after
+#                                                    sys.path.insert(0, REPO/"release"))
+#   from release.glc_loader.metal import ...        (tests/test_tbe_*_mlx.py, six
+#                                                    files, importing `release` as a
+#                                                    PEP 420 namespace package from
+#                                                    the repo root)
+#
+# Putting this file at `release/` and declaring the package root as `.` keeps
+# both: `pip install ./release` (or `-e ./release`) puts `glc_loader` on the
+# path exactly where `sys.path.insert(0, REPO/"release")` already puts it, and
+# nothing moves, so the `release.glc_loader.*` spelling is untouched.
+# `release/` deliberately has no `__init__.py`; adding one would make it a
+# regular package and is not needed for either spelling.
+#
+# The repository's own `pyproject.toml` builds the `georefine` distribution and
+# its `[tool.setuptools.packages.find]` include list does NOT contain
+# `release*`, so these two projects do not overlap.
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glc-loader"
+version = "1.2.0rc1"
+description = "Read, verify and serve GLC-FWP1 and GLC-TBE compressed model artifacts without the repository that built them"
+readme = "README.md"
+license = { text = "Proprietary" }
+requires-python = ">=3.10"
+authors = [{ name = "Tsotchke Corporation" }]
+keywords = ["compression", "lossless", "transformer", "inference", "vram"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Only `torch` is imported at module scope anywhere in `glc_loader/*.py`;
+# `safetensors` and `transformers` are imported inside the functions that need
+# them.  All three are still declared here because `verify`, `info` and `load`
+# each reach one of them on any real artifact, and an optional dependency that
+# every command needs is a lie.
+#
+# The floors below are DECLARED, not measured: this package has been exercised
+# on torch 2.6.0 / safetensors 0.8.0 / transformers 5.13.0 (see the README's
+# "Tested against" line).  The transformers floor is 4.56 because
+# `tbe_stream_loader.build_meta_skeleton` calls
+# `AutoModelForCausalLM.from_config(config, dtype=...)` with no `torch_dtype`
+# fallback, and `dtype=` is not accepted before then.  (`loader.py`'s own
+# skeleton builder does carry the fallback and would run on older releases.)
+dependencies = [
+    "torch>=2.1.0",
+    "safetensors>=0.4.0",
+    "transformers>=4.56.0",
+    # `glc-bench` downloads the pinned GLC-TBE artifact itself; a benchmark that cannot
+    # fetch its own model is not a one-command benchmark.
+    "huggingface_hub>=0.23.0",
+]
+
+[project.optional-dependencies]
+# NEITHER extra is a dependency of the other, and neither is needed to import
+# the package: `glc_loader/*.py` has no module-level `import triton` and no
+# module-level `import mlx`.  `glc_loader.metal.*` DOES import `mlx.core` at
+# module scope -- that subpackage is what [metal] buys, and `glc_loader`'s own
+# `__init__` does not import it.
+cuda = ["triton>=2.1.0"]
+metal = ["mlx>=0.26.0", "mlx-lm>=0.26.0"]
+dev = ["pytest>=7.0.0"]
+
+[project.scripts]
+glc-loader = "glc_loader.__main__:main"
+glc-serve = "glc_serve.server:main"
+# the batched multi-user server: a console script so the documented command is the same whether
+# the wheel is installed or not (no `python -m` path juggling for the person running it)
+glc-multiuser = "glc_serve.bidec_serve:main"
+# the one command an external tester runs: environment check, model download, correctness
+# gates, benchmark against llama.cpp, one table, one tarball.  Zero required flags.
+glc-bench = "glc_serve.glcbench:main"
+
+[project.urls]
+Homepage = "https://github.com/Tsotchke-Corporation/GeoRefine"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["glc_loader", "glc_loader.*", "glc_serve", "glc_serve.*"]
+namespaces = false
+
+# `tbe_mma_kernel.cu` and `fwp1_kernels.py` are NOT in this repository's
+# `release/glc_loader/`; they are vendored beside the loader at GLC-RELEASE
+# build time by `experiments/georefine/_glc_release.py::_copy_loader`.  These
+# globs pick them up when this package is built from inside a released
+# artifact.  A wheel built from the repository ships neither, and the two
+# consumers (`container.load_kernels`, `tbe_mma_kernels._build_extension`)
+# already refuse by name rather than guessing -- see the README.
+[tool.setuptools.package-data]
+glc_loader = ["*.cu", "*.metal"]
+# `glc_serve` carries its CUDA sources as package data because every kernel is
+# JIT-built by `torch.utils.cpp_extension.load_inline` from a file read next to
+# the module at run time (`fastdec.py`, `bidec.py`, `bigemm.py`, `miv_*.py`):
+# a wheel without them imports and then fails on the first forward pass.
+# `miv_tbe_configs/*.json` are the measured per-M autotune tables.
+glc_serve = ["*.cu", "*.cuh", "*.h", "*.cpp", "bi_csrc/*", "miv_kq_csrc/*",
+             "miv_tbe_csrc/*", "miv_tbe_configs/*.json"]
