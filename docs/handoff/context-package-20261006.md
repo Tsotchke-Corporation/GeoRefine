@@ -12,7 +12,6 @@ The measured artifact is a **storage package**: 36,403,357,016 bytes for 55,562,
 - NumPy
 - A C++17 compiler (the codec builds its helper on first use)
 - For the full checkpoint: about 36.4 GB for the package and 55.6 GB for the restored tensors, plus working room
-- `gcloud` only for the optional download command below
 
 Install NumPy in the Python environment you intend to use, for example `python3 -m pip install numpy`. No model framework is required.
 
@@ -53,7 +52,8 @@ python3 scripts/bitexact_context_package.py verify /path/to/context-package --jo
 From the repository root, with NumPy and pytest installed:
 
 ```sh
-PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -p no:capture -p no:cacheprovider tests/test_bitexact_context_package.py -q --basetemp=.scratch/test-package
+mkdir -p .scratch
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -p no:capture -p no:cacheprovider tests/test_bitexact_context_package.py -q --basetemp=.scratch/test-package
 ```
 
 The package tests use synthetic tensors and verify encoding/decoding, package integrity, exact synthetic shard and sidecar restoration, resume/reuse behavior, and fail-closed corruption handling. They do not compress the real model. `-p no:capture` avoids a known pytest capture-plugin crash in the development environment used to prepare this bundle; omit it on environments where normal pytest capture works.
@@ -65,4 +65,4 @@ The package tests use synthetic tensors and verify encoding/decoding, package in
 - Full artifact manifest SHA256: `d1a3d29c759f2056c20049c49b6b04479e151b74b52b688ab774b2d7253e4e8c`
 - Full artifact archive SHA256: `73665ab061483485a0395bb28ead9a3e9252edfa3d6932e153a07badbd6745c8`
 
-`SHA256SUMS` inventories every delivered file except itself. Check it with `shasum -a 256 -c SHA256SUMS`.
+In the standalone bundle, `SHA256SUMS` inventories every delivered file except itself. Check that bundle with `shasum -a 256 -c SHA256SUMS`.
