@@ -17,7 +17,14 @@ Install NumPy in the Python environment you intend to use, for example `python3 
 
 ## Obtain and verify the package
 
-Place the context package obtained from the approved release location at `./qwen38-context-package`, then verify it with:
+The completed package is published at [Hugging Face](https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-TBE/tree/02a50491a52e2ddded8a22aeebbfa58bb04433ce/context-v1-20261006). Download the pinned revision with the Hugging Face CLI, then verify it:
+
+```sh
+hf download Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-TBE \
+  --revision 02a50491a52e2ddded8a22aeebbfa58bb04433ce \
+  --include "context-v1-20261006/*" --local-dir ./qwen38-artifacts
+mv ./qwen38-artifacts/context-v1-20261006 ./qwen38-context-package
+```
 
 ```sh
 python3 ./qwen38-context-package/decoder/bitexact_context_package.py verify ./qwen38-context-package --jobs 8 --cache-dir ./.scratch/context-decoder-cache
