@@ -73,3 +73,38 @@ card identifies additional unverified contexts and platforms.
 The parent [Qwen3.8-27B model](https://huggingface.co/Qwen/Qwen3.8-27B) is
 Apache-2.0. Its LICENSE and notice are retained with the encoded model.
 GeoRefine's source packages are Apache-2.0 as well.
+
+## Predictive BF16 packages
+
+Predictive packages combine BCTX frames with reference-conditioned PPCX frames.
+Readers verify the package inventory, reference dependencies, and tensor hashes.
+The CUDA loader keeps weight frames compressed and decodes matrices for model
+operations. Decoder caches live outside the model package.
+
+Verify a package and restore its original checkpoint files:
+
+```bash
+python -m scripts.bitexact_predictive_package verify /path/to/package
+python -m scripts.bitexact_predictive_package restore /path/to/package /path/to/restored
+```
+
+Serve the package through the chat-completions API:
+
+```bash
+python -m scripts.serve_bitexact_predictive \
+  --package /path/to/package --loader-workers 4 \
+  --host 127.0.0.1 --port 8000
+```
+
+GPU serving uses CUDA-enabled PyTorch, Triton, Transformers, and Accelerate.
+The HTTP endpoint also uses FastAPI, Uvicorn, Pillow, and PyAV. Use a separate
+Python environment for these dependencies. Set `BITEXACT_PREDICTIVE_CACHE_DIR`
+to choose the external native-build cache location.
+
+The Python interface exposes `load_predictive_model` and `load_predictive_mtp`
+in `scripts.bitexact_predictive_serving`. The MTP head can be used with
+`MTPSpeculator` from `scripts.bitexact_context_mtp`.
+
+To generate candidate frames and build a package from a BCTX package, see
+`python -m scripts.bitexact_predictive_package --help`. Candidate generation
+checks exact reconstruction and resumes from receipts whose hashes match.
