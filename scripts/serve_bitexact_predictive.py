@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 
@@ -28,6 +29,17 @@ def create_predictive_app(*, package, device="cuda:0", attention_implementation=
     return create_app(engine=engine, model_id=model_id, **http_options)
 
 
+def _configure_exact_runtime():
+    """Apply the deterministic CUDA settings used by the predictive qualification path."""
+    os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
+    import torch
+
+    torch.use_deterministic_algorithms(True)
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = False
+    torch.backends.cudnn.allow_tf32 = False
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--package", required=True, type=Path)
@@ -43,6 +55,7 @@ def main(argv=None):
     parser.add_argument("--allow-remote-host", action="append", default=[],
                         help="exact HTTPS media host allowlist (remote media is off by default)")
     args = parser.parse_args(argv)
+    _configure_exact_runtime()
     try:
         import uvicorn
     except ImportError as exc:

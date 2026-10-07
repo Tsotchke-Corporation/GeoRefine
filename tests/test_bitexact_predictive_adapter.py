@@ -192,7 +192,20 @@ def test_predictive_http_wrapper_reuses_bctx_backend(tmp_path,monkeypatch):
 def test_predictive_http_cli_forwards_serving_options(tmp_path,monkeypatch):
     wrapper_spec=importlib.util.spec_from_file_location('serve_predictive_cli',ROOT.parent/'scripts'/'serve_bitexact_predictive.py')
     wrapper=importlib.util.module_from_spec(wrapper_spec);wrapper_spec.loader.exec_module(wrapper)
-    calls={};wrapper.create_predictive_app=lambda **kwargs:calls.update(app=kwargs) or 'app'
+    calls={}
+    matmul=types.SimpleNamespace(allow_tf32=True,allow_bf16_reduced_precision_reduction=True)
+    cudnn=types.SimpleNamespace(allow_tf32=True)
+    fake_torch=types.ModuleType('torch');fake_torch.backends=types.SimpleNamespace(cuda=types.SimpleNamespace(matmul=matmul),cudnn=cudnn)
+    fake_torch.use_deterministic_algorithms=lambda enabled:calls.update(deterministic=enabled)
+    monkeypatch.setitem(sys.modules,'torch',fake_torch)
+    monkeypatch.setenv('CUBLAS_WORKSPACE_CONFIG','wrong-value')
+    def create_app(**kwargs):
+        calls['app']=kwargs
+        assert __import__('os').environ['CUBLAS_WORKSPACE_CONFIG']==':4096:8'
+        assert calls['deterministic'] is True and matmul.allow_tf32 is False
+        assert matmul.allow_bf16_reduced_precision_reduction is False and cudnn.allow_tf32 is False
+        return 'app'
+    wrapper.create_predictive_app=create_app
     uvicorn=types.ModuleType('uvicorn');uvicorn.run=lambda app,**kwargs:calls.update(run=(app,kwargs))
     monkeypatch.setitem(sys.modules,'uvicorn',uvicorn)
     wrapper.main(['--package',str(tmp_path/'pkg'),'--device','cpu','--host','0.0.0.0','--port','9123',
