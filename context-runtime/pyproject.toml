@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "georefine-context-fast-runtime"
+version = "0.1.0"
+description = "Pinned Context and FastDecoder serving runtime"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+  "torch==2.8.0",
+  "torchvision==0.23.0",
+  "transformers==5.5.0",
+  "safetensors>=0.4",
+  "numpy>=1.26",
+  "accelerate>=1.10",
+  "fastapi>=0.100",
+  "uvicorn>=0.27",
+  "Pillow>=10",
+  "av>=15",
+  "ninja>=1.11",
+]
+
+[project.optional-dependencies]
+cuda = ["triton>=3.4,<4"]
+
+[project.scripts]
+"glc-loader" = "glc_loader.__main__:main"
+"glc-serve" = "glc_serve.server:main"
+"georefine-context-package" = "georefine_context_runtime.bitexact_context_package:main"
+"georefine-predictive-package" = "georefine_context_runtime.bitexact_predictive_package:main"
+"georefine-context-serve" = "georefine_context_runtime.serve_bitexact_context:main"
+"georefine-predictive-serve" = "georefine_context_runtime.serve_bitexact_predictive:main"
+"georefine-context-fast-serve" = "glc_serve.context_fast_server:main"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["glc_loader", "glc_loader.*", "glc_serve", "glc_serve.*",
+           "georefine_context_runtime", "georefine_context_runtime.*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+"georefine_context_runtime" = ["SOURCE_MANIFEST.json", "__init__.py", "bitexact_context_ans.cpp", "bitexact_context_codec.py", "bitexact_context_gpu.py", "bitexact_context_gpu_index.cpp", "bitexact_context_gpu_kernels.py", "bitexact_context_mtp.py", "bitexact_context_package.py", "bitexact_context_serving.py", "bitexact_predictive_ans.cpp", "bitexact_predictive_codec.py", "bitexact_predictive_gpu.py", "bitexact_predictive_gpu_index.cpp", "bitexact_predictive_gpu_kernels.py", "bitexact_predictive_mix.py", "bitexact_predictive_package.py", "bitexact_predictive_serving.py", "licenses/CONTEXT_RELEASE_GRANT.json", "licenses/NATIVE_CODEC_LICENSE.txt", "licenses/PUBLIC_RUNTIME_LICENSE.txt", "licenses/PUBLIC_RUNTIME_NOTICE.txt", "serve_bitexact_context.py", "serve_bitexact_predictive.py"]
+"glc_loader" = ["__init__.py", "__main__.py", "_inspect.py", "_jitenv.py", "artifact.py", "codec_v2.py", "codec_v21.py", "codec_v2_artifact.py", "container.py", "loader.py", "metal/__init__.py", "metal/ple_gather_mlx.py", "metal/tbe_backbone_batched_mlx.py", "metal/tbe_decode_mlx.py", "metal/tbe_decode_mlx_v2.py", "metal/tbe_decode_mlx_v3.py", "metal/tbe_decode_mlx_v4.py", "metal/tbe_gemv_fused_lut_mlx.py", "metal/tbe_gemv_fused_mlx.py", "metal/tbe_linear_mlx.py", "metal/tbe_linear_mlx_v2.py", "metal/tbe_linear_mlx_v3.py", "metal/tbe_linear_mlx_v4.py", "metal/tbe_mlx_model.py", "metal/tbe_moe_batched_mlx.py", "modules.py", "tbe_anyrank.py", "tbe_artifact.py", "tbe_container.py", "tbe_cpu_numpy.py", "tbe_cpu_process.py", "tbe_device_map.py", "tbe_gather.py", "tbe_mma.py", "tbe_mma_kernel.cu", "tbe_mma_kernels.py", "tbe_modules.py", "tbe_serve_portable.py", "tbe_serving.py", "tbe_stream_loader.py"]
+"glc_serve" = ["CONTEXT_BUILD.json", "NATIVE_BATCH_SOURCES.json", "__init__.py", "__main__.py", "_startup_limits.py", "_winenv.py", "bench.py", "bi_csrc/bi_api.h", "bi_csrc/bi_gemm.cuh", "bi_csrc/bi_gemm_dense.cu", "bi_csrc/bi_torch.cpp", "bidec.py", "bidec_kernels.cu", "bidec_mm.py", "bidec_policy.py", "bigemm.py", "bigemm_tbe21_ref.py", "bigemm_tbe2_ref.py", "bigemm_tune.py", "bundle.py", "context_fast_server.py", "engine.py", "espec.py", "fastdec.py", "fastdec_kernels.cu", "fastserve.py", "gate.py", "loader.py", "memcap.py", "miv_gemv.py", "miv_tbe.py", "miv_tbe_configs/miv_wpr_rtxpro6000.json", "miv_tbe_csrc/miv_tbe.h", "miv_tbe_csrc/miv_tbe_api.cu", "miv_tbe_csrc/miv_tbe_flat_smb.cu", "miv_tbe_csrc/miv_tbe_flat_smb.cuh", "miv_tbe_csrc/miv_tbe_flat_smb_torch.cpp", "miv_tbe_csrc/miv_tbe_kernels.cuh", "miv_tbe_csrc/miv_tbe_m1.cu", "miv_tbe_csrc/miv_tbe_m2.cu", "miv_tbe_csrc/miv_tbe_m3.cu", "miv_tbe_csrc/miv_tbe_m4.cu", "miv_tbe_csrc/miv_tbe_m5.cu", "miv_tbe_csrc/miv_tbe_m6.cu", "miv_tbe_csrc/miv_tbe_m7.cu", "miv_tbe_csrc/miv_tbe_m8.cu", "miv_tbe_csrc/miv_tbe_pair_m1.cu", "miv_tbe_csrc/miv_tbe_pair_torch.cpp", "miv_tbe_csrc/miv_tbe_torch.cpp", "miv_tbe_flat_smb.py", "miv_tbe_pair.py", "modules.py", "mtp.py", "native_batch_provenance/LICENSE", "pack.py", "predictive_batch_private.py", "predictive_tbe_private.py", "q8serve.py", "server.py", "state_budget.py", "tbe2_desc.py", "tbe_desc.py", "tunes/fastdec_sm120.json", "vendor.py"]

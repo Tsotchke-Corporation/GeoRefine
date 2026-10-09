@@ -1,0 +1,178 @@
+{
+  "source_repository": "private native reference worktree",
+  "source_commit": "79a4a2f55f5caa37c442ed0cd873e03d7fbd61ca",
+  "destination_branch": "codex/bidec-native-port-20261008",
+  "copied_sources": [
+    {
+      "source_path": "release/glc_serve/bidec.py",
+      "destination": "release/glc_serve/bidec.py",
+      "sha256": "18c079088d17c0d3e150f5a0e3e636bfe25efdf76687930ca6fdf35f7328b9ba",
+      "destination_sha256": "18c079088d17c0d3e150f5a0e3e636bfe25efdf76687930ca6fdf35f7328b9ba",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/bigemm.py",
+      "destination": "release/glc_serve/bigemm.py",
+      "sha256": "9824c9bc44748011fbab11af7f493c72f189da8738617c5a21bd7e41e15437ae",
+      "destination_sha256": "26615bc93cb2d17b3ebbc6718980cd5dd1c38143fdd2be5c62d5ec7cdf63fe4b",
+      "normalization": "Original source retained as origin; local opt-in Context-only compile guards exclude unused KQ implementation while legacy arithmetic remains unchanged.",
+      "previous_destination_sha256": "9824c9bc44748011fbab11af7f493c72f189da8738617c5a21bd7e41e15437ae"
+    },
+    {
+      "source_path": "release/glc_serve/bigemm_tune.py",
+      "destination": "release/glc_serve/bigemm_tune.py",
+      "sha256": "36bb0c64fd13c77e3b99a6a656299d037c29618aafda86c354ece3ebb4e85a31",
+      "destination_sha256": "36bb0c64fd13c77e3b99a6a656299d037c29618aafda86c354ece3ebb4e85a31",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/bidec_mm.py",
+      "destination": "release/glc_serve/bidec_mm.py",
+      "sha256": "62657bbbfec6d65e262da1f9badabf535126ecdec385f7b1ed9850dd1e7711ee",
+      "destination_sha256": "62657bbbfec6d65e262da1f9badabf535126ecdec385f7b1ed9850dd1e7711ee",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/state_budget.py",
+      "destination": "release/glc_serve/state_budget.py",
+      "sha256": "ef9512391e1657295cf1830cd59a17f887a567bf1ec5567df41cc2e66fd055a0",
+      "destination_sha256": "ef9512391e1657295cf1830cd59a17f887a567bf1ec5567df41cc2e66fd055a0",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/bidec_kernels.cu",
+      "destination": "release/glc_serve/bidec_kernels.cu",
+      "sha256": "80364de152840c3f299891d934797bd574e6dee2439300ed6e7a3feb3bb7cdb5",
+      "destination_sha256": "80364de152840c3f299891d934797bd574e6dee2439300ed6e7a3feb3bb7cdb5",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/bi_csrc/bi_api.h",
+      "destination": "release/glc_serve/bi_csrc/bi_api.h",
+      "sha256": "1ece3a896fffba38f440bf1e461152623826467054c40cb2a8a14d8af156a337",
+      "destination_sha256": "5ff5df2757e33b9b7f2d410af0e890a0ce65108af196d1331032426563b59614",
+      "normalization": "Original source retained as origin; local opt-in Context-only compile guards exclude unused KQ implementation while legacy arithmetic remains unchanged.",
+      "previous_destination_sha256": "1ece3a896fffba38f440bf1e461152623826467054c40cb2a8a14d8af156a337"
+    },
+    {
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm.cuh",
+      "destination": "release/glc_serve/bi_csrc/bi_gemm.cuh",
+      "sha256": "3ded9c0fac652b4b7ccc0d005566b92c11f33f8b629aec4d1b93818d01e252cb",
+      "destination_sha256": "82a0d2e137f06f66af6720c594f2b61e8ee1407f9ec8f8a57fd293829ca9fce7",
+      "normalization": "Original source retained as origin; local opt-in Context-only compile guards exclude unused KQ implementation while legacy arithmetic remains unchanged.",
+      "previous_destination_sha256": "0ac05de75f50a105562a3dc1365b7b4ed0dd413c756d8c4c56495db17498e29b"
+    },
+    {
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm_dense.cu",
+      "destination": "release/glc_serve/bi_csrc/bi_gemm_dense.cu",
+      "sha256": "d81cb68cf2c909a82c6b9ef2a069d48dea23960b71760eef11d7a5d7b9192198",
+      "destination_sha256": "d81cb68cf2c909a82c6b9ef2a069d48dea23960b71760eef11d7a5d7b9192198",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm_kq.cu",
+      "destination": "release/glc_serve/bi_csrc/bi_gemm_kq.cu",
+      "sha256": "eb398763d9ae3df1be88d8be27a0e8926620344d3ecb2c4a245febaa1f1dd0c6",
+      "destination_sha256": "eb398763d9ae3df1be88d8be27a0e8926620344d3ecb2c4a245febaa1f1dd0c6",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/bi_csrc/bi_torch.cpp",
+      "destination": "release/glc_serve/bi_csrc/bi_torch.cpp",
+      "sha256": "b7da328741c1ae28b07cc109e68b3858973cdf988be7688b63448b5d1e3c9d0f",
+      "destination_sha256": "397f0f0c4a43661b67d579255a66fe69392ca1e037227966f8a9a8309924e0be",
+      "normalization": "Original source retained as origin; local opt-in Context-only compile guards exclude unused KQ implementation while legacy arithmetic remains unchanged.",
+      "previous_destination_sha256": "a1010eff326457e85ed60996da7c34998201a2796980c4382d728008f522d13b"
+    },
+    {
+      "source_path": "release/glc_serve/miv_kq_csrc/miv_kq.h",
+      "destination": "release/glc_serve/miv_kq_csrc/miv_kq.h",
+      "sha256": "a5de10d8cfb09d609a2844768fd7fe9cb067a2aee3181242826bb452e6c2b224",
+      "destination_sha256": "a5de10d8cfb09d609a2844768fd7fe9cb067a2aee3181242826bb452e6c2b224",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/miv_kq_csrc/miv_kq_kernels.cuh",
+      "destination": "release/glc_serve/miv_kq_csrc/miv_kq_kernels.cuh",
+      "sha256": "08c2a5b6789e437dfba7fd3c7ac2306f117a8c57684cb5d23067f4a679440137",
+      "destination_sha256": "08c2a5b6789e437dfba7fd3c7ac2306f117a8c57684cb5d23067f4a679440137",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_serve/_winenv.py",
+      "destination": "release/glc_serve/_winenv.py",
+      "sha256": "41f7668e276f089b8bdc343a9861cced87f17a200be5505133c314ed30b0149c",
+      "destination_sha256": "41f7668e276f089b8bdc343a9861cced87f17a200be5505133c314ed30b0149c",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "release/glc_loader/_jitenv.py",
+      "destination": "release/glc_loader/_jitenv.py",
+      "sha256": "bbbfd742d171f4f3e197dcfa697a95eb3248a47cc8b59ad08280750d0de81352",
+      "destination_sha256": "bbbfd742d171f4f3e197dcfa697a95eb3248a47cc8b59ad08280750d0de81352",
+      "normalization": "byte-identical copy"
+    },
+    {
+      "source_path": "LICENSE",
+      "destination": "release/glc_serve/native_batch_provenance/LICENSE",
+      "sha256": "3370532b65d01a66990f223630471ab84c8b183eeff523368aa18123dc102db4",
+      "record_type": "raw_source_license",
+      "destination_sha256": "3370532b65d01a66990f223630471ab84c8b183eeff523368aa18123dc102db4"
+    },
+    {
+      "source_path": "release/glc_serve/bidec_policy.py",
+      "destination": "release/glc_serve/bidec_policy.py",
+      "sha256": "f2ab1a4295626ac9d7a00f747d7dc378746184310e23dd947f1dd0b3a132bb53",
+      "destination_sha256": "f2ab1a4295626ac9d7a00f747d7dc378746184310e23dd947f1dd0b3a132bb53",
+      "normalization": "byte-identical copy"
+    }
+  ],
+  "source_notice_status": {
+    "root_notice": "absent at pinned source commit",
+    "raw_license_copy": "release/glc_serve/native_batch_provenance/LICENSE"
+  },
+  "existing_public_legal_records_preserved": [
+    {
+      "path": "LICENSE",
+      "sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de",
+      "preserved": true
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b",
+      "preserved": true
+    },
+    {
+      "path": "release/NOTICE",
+      "sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b",
+      "preserved": true
+    },
+    {
+      "path": "release/glc_loader/NOTICE",
+      "sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b",
+      "preserved": true
+    }
+  ],
+  "unresolved_licensing": [
+    "release/glc_serve/miv_kq_csrc/miv_kq.h",
+    "release/glc_serve/miv_kq_csrc/miv_kq_kernels.cuh"
+  ],
+  "distribution_status": "DISTRIBUTION_HELD",
+  "license_decision": "none; retained source records as-is; KQ upstream notice/provenance unresolved",
+  "integration_files": [
+    {
+      "path": "release/glc_serve/predictive_batch_private.py",
+      "role": "new loader-to-B16 adapter"
+    },
+    {
+      "path": "tests/test_predictive_batch_private.py",
+      "role": "CPU import closure, fake routing, and capacity checks"
+    }
+  ],
+  "runtime_closure": [
+    {
+      "path": "release/glc_serve/bidec_policy.py",
+      "reason": "Batcher._prefill_seq_limit imports PrefillPolicy when prefill_priority is nonzero"
+    }
+  ]
+}

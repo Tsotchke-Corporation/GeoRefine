@@ -108,3 +108,7 @@ in `scripts.bitexact_predictive_serving`. The MTP head can be used with
 To generate candidate frames and build a package from a BCTX package, see
 `python -m scripts.bitexact_predictive_package --help`. Candidate generation
 checks exact reconstruction and resumes from receipts whose hashes match.
+
+## Context release candidate
+
+The complete Context codec and serving runtime source is in [`context-runtime/`](context-runtime/). Its candidate quickstart includes an isolated installation, pinned model download, exact verification and serving commands. GPU release qualification and public model publication are pending.
