@@ -1,0 +1,11 @@
+{
+  "upstream": "https://github.com/ml-explore/mlx",
+  "revision": "2f324cc3b200700b422db4811ae3ff8bd5bf48b4",
+  "files": {
+    "params.h": "6711e72e32310eafb088895d5a6d20fcfca814158f5b38eb72b6e69d9d773e43",
+    "transforms.h": "aead73fa873184cf7d930fb9d20308f765c52c35a775a9a0131162cc332fa814",
+    "mma.h": "8a744cee1a1072751b376c276f0419c251547450b2055a3fbf4b227ed381d366",
+    "loader.h": "703cd05158c22625dd636b85f7219bb374c65eeaed03f7b770bf8ac49f2fb16d",
+    "gemm.h": "c84af31e2c57154f2a8a24fa7f9fe2449765cce9a66f3f035846ed3c03b6a8b0"
+  }
+}

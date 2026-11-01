@@ -10,7 +10,20 @@ and serves them without keeping a dense copy of every coded weight resident.
 This repository contains the Apache-2.0 codec, runtime, verifier, and tests.
 Model weights live in the [Tsotchke Corporation Qwen3.8-27B TBE model repository](https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-TBE).
 
-## First release scope
+## Context codec v2 — Linux CUDA
+
+The complete Qwen3.8-27B reference/package storage ratio is **1.530696×**, retaining BF16 weights without quantization/pruning. The matched Linux runtime distribution is `georefine-context-fast-runtime` **0.1.1+cu129**.
+
+- [Codec source and reproducible build](context-runtime/)
+- [Linux release guide and checksums](docs/context-v2-linux-release.md)
+- [Measured Linux evidence](proofs/context-linux-v2/summary.json)
+- [Model weights and runtime downloads](https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-Context/tree/v2-linux-20261101)
+
+Blackwell96 measured token-generation decode ratios are **1.21×/1.42×** at64/128users; end-to-end aggregate ratios are **1.23×/1.34×** versus same-engine BF16. Candidate naturalMTP is enabled and referenceMTP disabled. These are combined serving measurements, not isolatedcodec-only speedups. A100resident-worker results and slowcold-start/observer limitations are disclosed in the evidence. Metal/Windows are unqualified.
+
+The earlier TBE1.x API/artifacts below remain available.
+
+## Previous TBE1.x release scope
 
 For Qwen3.8-27B at upstream revision
 `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`, the complete bundle has

@@ -1,0 +1,242 @@
+{
+  "copied_sources": [
+    {
+      "destination": "release/glc_serve/bidec.py",
+      "destination_sha256": "398f6aa100c4591170c09548eb8ba3fd560e87956ad6c64553f5778baf39c61a",
+      "installed_path": "glc_serve/bidec.py",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "18c079088d17c0d3e150f5a0e3e636bfe25efdf76687930ca6fdf35f7328b9ba",
+      "sha256": "18c079088d17c0d3e150f5a0e3e636bfe25efdf76687930ca6fdf35f7328b9ba",
+      "source_path": "release/glc_serve/bidec.py"
+    },
+    {
+      "destination": "release/glc_serve/bigemm.py",
+      "destination_sha256": "5aba89ca4aca2ae980e5a8483504426d7f2b47f73485323eb15b5339e96ea2ec",
+      "experimental_status": "Opt-in TBE cursor prototype; CUDA and full-model gates unverified.",
+      "installed_path": "glc_serve/bigemm.py",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "9824c9bc44748011fbab11af7f493c72f189da8738617c5a21bd7e41e15437ae",
+      "sha256": "9824c9bc44748011fbab11af7f493c72f189da8738617c5a21bd7e41e15437ae",
+      "source_path": "release/glc_serve/bigemm.py"
+    },
+    {
+      "destination": "release/glc_serve/bigemm_tune.py",
+      "destination_sha256": "36bb0c64fd13c77e3b99a6a656299d037c29618aafda86c354ece3ebb4e85a31",
+      "installed_path": "glc_serve/bigemm_tune.py",
+      "normalization": "byte-identical copy",
+      "sha256": "36bb0c64fd13c77e3b99a6a656299d037c29618aafda86c354ece3ebb4e85a31",
+      "source_path": "release/glc_serve/bigemm_tune.py"
+    },
+    {
+      "destination": "release/glc_serve/bidec_mm.py",
+      "destination_sha256": "f9e7183de2bd4b73afc9e197d2f9a342424eaeac7c24d7aa4b73edfbc9cdd48f",
+      "installed_path": "glc_serve/bidec_mm.py",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "62657bbbfec6d65e262da1f9badabf535126ecdec385f7b1ed9850dd1e7711ee",
+      "sha256": "62657bbbfec6d65e262da1f9badabf535126ecdec385f7b1ed9850dd1e7711ee",
+      "source_path": "release/glc_serve/bidec_mm.py"
+    },
+    {
+      "destination": "release/glc_serve/state_budget.py",
+      "destination_sha256": "716e2f5a2577bbe7686467d16025b14827f194e7c4ecd130039ee42c64e02465",
+      "installed_path": "glc_serve/state_budget.py",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "ef9512391e1657295cf1830cd59a17f887a567bf1ec5567df41cc2e66fd055a0",
+      "sha256": "ef9512391e1657295cf1830cd59a17f887a567bf1ec5567df41cc2e66fd055a0",
+      "source_path": "release/glc_serve/state_budget.py"
+    },
+    {
+      "destination": "release/glc_serve/bidec_kernels.cu",
+      "destination_sha256": "78eb9cd9b7eed7ef2aa4b1065b57a9030f781c4cdd8be01999b33065e664bbc3",
+      "installed_path": "glc_serve/bidec_kernels.cu",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "80364de152840c3f299891d934797bd574e6dee2439300ed6e7a3feb3bb7cdb5",
+      "sha256": "80364de152840c3f299891d934797bd574e6dee2439300ed6e7a3feb3bb7cdb5",
+      "source_path": "release/glc_serve/bidec_kernels.cu"
+    },
+    {
+      "destination": "release/glc_serve/bi_csrc/bi_api.h",
+      "destination_sha256": "a59bbba90155ff8f651573d5ec82522158889b63e8705f78986b97f7240eaf4b",
+      "experimental_status": "Opt-in TBE cursor prototype; CUDA and full-model gates unverified.",
+      "installed_path": "glc_serve/bi_csrc/bi_api.h",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "1ece3a896fffba38f440bf1e461152623826467054c40cb2a8a14d8af156a337",
+      "sha256": "1ece3a896fffba38f440bf1e461152623826467054c40cb2a8a14d8af156a337",
+      "source_path": "release/glc_serve/bi_csrc/bi_api.h"
+    },
+    {
+      "destination": "release/glc_serve/bi_csrc/bi_gemm.cuh",
+      "destination_sha256": "10640f86efbe92e5bb5e5de3f36cc9486f03ea975469481754ee6e563963fcd5",
+      "experimental_status": "Opt-in TBE cursor prototype; CUDA and full-model gates unverified.",
+      "installed_path": "glc_serve/bi_csrc/bi_gemm.cuh",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "0ac05de75f50a105562a3dc1365b7b4ed0dd413c756d8c4c56495db17498e29b",
+      "sha256": "3ded9c0fac652b4b7ccc0d005566b92c11f33f8b629aec4d1b93818d01e252cb",
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm.cuh"
+    },
+    {
+      "destination": "release/glc_serve/bi_csrc/bi_gemm_dense.cu",
+      "destination_sha256": "6873e12c39556cef6aa517a139c7534c51d33d81455507276af8825302a5492a",
+      "experimental_status": "Opt-in TBE cursor prototype; CUDA and full-model gates unverified.",
+      "installed_path": "glc_serve/bi_csrc/bi_gemm_dense.cu",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "d81cb68cf2c909a82c6b9ef2a069d48dea23960b71760eef11d7a5d7b9192198",
+      "sha256": "d81cb68cf2c909a82c6b9ef2a069d48dea23960b71760eef11d7a5d7b9192198",
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm_dense.cu"
+    },
+    {
+      "destination": "release/glc_serve/bi_csrc/bi_gemm_kq.cu",
+      "destination_sha256": "eb398763d9ae3df1be88d8be27a0e8926620344d3ecb2c4a245febaa1f1dd0c6",
+      "exclusion_reason": "Context-only build excludes K-quant kernels.",
+      "normalization": "byte-identical copy",
+      "sha256": "eb398763d9ae3df1be88d8be27a0e8926620344d3ecb2c4a245febaa1f1dd0c6",
+      "shipped": false,
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm_kq.cu"
+    },
+    {
+      "destination": "release/glc_serve/bi_csrc/bi_torch.cpp",
+      "destination_sha256": "d1f62f2a8e0568d086d909d761f69b9a2a56f4adb974ad64c7e6d04a238e0a2b",
+      "experimental_status": "Opt-in TBE cursor prototype; CUDA and full-model gates unverified.",
+      "installed_path": "glc_serve/bi_csrc/bi_torch.cpp",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "a1010eff326457e85ed60996da7c34998201a2796980c4382d728008f522d13b",
+      "sha256": "b7da328741c1ae28b07cc109e68b3858973cdf988be7688b63448b5d1e3c9d0f",
+      "source_path": "release/glc_serve/bi_csrc/bi_torch.cpp"
+    },
+    {
+      "destination": "release/glc_serve/miv_kq_csrc/miv_kq.h",
+      "destination_sha256": "a5de10d8cfb09d609a2844768fd7fe9cb067a2aee3181242826bb452e6c2b224",
+      "exclusion_reason": "Context-only build excludes K-quant kernels.",
+      "normalization": "byte-identical copy",
+      "sha256": "a5de10d8cfb09d609a2844768fd7fe9cb067a2aee3181242826bb452e6c2b224",
+      "shipped": false,
+      "source_path": "release/glc_serve/miv_kq_csrc/miv_kq.h"
+    },
+    {
+      "destination": "release/glc_serve/miv_kq_csrc/miv_kq_kernels.cuh",
+      "destination_sha256": "08c2a5b6789e437dfba7fd3c7ac2306f117a8c57684cb5d23067f4a679440137",
+      "exclusion_reason": "Context-only build excludes K-quant kernels.",
+      "normalization": "byte-identical copy",
+      "sha256": "08c2a5b6789e437dfba7fd3c7ac2306f117a8c57684cb5d23067f4a679440137",
+      "shipped": false,
+      "source_path": "release/glc_serve/miv_kq_csrc/miv_kq_kernels.cuh"
+    },
+    {
+      "destination": "release/glc_serve/_winenv.py",
+      "destination_sha256": "41f7668e276f089b8bdc343a9861cced87f17a200be5505133c314ed30b0149c",
+      "installed_path": "glc_serve/_winenv.py",
+      "normalization": "byte-identical copy",
+      "sha256": "41f7668e276f089b8bdc343a9861cced87f17a200be5505133c314ed30b0149c",
+      "source_path": "release/glc_serve/_winenv.py"
+    },
+    {
+      "destination": "release/glc_loader/_jitenv.py",
+      "destination_sha256": "bbbfd742d171f4f3e197dcfa697a95eb3248a47cc8b59ad08280750d0de81352",
+      "installed_path": "glc_loader/_jitenv.py",
+      "normalization": "byte-identical copy",
+      "sha256": "bbbfd742d171f4f3e197dcfa697a95eb3248a47cc8b59ad08280750d0de81352",
+      "source_path": "release/glc_loader/_jitenv.py"
+    },
+    {
+      "destination": "release/glc_serve/native_batch_provenance/LICENSE",
+      "destination_sha256": "3370532b65d01a66990f223630471ab84c8b183eeff523368aa18123dc102db4",
+      "installed_path": "glc_serve/native_batch_provenance/LICENSE",
+      "record_type": "raw_source_license",
+      "sha256": "3370532b65d01a66990f223630471ab84c8b183eeff523368aa18123dc102db4",
+      "source_path": "LICENSE"
+    },
+    {
+      "destination": "release/glc_serve/bidec_policy.py",
+      "destination_sha256": "f2ab1a4295626ac9d7a00f747d7dc378746184310e23dd947f1dd0b3a132bb53",
+      "installed_path": "glc_serve/bidec_policy.py",
+      "normalization": "byte-identical copy",
+      "sha256": "f2ab1a4295626ac9d7a00f747d7dc378746184310e23dd947f1dd0b3a132bb53",
+      "source_path": "release/glc_serve/bidec_policy.py"
+    },
+    {
+      "destination": "release/glc_serve/bigemm_tbe2_opt.py",
+      "destination_sha256": "f176f1b3b332b8c0c663da80e15cb07b15022c82066d117eb01134e58398e543",
+      "experimental_status": "Recovered TBE2 reference backend; CUDA NOT_RUN in Context.",
+      "installed_path": "glc_serve/bigemm_tbe2_opt.py",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "ef5e77cea75db1a42ab927e2f0a0f667e9862815a715eb96bc9c891505be2676",
+      "sha256": "ef5e77cea75db1a42ab927e2f0a0f667e9862815a715eb96bc9c891505be2676",
+      "source_path": "release/glc_serve/bigemm_tbe2_opt.py",
+      "source_repo": "attention",
+      "source_revision": "932e6d91a031db0a5191e2ecfba99109647e0e0a"
+    },
+    {
+      "destination": "release/glc_serve/bi_csrc/bi_tbe2_opt.cuh",
+      "destination_sha256": "143b7983c71a0a35d75bff27d723d4dcfe3db39ac4456ad063d3bd3e3d372a61",
+      "experimental_status": "Recovered TBE2 reference backend; CUDA NOT_RUN in Context.",
+      "installed_path": "glc_serve/bi_csrc/bi_tbe2_opt.cuh",
+      "normalization": "Original source retained as origin; installed 0.1.1 candidate includes reviewed local changes.",
+      "previous_destination_sha256": "99dd507062ed6ab25ae6517473dc925024d424beba9e80e6d0feb458bc18eeee",
+      "sha256": "58b6219241f490157789290fbb6a8f32c76199dd129b63e0d8730bdb60e49809",
+      "source_path": "release/glc_serve/bi_csrc/bi_tbe2_opt.cuh",
+      "source_repo": "attention",
+      "source_revision": "932e6d91a031db0a5191e2ecfba99109647e0e0a"
+    },
+    {
+      "destination": "release/glc_serve/bi_csrc/bi_tbe2_opt_dense.cu",
+      "destination_sha256": "b7bdd4a8fc998d7e7da2fedf1eda5e84d66d9d8fbbd696890e1112b5fa782401",
+      "experimental_status": "Recovered TBE2 reference backend; CUDA NOT_RUN in Context.",
+      "installed_path": "glc_serve/bi_csrc/bi_tbe2_opt_dense.cu",
+      "sha256": "25234a0658108d6d7225f1963c91092e140741210858f9afffadd446f1f8b8ac",
+      "source_path": "release/glc_serve/bi_csrc/bi_tbe2_opt_dense.cu",
+      "source_repo": "attention",
+      "source_revision": "932e6d91a031db0a5191e2ecfba99109647e0e0a"
+    }
+  ],
+  "destination_branch": "codex/bidec-native-port-20261008",
+  "distribution_status": "DISTRIBUTION_HELD",
+  "existing_public_legal_records_preserved": [
+    {
+      "path": "LICENSE",
+      "preserved": true,
+      "sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de"
+    },
+    {
+      "path": "NOTICE",
+      "preserved": true,
+      "sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b"
+    },
+    {
+      "path": "release/NOTICE",
+      "preserved": true,
+      "sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b"
+    },
+    {
+      "path": "release/glc_loader/NOTICE",
+      "preserved": true,
+      "sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b"
+    }
+  ],
+  "integration_files": [
+    {
+      "path": "release/glc_serve/predictive_batch_private.py",
+      "role": "new loader-to-B16 adapter"
+    },
+    {
+      "path": "tests/test_predictive_batch_private.py",
+      "role": "CPU import closure, fake routing, and capacity checks"
+    }
+  ],
+  "license_decision": "none; retained source records as-is; KQ upstream notice/provenance unresolved",
+  "runtime_closure": [
+    {
+      "path": "release/glc_serve/bidec_policy.py",
+      "reason": "Batcher._prefill_seq_limit imports PrefillPolicy when prefill_priority is nonzero"
+    }
+  ],
+  "source_commit": "79a4a2f55f5caa37c442ed0cd873e03d7fbd61ca",
+  "source_notice_status": {
+    "raw_license_copy": "release/glc_serve/native_batch_provenance/LICENSE",
+    "root_notice": "absent at pinned source commit"
+  },
+  "source_repository": "private native reference worktree",
+  "unresolved_licensing": [
+    "release/glc_serve/miv_kq_csrc/miv_kq.h",
+    "release/glc_serve/miv_kq_csrc/miv_kq_kernels.cuh"
+  ]
+}
