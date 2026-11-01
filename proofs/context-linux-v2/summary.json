@@ -1,0 +1,175 @@
+{
+  "schema": "georefine.linux_cuda_v2_measured_summary.v1",
+  "release_scope": "Linux CUDA codec/model and stated measured serving frames",
+  "runtime_source_revision": "6e24ede1489fa1061c9a435cbc66d5987f1762b7",
+  "runtime_wheel_sha256": "e64de51241c387efbdbc63f7185985b6106e5310350eb9540415dc3a6339e752",
+  "runtime_source_manifest_sha256": "49c8e64604bb6209fde937914943b95e87f2eeed1e6c76b9d5da21d7009d50ff",
+  "package_manifest_sha256": "bbac23fdeba3020f8951d7a0a005016985c40add08979f37a85df2f22ccbacee",
+  "parent_model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "source_parameters": 27781427952,
+  "storage": {
+    "reference_bytes": 55586113293,
+    "candidate_package_bytes": 36314261945,
+    "complete_ratio": 1.5306964899132,
+    "tensor_payload_bytes": 55562855904,
+    "tensor_payload_ratio": 1.5300560421179172
+  },
+  "blackwell": {
+    "device": "RTX PRO 6000 Blackwell 96GB",
+    "exactness_comparisons": 768,
+    "candidate_spec_k": 1,
+    "reference_spec_k": 0,
+    "cells": {
+      "128": {
+        "candidate": {
+          "agg_tok_s": 855.4937954930575,
+          "all_completions_exactly_max_tokens": true,
+          "errors": [],
+          "n_errors": 0,
+          "n_ok": 384,
+          "n_requests": 384,
+          "per_user_tok_s_mean": 8.716021236870349,
+          "per_user_tok_s_p50": 7.914609516549191,
+          "prompt_tokens_mean": 68.48177083333333,
+          "server_queue_s_p50": 0.012924499999999998,
+          "token_count_sources": [
+            "server_usage"
+          ],
+          "total_completion_tokens": 24576,
+          "ttft_max_s": 6.009224604999872,
+          "ttft_mean_s": 1.566946187770777,
+          "ttft_p50_s": 1.232964732000255,
+          "ttft_p99_s": 5.76059783560001,
+          "window_s": 28.72726854300072
+        },
+        "bf16_reference": {
+          "agg_tok_s": 637.8640431330294,
+          "all_completions_exactly_max_tokens": true,
+          "errors": [],
+          "n_errors": 0,
+          "n_ok": 384,
+          "n_requests": 384,
+          "per_user_tok_s_mean": 6.139260572507055,
+          "per_user_tok_s_p50": 5.402682565235191,
+          "prompt_tokens_mean": 68.48177083333333,
+          "server_queue_s_p50": 0.335471,
+          "token_count_sources": [
+            "server_usage"
+          ],
+          "total_completion_tokens": 24576,
+          "ttft_max_s": 6.579185309000422,
+          "ttft_mean_s": 1.6092307038906004,
+          "ttft_p50_s": 0.8873191900001984,
+          "ttft_p99_s": 6.331789772200463,
+          "window_s": 38.52858656099943
+        },
+        "decode_mean_speedup": 1.4197184064645485,
+        "end_to_end_aggregate_speedup": 1.3411851705750413,
+        "request_count_per_arm": 384,
+        "output_tokens_per_request": 64
+      },
+      "64": {
+        "candidate": {
+          "agg_tok_s": 787.1733982954166,
+          "all_completions_exactly_max_tokens": true,
+          "errors": [],
+          "n_errors": 0,
+          "n_ok": 192,
+          "n_requests": 192,
+          "per_user_tok_s_mean": 14.614491599102132,
+          "per_user_tok_s_p50": 14.098215657621001,
+          "prompt_tokens_mean": 68.27083333333333,
+          "server_queue_s_p50": 0.017847000000000002,
+          "token_count_sources": [
+            "server_usage"
+          ],
+          "total_completion_tokens": 12288,
+          "ttft_max_s": 2.4782102139997733,
+          "ttft_mean_s": 0.6943386944531463,
+          "ttft_p50_s": 0.4913710380001248,
+          "ttft_p99_s": 2.4737818801994855,
+          "window_s": 15.61028361299941
+        },
+        "bf16_reference": {
+          "agg_tok_s": 638.2456112400507,
+          "all_completions_exactly_max_tokens": true,
+          "errors": [],
+          "n_errors": 0,
+          "n_ok": 192,
+          "n_requests": 192,
+          "per_user_tok_s_mean": 12.072357736715327,
+          "per_user_tok_s_p50": 11.258062988650563,
+          "prompt_tokens_mean": 68.27083333333333,
+          "server_queue_s_p50": 0.3305145,
+          "token_count_sources": [
+            "server_usage"
+          ],
+          "total_completion_tokens": 12288,
+          "ttft_max_s": 3.1362486489997536,
+          "ttft_mean_s": 1.0329682365364903,
+          "ttft_p50_s": 0.6709154189998117,
+          "ttft_p99_s": 3.016057249789256,
+          "window_s": 19.252776334999908
+        },
+        "decode_mean_speedup": 1.2105747624306629,
+        "end_to_end_aggregate_speedup": 1.233339304544552,
+        "request_count_per_arm": 192,
+        "output_tokens_per_request": 64
+      }
+    },
+    "candidate_process_GPU_peak_bytes": 93306486784,
+    "candidate_host_RSS_peak_bytes": 67127918592,
+    "candidate_external_startup_seconds": {
+      "exactness": 314.565,
+      "performance": 313.213
+    },
+    "code_cache_prepared": true,
+    "raw_archive_sha256": "6373de64a53e4b67f8d324f9c86133c4a2b9fa917fc7601c8c802b7078fefa4c",
+    "report_hashes": {
+      "bench_client_sha256": "a774848ff90d4b094fe101cfc73dc4fa22ba3108071f8a947c1f7b56432cae40",
+      "candidate_raw_sha256": "668389b1e8fc94a4d385c3a98a76b2399e3c034a1e286dcdd36f4d2daa1a0c83",
+      "comparison_sha256": "9f94c5579dd92a24630c575b660f1ff8bfb761f11299b497001b491b6e178fd4",
+      "formal_target_measurements_sha256": "311cc6d82f243e992b9c98c8b366e901c0c52ad1cba77d6a824a5bec6f56840c",
+      "preservation_receipt_sha256": "6326765f2d1831f71ad2299f1b2d128ba16cde2126283c3f13c9dd5350e420e2",
+      "protocol_sha256": "10cc4a5dd5f50ac48158eca46867cb010076866077fca5dbe2d5fed82f13b62f",
+      "qualification_result_sha256": "b875ac70d0f362ad5e909b166ed7f61f5c6272132045dac9eaeaa7c593959e1a",
+      "reference_raw_sha256": "e96656760dcc1c2d0ba4fe772bde3c06f2d46c6472b229082e896120c9a5299e"
+    },
+    "kernel_component": {
+      "matrix_cases": 462,
+      "complete_BF16_domain_decode": true,
+      "mismatches": 0,
+      "result_sha256": "a5fb050556cbfe488bf5b351abd773d9b123b2cd04f9eb912abf8f4a0f78a805",
+      "scope": "Separately measured Blackwell TBE21 component; not a multi-device/full-product certificate"
+    }
+  },
+  "a100": {
+    "device": "A100-SXM4-40GB, one GPU visible on a two-GPU VM with170GiB host RAM",
+    "scope": "Resident-worker compressed full-model capacity and bounded serving observations",
+    "comparisons_identical": 512,
+    "comparison_requests": 8,
+    "aggregate_tok_s": 15.755636026418658,
+    "mean_per_request_decode_tok_s": 17.964549277783885,
+    "ttft_p99_s": 0.6212189074802518,
+    "process_GPU_peak_bytes": 40133197824,
+    "external_startup_seconds": {
+      "exactness": 906.8610819310002,
+      "performance": 908.5704107889997
+    },
+    "startup_disposition": "OWNER_ACCEPTED_RESIDENT_A100; 600-second cold-start criterion not met",
+    "separate_observer_profile": "FAIL; retained unclassified-process observation; not claimed passed"
+  },
+  "measurement_scope": {
+    "decode": "mean per-request token-generation rate from first/last token timestamps",
+    "end_to_end": "all completion tokens divided by the full measured client window",
+    "scheduling": "three sequential requests per worker after excluded warmup; not three independently synchronized paired trials",
+    "comparison": "Same GeoRefine engine: candidate natural MTP1, dense BF16 reference MTP0; combined codec/runtime/batching/MTP results",
+    "independent_HF_parent_parity_claimed": false,
+    "isolated_codec_only_speedup_claimed": false
+  },
+  "unqualified_platforms": [
+    "Windows",
+    "macOS Metal"
+  ],
+  "legacy_four_platform_release_matrix_status": "NOT_QUALIFIED; not claimed by this Linux-scoped release"
+}

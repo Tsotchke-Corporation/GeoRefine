@@ -1,0 +1,1434 @@
+{
+  "additional_required_test_harness": {
+    "context-runtime/tests/packedscan_simt/harness.cpp": {
+      "bytes": 4461,
+      "sha256": "82d8ec74d044fc79350a805ad5201f97259c211055b705d39ab53dccf8d04694",
+      "source_git_blob": "d806179fed40cd06b0afd74dc758bf60fd51d9c4"
+    },
+    "context-runtime/tests/packedscan_simt/simt.h": {
+      "bytes": 7954,
+      "sha256": "675960c8403e80c5153213eb0548c37064c2caeaab0a3c63028d27c7c5db2730",
+      "source_git_blob": "496d4c55fea62dc1586030fcb307e2d4db4e6674"
+    }
+  },
+  "build_helper_changes": [
+    "nondeleting retained staging",
+    "explicit original artifact epoch",
+    "accept complete already-pinned CUDA12.9 source metadata"
+  ],
+  "code_arithmetic_modified": false,
+  "documentation_overrides": {
+    "README.md": {
+      "original_preserved_as": "docs/context-0.1.1-original-source-readme.md",
+      "original_sha256": "da44a7ef65532c5aaa03f40226f6faeb23ff676d7dee1ac8548ce6909f13a62b",
+      "published_sha256": "f7092f5dd429f21494328b164af0399fcec7a0b62492cf74a3b1ab4a6606699d"
+    }
+  },
+  "expected_wheel_sha256": "e64de51241c387efbdbc63f7185985b6106e5310350eb9540415dc3a6339e752",
+  "historical_runtime_revision": "6e24ede1489fa1061c9a435cbc66d5987f1762b7",
+  "no_modelweights_or_credentials": true,
+  "omitted_generated_metadata_and_unrelated_test_paths": [
+    "PKG-INFO",
+    "georefine_context_fast_runtime.egg-info/PKG-INFO",
+    "georefine_context_fast_runtime.egg-info/SOURCES.txt",
+    "georefine_context_fast_runtime.egg-info/dependency_links.txt",
+    "georefine_context_fast_runtime.egg-info/entry_points.txt",
+    "georefine_context_fast_runtime.egg-info/not-zip-safe",
+    "georefine_context_fast_runtime.egg-info/requires.txt",
+    "georefine_context_fast_runtime.egg-info/top_level.txt",
+    "setup.cfg",
+    "tests/test_adaptive_worklist_binding.py",
+    "tests/test_adaptive_worklist_capacity.py",
+    "tests/test_adaptive_worklist_consumers.py",
+    "tests/test_alias_actual_weight_probe.py",
+    "tests/test_attention_implementation_config.py",
+    "tests/test_bctx_v21_cache_binding.py",
+    "tests/test_bctx_v21_predictive_dag.py",
+    "tests/test_bctx_v21_typed.py",
+    "tests/test_bhe_descriptor_pipeline.py",
+    "tests/test_bhe_frequency_only.py",
+    "tests/test_bhe_serving.py",
+    "tests/test_bhe_validation_witness.py",
+    "tests/test_bidec_gdn_ring_dtype.py",
+    "tests/test_bidec_load_reexports.py",
+    "tests/test_bidec_longctx_parity.py",
+    "tests/test_bidec_metadata_lifetime.py",
+    "tests/test_bidec_rope_extent.py",
+    "tests/test_bigemm_device_binding.py",
+    "tests/test_bigemm_measured_tile.py",
+    "tests/test_bigemm_nd_paths.py",
+    "tests/test_build_release.py",
+    "tests/test_capture_workload.py",
+    "tests/test_compact_qualification_binding.py",
+    "tests/test_compact_runtime_optin.py",
+    "tests/test_context_alias_ans.py",
+    "tests/test_context_alias_ans_native.py",
+    "tests/test_context_alias_fifo.py",
+    "tests/test_context_alias_gemm.py",
+    "tests/test_context_alias_matrix.py",
+    "tests/test_context_alias_packet.py",
+    "tests/test_context_alias_trusted.py",
+    "tests/test_context_batch_memory.py",
+    "tests/test_context_batch_server.py",
+    "tests/test_context_cdf_lookup.py",
+    "tests/test_context_exponent_decode_probe.py",
+    "tests/test_context_exponent_metal.py",
+    "tests/test_context_exponent_metal_fused.py",
+    "tests/test_context_exponent_metal_gemv_exact.py",
+    "tests/test_context_exponent_native.py",
+    "tests/test_context_exponent_native_cpu.py",
+    "tests/test_context_exponent_splits.py",
+    "tests/test_context_fused_gemm.py",
+    "tests/test_context_interleaved_packet.py",
+    "tests/test_context_native_verification.py",
+    "tests/test_context_packet_reference.py",
+    "tests/test_context_parallel_cancel.py",
+    "tests/test_context_parallel_startup.py",
+    "tests/test_context_parallel_streaming.py",
+    "tests/test_context_standalone_restore.py",
+    "tests/test_context_stream_gemm.py",
+    "tests/test_context_stream_packet.py",
+    "tests/test_context_tbe21_asyncx_binding.py",
+    "tests/test_context_tiled_packet.py",
+    "tests/test_cuda_qualification_identity.py",
+    "tests/test_encode_pipeline.py",
+    "tests/test_engine_optimisation.py",
+    "tests/test_exponent_actual_weight_probe.py",
+    "tests/test_fastdec_dense_temporary.py",
+    "tests/test_fastdec_untuned_shapes.py",
+    "tests/test_gdn_hf_norm.py",
+    "tests/test_gdn_native_dtypes.py",
+    "tests/test_glc_loader_progress_logging.py",
+    "tests/test_kernel_cache.py",
+    "tests/test_linear_layout.py",
+    "tests/test_memory_http.py",
+    "tests/test_mesh_cpu_qualification.py",
+    "tests/test_metal_deferred_status_gpu.py",
+    "tests/test_metal_status_guard.py",
+    "tests/test_mlx_batch.py",
+    "tests/test_mlx_digest.py",
+    "tests/test_mlx_http.py",
+    "tests/test_mlx_multimodal.py",
+    "tests/test_mlx_qwen_engine.py",
+    "tests/test_mlx_server_inventory.py",
+    "tests/test_mlx_service.py",
+    "tests/test_mlx_speculative.py",
+    "tests/test_mlx_vision.py",
+    "tests/test_mtp_confirmation_kv_only.py",
+    "tests/test_native_pack_qualification.py",
+    "tests/test_native_platform_support.py",
+    "tests/test_parallel_startup_qualification.py",
+    "tests/test_predictive_batch_helpers.py",
+    "tests/test_predictive_engine_device.py",
+    "tests/test_predictive_mlx.py",
+    "tests/test_predictive_mtp_startup.py",
+    "tests/test_predictive_native_build_cleanup.py",
+    "tests/test_public_spec_integration.py",
+    "tests/test_published_tbe_batch.py",
+    "tests/test_qualification_identity.py",
+    "tests/test_replica_pool.py",
+    "tests/test_runtime_memory.py",
+    "tests/test_safetensors_source.py",
+    "tests/test_server_startup_health.py",
+    "tests/test_serving_codec_profile.py",
+    "tests/test_serving_resources.py",
+    "tests/test_small_gdn_support.py",
+    "tests/test_spec_row_aware_selection.py",
+    "tests/test_startup.py",
+    "tests/test_startup_integration.py",
+    "tests/test_state_budget.py",
+    "tests/test_tbe21_async_x_probe.py",
+    "tests/test_tbe21_compact_state.py",
+    "tests/test_tbe21_context_batch_route.py",
+    "tests/test_tbe21_decode_oracle.py",
+    "tests/test_tbe21_descriptor_dispatch.py",
+    "tests/test_tbe21_exec_decode_default_off.py",
+    "tests/test_tbe21_exec_decode_literal.py",
+    "tests/test_tbe21_exec_decode_oracle.py",
+    "tests/test_tbe21_exec_full_g1.py",
+    "tests/test_tbe21_exec_layout.py",
+    "tests/test_tbe21_kernel_controls.py",
+    "tests/test_tbe21_kernel_schedule.py",
+    "tests/test_tbe21_loader_lifecycle.py",
+    "tests/test_tbe21_metadata_provider.py",
+    "tests/test_tbe21_native_decode.py",
+    "tests/test_tbe21_native_resource_query.py",
+    "tests/test_tbe21_package_vision_source.py",
+    "tests/test_tbe21_packedscan.py",
+    "tests/test_tbe21_packscan4.py",
+    "tests/test_tbe21_pipe128.py",
+    "tests/test_tbe21_public_loader_dispatch.py",
+    "tests/test_tbe21_resource_binding.py",
+    "tests/test_tbe21_row96_mapping.py",
+    "tests/test_tbe21_row_cost_model.py",
+    "tests/test_tbe21_row_geometry.py",
+    "tests/test_tbe21_scan4.py",
+    "tests/test_tbe21_startup_overlap.py",
+    "tests/test_tbe21_tier_g1.py",
+    "tests/test_tbe21_tier_metadata.py",
+    "tests/test_tbe21_tier_prefix_binding.py",
+    "tests/test_tbe21_tier_prefix_native.py",
+    "tests/test_tbe21_tier_prefix_nd.py",
+    "tests/test_tbe21_tier_profile.py",
+    "tests/test_tbe21_tile128.py",
+    "tests/test_tbe21_v2_backend.py",
+    "tests/test_tbe21_wide128.py",
+    "tests/test_tbe2_backend_recovery.py",
+    "tests/test_tbe2_opt_serving.py",
+    "tests/test_tbe_cursor.py",
+    "tests/test_transcode_cache.py",
+    "tests/test_typed_context_package.py",
+    "tests/test_typed_context_serving.py",
+    "tests/test_typed_cuda_fastsession.py",
+    "tests/test_typed_predictive_mlx.py",
+    "tests/test_typed_predictive_torch.py",
+    "tests/test_typed_predictive_torch_safetensors.py",
+    "tests/test_unbound_runtime_decoder_qualification.py"
+  ],
+  "origin_public_base": "f1a3cc777e6909e70b7571be192dffc4ef185953",
+  "original_archive_files": {
+    "LICENSE": {
+      "bytes": 22911,
+      "sha256": "458b03ff494d4adaaf9ff2f245be2884bf20f020c1351f3c3e2e44ffbacc5d0c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/LICENSE"
+    },
+    "README.md": {
+      "bytes": 30285,
+      "sha256": "da44a7ef65532c5aaa03f40226f6faeb23ff676d7dee1ac8548ce6909f13a62b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/README.md"
+    },
+    "georefine_context_runtime/SOURCE_MANIFEST.json": {
+      "bytes": 122929,
+      "sha256": "49c8e64604bb6209fde937914943b95e87f2eeed1e6c76b9d5da21d7009d50ff",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/SOURCE_MANIFEST.json"
+    },
+    "georefine_context_runtime/__init__.py": {
+      "bytes": 53,
+      "sha256": "662b309ff33f5292d14795196cc7954e6b32394f7644a2143db02e9653a590da",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/__init__.py"
+    },
+    "georefine_context_runtime/bitexact_context_ans.cpp": {
+      "bytes": 12517,
+      "sha256": "d05e7efa7ca46167196f5d23c03088d91fa4f59ad13577c039e2004c751de417",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_ans.cpp"
+    },
+    "georefine_context_runtime/bitexact_context_codec.py": {
+      "bytes": 15585,
+      "sha256": "43391d513fa96532121294fa96525f7180b78a122f97ea779ca07ce5e5646855",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_codec.py"
+    },
+    "georefine_context_runtime/bitexact_context_gpu.py": {
+      "bytes": 9255,
+      "sha256": "d5b7530d73e9b5855c9ceb8a52eaeb67801952fc7cb2df29c3a0011b3f036615",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_gpu.py"
+    },
+    "georefine_context_runtime/bitexact_context_gpu_index.cpp": {
+      "bytes": 4998,
+      "sha256": "997b74f5a900251293584e6554067c2cd3b6950e46f31f2e390df7a4b8403f9e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_gpu_index.cpp"
+    },
+    "georefine_context_runtime/bitexact_context_gpu_kernels.py": {
+      "bytes": 8421,
+      "sha256": "042be32bd7da8c3c5269e767655684ff2718d8caa4530b8cd917b36c1efa9c30",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_gpu_kernels.py"
+    },
+    "georefine_context_runtime/bitexact_context_mtp.py": {
+      "bytes": 35364,
+      "sha256": "c4e638b0b5bb829e78b7b92d32c4ebbb4cd391786937c2386b51ac0e00d7fc18",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_mtp.py"
+    },
+    "georefine_context_runtime/bitexact_context_package.py": {
+      "bytes": 40172,
+      "sha256": "3b9c8a323f4641ba971c9cbbaf0add5ac56ebca3aebbf86bc85bdbc6a5e984b0",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_package.py"
+    },
+    "georefine_context_runtime/bitexact_context_serving.py": {
+      "bytes": 33423,
+      "sha256": "73aacbeb5fee3e4b53c1e97cc8efa569ad13fef18ac5b83c531d8f4be6ff2791",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_context_serving.py"
+    },
+    "georefine_context_runtime/bitexact_predictive_ans.cpp": {
+      "bytes": 3767,
+      "sha256": "069e429a5c37c2bb6d671dd5b68cdf7688f99a4127847f46c15da87d78d0b33e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_ans.cpp"
+    },
+    "georefine_context_runtime/bitexact_predictive_codec.py": {
+      "bytes": 14371,
+      "sha256": "db6be9268b680d52265a4f70d6ded4e7b7a2ad42fec9552e9214b63fd80204aa",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_codec.py"
+    },
+    "georefine_context_runtime/bitexact_predictive_gpu.py": {
+      "bytes": 11664,
+      "sha256": "72e8c3b85c109da1ef4854408301bad620b48556b06f8277daf286b3711d7a18",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_gpu.py"
+    },
+    "georefine_context_runtime/bitexact_predictive_gpu_index.cpp": {
+      "bytes": 3937,
+      "sha256": "4d260e850e957f125d1cb1c70f16eaceb41342ee5348ccb17e3a77454cb0722b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_gpu_index.cpp"
+    },
+    "georefine_context_runtime/bitexact_predictive_gpu_kernels.py": {
+      "bytes": 3811,
+      "sha256": "1102730e786264c3355c1072b74ed5d35f551ed6dff00cb4b0950ddcffb99c9b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_gpu_kernels.py"
+    },
+    "georefine_context_runtime/bitexact_predictive_mix.py": {
+      "bytes": 6156,
+      "sha256": "9632dfad6d4034eabbafd179f5e0cde2cd64f0aa4f0650f9798a4f6a34e729e3",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_mix.py"
+    },
+    "georefine_context_runtime/bitexact_predictive_package.py": {
+      "bytes": 63843,
+      "sha256": "34b8014715a28f72a29ab7fdf6bbf4ff8e6764ee7f92e2c43a904bd44e15d360",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_package.py"
+    },
+    "georefine_context_runtime/bitexact_predictive_serving.py": {
+      "bytes": 55494,
+      "sha256": "b028b07ace232a7ca5ff993b19ee18345293350dba74d304287d063bb7855a4b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/bitexact_predictive_serving.py"
+    },
+    "georefine_context_runtime/context_alias_ans.py": {
+      "bytes": 28822,
+      "sha256": "2d21615f5b925a1e9a74e143d1691890db6163c2698f3c439faa6b3d81a4eeaa",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_ans.py"
+    },
+    "georefine_context_runtime/context_alias_ans_native.cpp": {
+      "bytes": 9983,
+      "sha256": "c546881c98b46835e16824d2771ba7a9ce6e4a84b9280562ce3a0bec1fff5ad9",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_ans_native.cpp"
+    },
+    "georefine_context_runtime/context_alias_ans_native.py": {
+      "bytes": 15713,
+      "sha256": "bd1af06b51440c12aa9957c682a68df26ea51c88fc51c7f896efcb890f3af4aa",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_ans_native.py"
+    },
+    "georefine_context_runtime/context_alias_gemm.cpp": {
+      "bytes": 25514,
+      "sha256": "25f2e7c2d8bafe6319680d802e36cc9d19d3e6cbd93eb9e7dfc64a3082c15fa9",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_gemm.cpp"
+    },
+    "georefine_context_runtime/context_alias_gemm.cu": {
+      "bytes": 18850,
+      "sha256": "614de17cddefbf2b0363044781cfee0806d54a531d97a95adb734d260178d9ff",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_gemm.cu"
+    },
+    "georefine_context_runtime/context_alias_gemm.py": {
+      "bytes": 14557,
+      "sha256": "91d223b9e6594a3995d6981bba14680eb32556df5e6cc865bf0e83f0d4ecd1a7",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_gemm.py"
+    },
+    "georefine_context_runtime/context_alias_packet.cuh": {
+      "bytes": 20490,
+      "sha256": "daeea6ff92f9bc019a59d8e8c3f55ecd951a7051b6e04e44a868159f4b9e5b9e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_packet.cuh"
+    },
+    "georefine_context_runtime/context_alias_packet.py": {
+      "bytes": 23646,
+      "sha256": "ccf9b4bc1a06a0fd07e63859206f5d455ee63215b8b03c5d628f436557d4573a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_alias_packet.py"
+    },
+    "georefine_context_runtime/context_cdf_lookup.py": {
+      "bytes": 8193,
+      "sha256": "37e0d7e8d2900f8262c26632c66215ac5521b6634950bce86c3fd550636fb5af",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_cdf_lookup.py"
+    },
+    "georefine_context_runtime/context_exponent_gemm.cpp": {
+      "bytes": 16833,
+      "sha256": "fa48328ddf0626ac51b6563a4bddcb427682c01e863db6c694864fabf600ccf0",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_gemm.cpp"
+    },
+    "georefine_context_runtime/context_exponent_gemm.cu": {
+      "bytes": 37577,
+      "sha256": "8e279dfacbc1dd3fa9d011974b3242f9562f02f576cf80aa5282d4857b0862f6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_gemm.cu"
+    },
+    "georefine_context_runtime/context_exponent_gemm.py": {
+      "bytes": 9962,
+      "sha256": "38de5e319213a6862698ae1675593cfff11a349a808b970c9edbe5dee4a15de8",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_gemm.py"
+    },
+    "georefine_context_runtime/context_exponent_metal.py": {
+      "bytes": 16344,
+      "sha256": "3591862f99d1c92d0ee397da6454eab73e1f2a29af8f54207495c4ec63eb758f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_metal.py"
+    },
+    "georefine_context_runtime/context_exponent_metal_fused.py": {
+      "bytes": 16879,
+      "sha256": "5fe8396cea0b99176f880621df4af892faf64aeff77715e9d74a029079d8b812",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_metal_fused.py"
+    },
+    "georefine_context_runtime/context_exponent_metal_gemv_exact.py": {
+      "bytes": 15026,
+      "sha256": "55aedc6ef5729d5f99a8e45050732ee983bea1e901afc84e835c9e77df9f7d5d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_metal_gemv_exact.py"
+    },
+    "georefine_context_runtime/context_exponent_native.cpp": {
+      "bytes": 8625,
+      "sha256": "11c72d4a0ba6a639d9fd3a20c99fbcc2829e5a5e53e08e25faa77a90137550bc",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_native.cpp"
+    },
+    "georefine_context_runtime/context_exponent_native.py": {
+      "bytes": 21331,
+      "sha256": "b7d453566a46804b0e9a04337dff1de1230145e322539965344d9d5d44126a31",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_native.py"
+    },
+    "georefine_context_runtime/context_exponent_packet.cuh": {
+      "bytes": 4997,
+      "sha256": "d758876fab9cdf97b979508f6529a041a356ddae87898b075e67c307515b1f4a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_packet.cuh"
+    },
+    "georefine_context_runtime/context_exponent_packet.py": {
+      "bytes": 40735,
+      "sha256": "274d33522ccbc8ed52844d9b6b4ba05c26777969d97d9ba414d100ec068084e2",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_packet.py"
+    },
+    "georefine_context_runtime/context_exponent_splits.py": {
+      "bytes": 6475,
+      "sha256": "f000e8a08e7a57f1cc88d55fc724d128df9f3a46f6e9b760efff086057f04023",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_splits.py"
+    },
+    "georefine_context_runtime/context_exponent_tables.py": {
+      "bytes": 16402,
+      "sha256": "883e259c8b4dc5ee67c07340d099b3b962037e34486c868f645b4e9a331ef2ff",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_exponent_tables.py"
+    },
+    "georefine_context_runtime/context_fused_gemm.cpp": {
+      "bytes": 13277,
+      "sha256": "b9e5ac26bebcdbb3b3f4deb963f7f2da39201072f6ff66efe89501a7373a5624",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_fused_gemm.cpp"
+    },
+    "georefine_context_runtime/context_fused_gemm.cu": {
+      "bytes": 12150,
+      "sha256": "22e27a8b3a718ed32031060583b82e99edd16cd619ff138ad7f742fceced6f78",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_fused_gemm.cu"
+    },
+    "georefine_context_runtime/context_fused_gemm.cuh": {
+      "bytes": 12825,
+      "sha256": "b5bdf625dbe148ffc87e799e4c725736a4e602893ef6a47619dd810dfd56ec77",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_fused_gemm.cuh"
+    },
+    "georefine_context_runtime/context_fused_gemm.py": {
+      "bytes": 17132,
+      "sha256": "68d4942cf786f8bcca5eb68726df8cc6900eb80d49703aeee9b13399da1ccf29",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_fused_gemm.py"
+    },
+    "georefine_context_runtime/context_interleaved_packet.cpp": {
+      "bytes": 1974,
+      "sha256": "8cc5873f3bf0f9e84096fc9afd0334dca3ba6a850ed16e9ce4d80c7f8ad40b3e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_interleaved_packet.cpp"
+    },
+    "georefine_context_runtime/context_interleaved_packet.cu": {
+      "bytes": 1280,
+      "sha256": "07d0bae704715f277a0bbce27ae958644b592fee2797eeb6de77237b8bc9ee67",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_interleaved_packet.cu"
+    },
+    "georefine_context_runtime/context_interleaved_packet.cuh": {
+      "bytes": 3835,
+      "sha256": "61aa7e9ca6be774e5d828da687c1d88457a747f831b6c2dbcdd9e40f9919933f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_interleaved_packet.cuh"
+    },
+    "georefine_context_runtime/context_interleaved_packet.py": {
+      "bytes": 17258,
+      "sha256": "cd7277bf033d17f2f3515d97e99d441549bde084ef1066c3f181c1ee98d4aa15",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_interleaved_packet.py"
+    },
+    "georefine_context_runtime/context_packet_reference.py": {
+      "bytes": 10336,
+      "sha256": "34b9ea57d9fad02add3bbd2141618c9e7732510301fa0f51e886838f2293936d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_packet_reference.py"
+    },
+    "georefine_context_runtime/context_stream_gemm.cpp": {
+      "bytes": 4279,
+      "sha256": "aef4529664badc7e627f937bd2b8e7640d3e9855c848a0af8f30a58c6fe9af50",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_stream_gemm.cpp"
+    },
+    "georefine_context_runtime/context_stream_gemm.cu": {
+      "bytes": 5738,
+      "sha256": "934be8a7acdb329a33a1aeb600a3e576d39642450d051975591f174eedc18075",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_stream_gemm.cu"
+    },
+    "georefine_context_runtime/context_stream_gemm.py": {
+      "bytes": 7952,
+      "sha256": "9182b59d9eb07b85e352e6a6a7e9f11e2b0bde13eaf0b288b5cf1a9895183a30",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_stream_gemm.py"
+    },
+    "georefine_context_runtime/context_stream_packet.cuh": {
+      "bytes": 5695,
+      "sha256": "93b3d0e7b5e726ec536df83372c2845d2d55f7754e7c6586ab486b68cad5ef8b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_stream_packet.cuh"
+    },
+    "georefine_context_runtime/context_stream_packet.py": {
+      "bytes": 12746,
+      "sha256": "90b1d58c7b3932cf5393dd9db94b8f0fb1e1a85e3883257c814e5a29f7d90d85",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_stream_packet.py"
+    },
+    "georefine_context_runtime/context_tiled_packet.cpp": {
+      "bytes": 3036,
+      "sha256": "91bed5c7cc0c2afde7bb659cbf5515371999bf3330d953a300b9b210b0ac0eec",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_tiled_packet.cpp"
+    },
+    "georefine_context_runtime/context_tiled_packet.cu": {
+      "bytes": 1729,
+      "sha256": "7cbc378554cd2f8b41531356bd5c3bed446d6d65d2de611a4b0c5cd3a827e83c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_tiled_packet.cu"
+    },
+    "georefine_context_runtime/context_tiled_packet.cuh": {
+      "bytes": 5109,
+      "sha256": "4dedc5f2b24beaa3aa29c243e8d8360099d1220e4d119a71e6852f854dcf34ae",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_tiled_packet.cuh"
+    },
+    "georefine_context_runtime/context_tiled_packet.py": {
+      "bytes": 19569,
+      "sha256": "44f55a0298ccb5ed2c2ae7657e4ebbb5f63adae3cb8d4975e1b053792404d962",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/context_tiled_packet.py"
+    },
+    "georefine_context_runtime/generic_tensor_codec.py": {
+      "bytes": 18870,
+      "sha256": "34476c69ce6ab6ea7b4958e6eef3879816c7672340d271295adfaa73e7f34651",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/generic_tensor_codec.py"
+    },
+    "georefine_context_runtime/licenses/CONTEXT_RELEASE_GRANT.json": {
+      "bytes": 1387,
+      "sha256": "7735b4d737ca1a6b60800dfa86c1069986b5738b06f40d7059a6d1dd5f48008b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/licenses/CONTEXT_RELEASE_GRANT.json"
+    },
+    "georefine_context_runtime/licenses/NATIVE_CODEC_LICENSE.txt": {
+      "bytes": 11350,
+      "sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/licenses/NATIVE_CODEC_LICENSE.txt"
+    },
+    "georefine_context_runtime/licenses/PUBLIC_RUNTIME_LICENSE.txt": {
+      "bytes": 11350,
+      "sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/licenses/PUBLIC_RUNTIME_LICENSE.txt"
+    },
+    "georefine_context_runtime/licenses/PUBLIC_RUNTIME_NOTICE.txt": {
+      "bytes": 126,
+      "sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/licenses/PUBLIC_RUNTIME_NOTICE.txt"
+    },
+    "georefine_context_runtime/metal_steel_0304/LICENSE": {
+      "bytes": 1066,
+      "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/metal_steel_0304/LICENSE"
+    },
+    "georefine_context_runtime/metal_steel_0304/SOURCE.json": {
+      "bytes": 548,
+      "sha256": "511cc135c388c6dec0b2b01ed0d7188e2875a5a267b6af63c1b00563506132a4",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/metal_steel_0304/SOURCE.json"
+    },
+    "georefine_context_runtime/metal_steel_0304/gemm.h": {
+      "bytes": 8475,
+      "sha256": "c84af31e2c57154f2a8a24fa7f9fe2449765cce9a66f3f035846ed3c03b6a8b0",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/metal_steel_0304/gemm.h"
+    },
+    "georefine_context_runtime/metal_steel_0304/loader.h": {
+      "bytes": 3832,
+      "sha256": "703cd05158c22625dd636b85f7219bb374c65eeaed03f7b770bf8ac49f2fb16d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/metal_steel_0304/loader.h"
+    },
+    "georefine_context_runtime/metal_steel_0304/mma.h": {
+      "bytes": 33627,
+      "sha256": "8a744cee1a1072751b376c276f0419c251547450b2055a3fbf4b227ed381d366",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/metal_steel_0304/mma.h"
+    },
+    "georefine_context_runtime/metal_steel_0304/params.h": {
+      "bytes": 1136,
+      "sha256": "6711e72e32310eafb088895d5a6d20fcfca814158f5b38eb72b6e69d9d773e43",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/metal_steel_0304/params.h"
+    },
+    "georefine_context_runtime/metal_steel_0304/transforms.h": {
+      "bytes": 1680,
+      "sha256": "aead73fa873184cf7d930fb9d20308f765c52c35a775a9a0131162cc332fa814",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/metal_steel_0304/transforms.h"
+    },
+    "georefine_context_runtime/safetensors_source.py": {
+      "bytes": 13319,
+      "sha256": "167978dbe5b96394ebd39d06a8b23de90226ea490a8eb91d55867ee1a96cf82d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/safetensors_source.py"
+    },
+    "georefine_context_runtime/serve_bitexact_context.py": {
+      "bytes": 38393,
+      "sha256": "17dc9b5040ceccf607b2cc510e6a2dac91e4900a49728afc45ed0c2463936b4a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/serve_bitexact_context.py"
+    },
+    "georefine_context_runtime/serve_bitexact_predictive.py": {
+      "bytes": 3438,
+      "sha256": "972b35933645ee9553e41bd67f29e5db24af2a681fe24e9735a69d67a4f11552",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/serve_bitexact_predictive.py"
+    },
+    "georefine_context_runtime/typed_context_package.py": {
+      "bytes": 62880,
+      "sha256": "f9f2125e01c164b3e4acaea5fbf067480a347d29ad95ca246daed7540f3b4198",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/typed_context_package.py"
+    },
+    "georefine_context_runtime/typed_context_serving.py": {
+      "bytes": 14984,
+      "sha256": "e2e4826f68db08d3777309b18668787c0034ab57aac8e586cace557249ed096b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/georefine_context_runtime/typed_context_serving.py"
+    },
+    "glc_loader/__init__.py": {
+      "bytes": 4568,
+      "sha256": "70a799110858af778dddecfe4208395d975c20f2435ff63f14f9ee989961c4ed",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/__init__.py"
+    },
+    "glc_loader/__main__.py": {
+      "bytes": 17956,
+      "sha256": "b7c8098745091b4efaa2f19a4be51bba72098315a4f3ad465a0d6d70b05a9b8e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/__main__.py"
+    },
+    "glc_loader/_inspect.py": {
+      "bytes": 31459,
+      "sha256": "054b3beb72823b6f188db1877a91115fb76be810b65ec1d577a0db619ce61147",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/_inspect.py"
+    },
+    "glc_loader/_jitenv.py": {
+      "bytes": 4666,
+      "sha256": "bbbfd742d171f4f3e197dcfa697a95eb3248a47cc8b59ad08280750d0de81352",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/_jitenv.py"
+    },
+    "glc_loader/artifact.py": {
+      "bytes": 19415,
+      "sha256": "6662f868b5c7ae9ea810802864fffcf79a96a7ca7fd6a96326fc519350b71677",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/artifact.py"
+    },
+    "glc_loader/codec_v2.py": {
+      "bytes": 36149,
+      "sha256": "c700ea3499a83b4c1972b827a2565ca23ef7ea619082049ad17886af66b35e36",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/codec_v2.py"
+    },
+    "glc_loader/codec_v21.py": {
+      "bytes": 31577,
+      "sha256": "5b655eb8b3a65d88b7208c1e00399d28c5dc89a68b0afe890c3fbbd6bd9fcc22",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/codec_v21.py"
+    },
+    "glc_loader/codec_v21_fullpack.py": {
+      "bytes": 19571,
+      "sha256": "c3852b45f31619103f266595a50b4583eecce2ee0cd6c12c931baacb4f2a1614",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/codec_v21_fullpack.py"
+    },
+    "glc_loader/codec_v21_native.cpp": {
+      "bytes": 10606,
+      "sha256": "ce9f37a206a06754e100f366e9d2ec6c649237c7b770370c159988389377f9e1",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/codec_v21_native.cpp"
+    },
+    "glc_loader/codec_v21_native.py": {
+      "bytes": 17219,
+      "sha256": "77f717fc1f921aa9f1ed61cd9b30e55946b9621830e604d1f1c8c78ce52e72a5",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/codec_v21_native.py"
+    },
+    "glc_loader/codec_v2_artifact.py": {
+      "bytes": 11616,
+      "sha256": "7a5c6e98113ffc0e1f53462aeccb4ec07c7831fc074ca25392fbc1e024828458",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/codec_v2_artifact.py"
+    },
+    "glc_loader/container.py": {
+      "bytes": 15573,
+      "sha256": "197cdff41b1407339f0bd9091383cf4bfaf383e58f792df0c0c4c25f8e03f5d3",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/container.py"
+    },
+    "glc_loader/loader.py": {
+      "bytes": 25650,
+      "sha256": "55f6dce9ac3711e555de3a1d5226f3f1c41c8ac2267efdf265a743986628afde",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/loader.py"
+    },
+    "glc_loader/metal/__init__.py": {
+      "bytes": 940,
+      "sha256": "46f182802f55f76bb2c50668c806776a194b7d47f5dd3baa6231187ae2349391",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/__init__.py"
+    },
+    "glc_loader/metal/ple_gather_mlx.py": {
+      "bytes": 18009,
+      "sha256": "3e398a67c23fa50a5a9677cecb1a9b2213992dfc7a44349607a3db1407fc7556",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/ple_gather_mlx.py"
+    },
+    "glc_loader/metal/status_guard.py": {
+      "bytes": 5767,
+      "sha256": "ca19879b573d2b325eb252ffd9d83c014b1586dc5218a6e34504ca1a0273bc46",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/status_guard.py"
+    },
+    "glc_loader/metal/tbe_backbone_batched_mlx.py": {
+      "bytes": 21304,
+      "sha256": "446f65768712d109353ec93a22dde66062e6e83081ee5bac663f8e897101a759",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_backbone_batched_mlx.py"
+    },
+    "glc_loader/metal/tbe_decode_mlx.py": {
+      "bytes": 16317,
+      "sha256": "dbf81b02b50067c851e21e196bd447383d5dccde94e71b3ea435a38cc12ce886",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_decode_mlx.py"
+    },
+    "glc_loader/metal/tbe_decode_mlx_v2.py": {
+      "bytes": 10369,
+      "sha256": "c508a9fd2ef0a3dedb4765d44d511b328a502d3f6d842509d3366b66571849d5",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_decode_mlx_v2.py"
+    },
+    "glc_loader/metal/tbe_decode_mlx_v3.py": {
+      "bytes": 13683,
+      "sha256": "a40fc19f1ab428ee35d882f473b8977de6b57d14c8ee01d9a4d622537c736b03",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_decode_mlx_v3.py"
+    },
+    "glc_loader/metal/tbe_decode_mlx_v4.py": {
+      "bytes": 7378,
+      "sha256": "b09e3eadfe6c8ffa077396dcb3de77a9a8c24bb7589685d697f7e88dd5d64d9d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_decode_mlx_v4.py"
+    },
+    "glc_loader/metal/tbe_gemv_fused_lut_mlx.py": {
+      "bytes": 26905,
+      "sha256": "a4f9f80d21ea335696e68f07e642f6be827c6514f92502c83b1e114fefcc6a29",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_gemv_fused_lut_mlx.py"
+    },
+    "glc_loader/metal/tbe_gemv_fused_mlx.py": {
+      "bytes": 34287,
+      "sha256": "9cbc5589a4f2b24608290103b9adf21983bc6f05faabefc8488d6d3bef905d9a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_gemv_fused_mlx.py"
+    },
+    "glc_loader/metal/tbe_linear_mlx.py": {
+      "bytes": 4223,
+      "sha256": "eb7693a1020e090327191f5208b6027095a37873184b3ff555382e0ff76de4e9",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_linear_mlx.py"
+    },
+    "glc_loader/metal/tbe_linear_mlx_v2.py": {
+      "bytes": 2049,
+      "sha256": "fb33d33358a4ede70d7a8e2973772e6524f765e138591fee33dbe46e0d1cdcf9",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_linear_mlx_v2.py"
+    },
+    "glc_loader/metal/tbe_linear_mlx_v3.py": {
+      "bytes": 2051,
+      "sha256": "765d435e21495ed8cfb23e601058fcbd214bbd15f0c6853e1d62d3d3271ac27b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_linear_mlx_v3.py"
+    },
+    "glc_loader/metal/tbe_linear_mlx_v4.py": {
+      "bytes": 2498,
+      "sha256": "a042022e534d13dfc6d8dabb6e1fc2273ba2369d741c59ae0c25930ff830ba2b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_linear_mlx_v4.py"
+    },
+    "glc_loader/metal/tbe_mlx_model.py": {
+      "bytes": 17979,
+      "sha256": "1e2a34c6d4bff91c4e402914f7cee32e00e9e1415c264215821f93b66f7ccaeb",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_mlx_model.py"
+    },
+    "glc_loader/metal/tbe_moe_batched_mlx.py": {
+      "bytes": 22281,
+      "sha256": "cedd9b3321e9982185109d4e2afe54439cadbe618553c81282f60ee32a502422",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/metal/tbe_moe_batched_mlx.py"
+    },
+    "glc_loader/modules.py": {
+      "bytes": 13583,
+      "sha256": "1f140b4454de2dc3d9084dea6cf021a2dddb2a8d71f927dd28ae21b322719fb6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/modules.py"
+    },
+    "glc_loader/tbe_anyrank.py": {
+      "bytes": 4702,
+      "sha256": "fb98965111575236122efab3e5ce735235face1ecc812c32d8b64680da520ffd",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_anyrank.py"
+    },
+    "glc_loader/tbe_artifact.py": {
+      "bytes": 32804,
+      "sha256": "2b39114dfaf2abf9288426770b945f326d3731ea24de1236c855b0b113caccbf",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_artifact.py"
+    },
+    "glc_loader/tbe_container.py": {
+      "bytes": 17347,
+      "sha256": "76726158def3f5727c724086ab56395bac9a4462348d82ef55a65c44a5064e84",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_container.py"
+    },
+    "glc_loader/tbe_cpu_numpy.py": {
+      "bytes": 13279,
+      "sha256": "8814228b0e1eaab105600508baea0cb94de699ce583344f9cf305375953c607e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_cpu_numpy.py"
+    },
+    "glc_loader/tbe_cpu_process.py": {
+      "bytes": 13189,
+      "sha256": "2650ad0c3705cd27ad7c2c164f51d1f6b92e42d0bd3f89a14c753aa952396402",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_cpu_process.py"
+    },
+    "glc_loader/tbe_device_map.py": {
+      "bytes": 17555,
+      "sha256": "8cb3d8695beca932513b02ff8de87bfb8231824194c4a6414f5106f8d6235795",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_device_map.py"
+    },
+    "glc_loader/tbe_gather.py": {
+      "bytes": 10247,
+      "sha256": "358a63f598eeec3189ad92a967ddd53bd1543f00101a06be64ff454ee7da9726",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_gather.py"
+    },
+    "glc_loader/tbe_mma.py": {
+      "bytes": 18773,
+      "sha256": "acb678ebd7978d86c26a66b4a272957dde5f71558ef0825d9ea4a68947823c3f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_mma.py"
+    },
+    "glc_loader/tbe_mma_kernel.cu": {
+      "bytes": 34752,
+      "sha256": "d63d78a9a4e38bb0cf597f7b9604a09c9fcc932723f2a7737e5ac8d3b2b066f8",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_mma_kernel.cu"
+    },
+    "glc_loader/tbe_mma_kernels.py": {
+      "bytes": 6304,
+      "sha256": "7485879845380942ba3ece55caf43e578c52508d30a3242228d5a7388161a0b3",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_mma_kernels.py"
+    },
+    "glc_loader/tbe_modules.py": {
+      "bytes": 15906,
+      "sha256": "5287b4e657a8a4ac800579ea02f7ca9a1b0b764cee111a934968bcd79c8de02b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_modules.py"
+    },
+    "glc_loader/tbe_serve_portable.py": {
+      "bytes": 9099,
+      "sha256": "ed6e7104ab54f2a95400b7da75a86c11df5162e8452a4c8b756a162ff0cd968a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_serve_portable.py"
+    },
+    "glc_loader/tbe_serving.py": {
+      "bytes": 33983,
+      "sha256": "61076980db9d1910c8d480e59a2983dd6670d5f2449b8db8b15c3fa57f53e059",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_serving.py"
+    },
+    "glc_loader/tbe_stream_loader.py": {
+      "bytes": 31332,
+      "sha256": "7d6e5b4f50b106ea7ca515636b26b7c98d5ce74d7f10780dc70847a798e274e3",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_loader/tbe_stream_loader.py"
+    },
+    "glc_serve/CONTEXT_BUILD.json": {
+      "bytes": 91,
+      "sha256": "28c9f4323c828c6115a139680edd99ff64022a19b0abdb4762ce5d5acb63bf8c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/CONTEXT_BUILD.json"
+    },
+    "glc_serve/NATIVE_BATCH_SOURCES.json": {
+      "bytes": 13185,
+      "sha256": "c9eadf83f9eeb40f8b531a4c6703aa686ec1d3e13eb077f55c28dcbbb5ccc8bb",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/NATIVE_BATCH_SOURCES.json"
+    },
+    "glc_serve/__init__.py": {
+      "bytes": 1506,
+      "sha256": "d3d52c47790811cd6064523dc0bf06c1bd4c0ea1e1df54462faae843799e15da",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/__init__.py"
+    },
+    "glc_serve/__main__.py": {
+      "bytes": 122,
+      "sha256": "801b6c2ba7488992e656cc153792a3924893f86eb424f68b37494d107ab4bb46",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/__main__.py"
+    },
+    "glc_serve/_startup_limits.py": {
+      "bytes": 416,
+      "sha256": "7bf665ab4f7b27dadbf657d3cfa9f09f97d163e05e96d42f02eff4848f80d70d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/_startup_limits.py"
+    },
+    "glc_serve/_winenv.py": {
+      "bytes": 5028,
+      "sha256": "41f7668e276f089b8bdc343a9861cced87f17a200be5505133c314ed30b0149c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/_winenv.py"
+    },
+    "glc_serve/bctx_v21_cache.py": {
+      "bytes": 29445,
+      "sha256": "cc5e98c18cd4e8ba3944a355a83521fea444b069acdcbc061d5b7d271a06e455",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bctx_v21_cache.py"
+    },
+    "glc_serve/bctx_v21_transcode.py": {
+      "bytes": 30319,
+      "sha256": "234a9db9d2027c8d18ad9ac82b67213e9f5540b7bf590dca949e7edd576ec4aa",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bctx_v21_transcode.py"
+    },
+    "glc_serve/bctx_v21_typed.py": {
+      "bytes": 8583,
+      "sha256": "91cde94c420a824378a4d88613b51e3353a640127879b31070dba1c743261c97",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bctx_v21_typed.py"
+    },
+    "glc_serve/bench.py": {
+      "bytes": 33136,
+      "sha256": "5baffb5c4528c147ffd46869d471541465317e4c77ed02b93113f59f1f9f8180",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bench.py"
+    },
+    "glc_serve/bhe_desc.py": {
+      "bytes": 19771,
+      "sha256": "2fe207bfc3f4bce6635bb381df5dcef4790e78d416e650a9e811fc8a3c4577b7",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bhe_desc.py"
+    },
+    "glc_serve/bi_csrc/bi_api.h": {
+      "bytes": 4101,
+      "sha256": "a59bbba90155ff8f651573d5ec82522158889b63e8705f78986b97f7240eaf4b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_csrc/bi_api.h"
+    },
+    "glc_serve/bi_csrc/bi_gemm.cuh": {
+      "bytes": 55127,
+      "sha256": "10640f86efbe92e5bb5e5de3f36cc9486f03ea975469481754ee6e563963fcd5",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_csrc/bi_gemm.cuh"
+    },
+    "glc_serve/bi_csrc/bi_gemm_dense.cu": {
+      "bytes": 2603,
+      "sha256": "6873e12c39556cef6aa517a139c7534c51d33d81455507276af8825302a5492a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_csrc/bi_gemm_dense.cu"
+    },
+    "glc_serve/bi_csrc/bi_tbe2_opt.cuh": {
+      "bytes": 42229,
+      "sha256": "143b7983c71a0a35d75bff27d723d4dcfe3db39ac4456ad063d3bd3e3d372a61",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_csrc/bi_tbe2_opt.cuh"
+    },
+    "glc_serve/bi_csrc/bi_tbe2_opt_dense.cu": {
+      "bytes": 1808,
+      "sha256": "b7bdd4a8fc998d7e7da2fedf1eda5e84d66d9d8fbbd696890e1112b5fa782401",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_csrc/bi_tbe2_opt_dense.cu"
+    },
+    "glc_serve/bi_csrc/bi_torch.cpp": {
+      "bytes": 13600,
+      "sha256": "d1f62f2a8e0568d086d909d761f69b9a2a56f4adb974ad64c7e6d04a238e0a2b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_csrc/bi_torch.cpp"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/PROVENANCE.md": {
+      "bytes": 1966,
+      "sha256": "9ba6a107ee9cdd205f25e17973305cb4eca634ce68567a4cf1d816c29550c295",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/PROVENANCE.md"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/bi_api.h": {
+      "bytes": 5712,
+      "sha256": "77ab7ca156cf25132f7edf39599f584237b17ce3ae71253b4082a4f6b199df6e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/bi_api.h"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/bi_gemm.cuh": {
+      "bytes": 180820,
+      "sha256": "4886a597c5dfa6dff698564e508c3cbc2bdc541b35183b1ecc071a59b0056b38",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/bi_gemm.cuh"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/bi_gemm_v2.cu": {
+      "bytes": 11780,
+      "sha256": "59dc0216dfdc87fa3d469a39211e3aca5e0e791b3a8bd566c6b0acb60c84bf81",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/bi_gemm_v2.cu"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/bi_tbe21_v2_api.h": {
+      "bytes": 1668,
+      "sha256": "c7a26b17b06836692f0159052f6f2729d446810b8a22d4ae9f6d4a8892418773",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/bi_tbe21_v2_api.h"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/bi_torch.cpp": {
+      "bytes": 16195,
+      "sha256": "3003844b653b0592a3d90029505248c6122ca915b6ccd56cbe15533bce400b7e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/bi_torch.cpp"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/miv_tbe.h": {
+      "bytes": 3376,
+      "sha256": "0aa9cde196788768920b5b941799e210ef29a40e4e797597f0599e8d62ffd486",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/miv_tbe.h"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/miv_tbe_kernels.cuh": {
+      "bytes": 25697,
+      "sha256": "eaba6073abde4adcd549df0f095bf11a6bddfaf3901ea40a842a0ffbe2844fb6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/miv_tbe_kernels.cuh"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/pair_vote.cuh": {
+      "bytes": 1412,
+      "sha256": "25d45d7f3765ee5ccb073dd4515f652b673cbf4fac3a2436f71adfd1a362b886",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/pair_vote.cuh"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/tier_prefix_cursor.cuh": {
+      "bytes": 556,
+      "sha256": "2af6b52b557c9f2f3b61767ff85de4e4bf5be95ba6660bda4f5858899d99195d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/tier_prefix_cursor.cuh"
+    },
+    "glc_serve/bi_tbe21_v2_csrc/tier_prefix_literal.cuh": {
+      "bytes": 6695,
+      "sha256": "1fc8eac50a16bbe342b09a721cae99c8bf4774743e6ec057fea01532a172c6dc",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bi_tbe21_v2_csrc/tier_prefix_literal.cuh"
+    },
+    "glc_serve/bidec.py": {
+      "bytes": 112741,
+      "sha256": "398f6aa100c4591170c09548eb8ba3fd560e87956ad6c64553f5778baf39c61a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bidec.py"
+    },
+    "glc_serve/bidec_kernels.cu": {
+      "bytes": 38294,
+      "sha256": "78eb9cd9b7eed7ef2aa4b1065b57a9030f781c4cdd8be01999b33065e664bbc3",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bidec_kernels.cu"
+    },
+    "glc_serve/bidec_load.py": {
+      "bytes": 17873,
+      "sha256": "db4d494060a02fb9ba79cb18388abf210ce19b9ba8d0c08f3092e7cdd5e98e29",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bidec_load.py"
+    },
+    "glc_serve/bidec_mm.py": {
+      "bytes": 48329,
+      "sha256": "f9e7183de2bd4b73afc9e197d2f9a342424eaeac7c24d7aa4b73edfbc9cdd48f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bidec_mm.py"
+    },
+    "glc_serve/bidec_policy.py": {
+      "bytes": 56846,
+      "sha256": "f2ab1a4295626ac9d7a00f747d7dc378746184310e23dd947f1dd0b3a132bb53",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bidec_policy.py"
+    },
+    "glc_serve/bidec_spec.py": {
+      "bytes": 47139,
+      "sha256": "e83e083f4057bdff0398487b3ced48c78eb767079fbfaa5c07ccbbbd040cd566",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bidec_spec.py"
+    },
+    "glc_serve/bigemm.py": {
+      "bytes": 37529,
+      "sha256": "5aba89ca4aca2ae980e5a8483504426d7f2b47f73485323eb15b5339e96ea2ec",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bigemm.py"
+    },
+    "glc_serve/bigemm_measured_tiles.py": {
+      "bytes": 5551,
+      "sha256": "ec9e9a900fd25f9143b7f15457ee1b77a1f85f0768c9ca63bad71f577589704d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bigemm_measured_tiles.py"
+    },
+    "glc_serve/bigemm_tbe21_ref.py": {
+      "bytes": 13944,
+      "sha256": "a4d089600b7e184f282b8fb31459c3c5628eb4c95b293c26cfddbb7a51b331b2",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bigemm_tbe21_ref.py"
+    },
+    "glc_serve/bigemm_tbe2_opt.py": {
+      "bytes": 4219,
+      "sha256": "f176f1b3b332b8c0c663da80e15cb07b15022c82066d117eb01134e58398e543",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bigemm_tbe2_opt.py"
+    },
+    "glc_serve/bigemm_tbe2_ref.py": {
+      "bytes": 23865,
+      "sha256": "6f22cb78afc4b46f20308794a724ae5cc09d9c6bbe8b74d5700d323e9fc21ef6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bigemm_tbe2_ref.py"
+    },
+    "glc_serve/bigemm_tune.py": {
+      "bytes": 7967,
+      "sha256": "36bb0c64fd13c77e3b99a6a656299d037c29618aafda86c354ece3ebb4e85a31",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bigemm_tune.py"
+    },
+    "glc_serve/bundle.py": {
+      "bytes": 29189,
+      "sha256": "62f9747cadee6905b2325956dc236947211e5da5b8143d8499d6f0ac846facf0",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/bundle.py"
+    },
+    "glc_serve/context_batch_server.py": {
+      "bytes": 113765,
+      "sha256": "2a4a58d1235c5cb4169a05a355df0cf4b80e4d130e17b20e45565bf4a89f1b3a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/context_batch_server.py"
+    },
+    "glc_serve/context_fast_server.py": {
+      "bytes": 34488,
+      "sha256": "169f80e92032fbcfe34866f488d0a6bf6178f6af1110724a48d436b7439e84d3",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/context_fast_server.py"
+    },
+    "glc_serve/context_parallel_startup.py": {
+      "bytes": 33227,
+      "sha256": "28d66e02cde34720e28da8d59aec3f609691f324a8dd5faace02fbb34944644a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/context_parallel_startup.py"
+    },
+    "glc_serve/context_source.py": {
+      "bytes": 9506,
+      "sha256": "6e1ae391e460de5b86a2ab67d727bc90d0a3b9986ba398c38586e5edf66cd2f2",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/context_source.py"
+    },
+    "glc_serve/engine.py": {
+      "bytes": 26513,
+      "sha256": "e77375bd21c6eaa958e151ed5fdecfae893888befaa50a3a95efeb2c5d5777d6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/engine.py"
+    },
+    "glc_serve/espec.py": {
+      "bytes": 15579,
+      "sha256": "65e0fb2879c648fcafa447bf2f0eb5ac29f40b361e2fd51182aa0a6663cd375e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/espec.py"
+    },
+    "glc_serve/fastdec.py": {
+      "bytes": 47526,
+      "sha256": "14fb69f9ae5e9e687106b00e04100e3f16b8694c8dbf2bb32a3efd8c94273b43",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/fastdec.py"
+    },
+    "glc_serve/fastdec_kernels.cu": {
+      "bytes": 34514,
+      "sha256": "45cb8528e3fb663a89a7c9b1a4f3e416e298da5c514fa2131865b1c36f26a373",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/fastdec_kernels.cu"
+    },
+    "glc_serve/fastserve.py": {
+      "bytes": 20330,
+      "sha256": "9bc2b2c9d60d5c3b10afe72861e148235d8db238afff58a2e650314a6f148ca4",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/fastserve.py"
+    },
+    "glc_serve/gate.py": {
+      "bytes": 15254,
+      "sha256": "7dce6c0a833c0ce6c5b9e6af2af58d62410ed47beab4d0eb31f3346a7f22ba8d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/gate.py"
+    },
+    "glc_serve/kernel_cache.py": {
+      "bytes": 45580,
+      "sha256": "3d0f591704fd490db18e91e9fcae9c941232ed1b652167448863b52bb6600d83",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/kernel_cache.py"
+    },
+    "glc_serve/linear_layout.py": {
+      "bytes": 3243,
+      "sha256": "f73654ebb2be23f5740e4b2814f7bc5f2ce2f57d5aef5cc1392dc43b8b8deea6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/linear_layout.py"
+    },
+    "glc_serve/loader.py": {
+      "bytes": 29171,
+      "sha256": "cabf8f0a6ad6a0641990bc37a1876a927b7075e4a45fa4cfd63199aca4f53721",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/loader.py"
+    },
+    "glc_serve/memcap.py": {
+      "bytes": 5467,
+      "sha256": "8b6a214a124329a84a7364e95fa2be592e597a06bee5fd691f3f063bbb03ce30",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/memcap.py"
+    },
+    "glc_serve/miv_gemv.py": {
+      "bytes": 42097,
+      "sha256": "d4e8a2adb095a1592bdac115fb6a20632a420cab3358fa41679f0b942a9c1c54",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_gemv.py"
+    },
+    "glc_serve/miv_tbe.py": {
+      "bytes": 16831,
+      "sha256": "a4c247b1b3c82dd9886624d9435c812ee4e3550c9fd6057f0f15fcf581ae52d8",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe.py"
+    },
+    "glc_serve/miv_tbe_configs/miv_wpr_rtxpro6000.json": {
+      "bytes": 722,
+      "sha256": "d019083404878c69175bb2ba0c7c2e872d30b321c4a0123ddfe563a2eb5c7369",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_configs/miv_wpr_rtxpro6000.json"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe.h": {
+      "bytes": 3367,
+      "sha256": "95c3753f81a58498a5893ea7cbb2bc89d0dcf0e8f59a8e0cce3ce9c430688f4d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe.h"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_api.cu": {
+      "bytes": 3095,
+      "sha256": "057db07147509302502ce74683920a5e6c0b47b5780520e6d72419326f4b1f61",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_api.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cu": {
+      "bytes": 2179,
+      "sha256": "102692802b6886575c89fd3ae1c47c55e5a9d509fc27e645ad733583668d6f37",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cuh": {
+      "bytes": 28484,
+      "sha256": "ba0c9b1994be8bd6c55e64b12921889b0862fe72690bfd4f582cdb432f2ed7f2",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cuh"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_flat_smb_torch.cpp": {
+      "bytes": 2989,
+      "sha256": "323439ab4765cf37b2f727e89696c29a1af7253623d54c1ff004526293c88639",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_flat_smb_torch.cpp"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_kernels.cuh": {
+      "bytes": 21433,
+      "sha256": "325f0fac49647dc6dd750d87d3dd967ab7180bb56a01e108a61cd6a3f612fbf5",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_kernels.cuh"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m1.cu": {
+      "bytes": 118,
+      "sha256": "a2a00dffb2e548cc79074aa3143351bbcae7c7e5558217485d12fd2dc465ec7b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m1.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m2.cu": {
+      "bytes": 118,
+      "sha256": "5a4051a1ce170cb867896841351ee3b20f66ae9de9be9611fe85ec67d465ddcc",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m2.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m3.cu": {
+      "bytes": 118,
+      "sha256": "570e9a99372a115c099c3213b93a9cd30f191fecaf7bcfb612d58b280d48a0b6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m3.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m4.cu": {
+      "bytes": 118,
+      "sha256": "b3379a006592beb4780c294b1b092fc5c4c9286338374ab215e879dd53aa00c6",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m4.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m5.cu": {
+      "bytes": 118,
+      "sha256": "6e9eabf5f56171182543be6411a1486af2331b6ca398e60273dabd2029843206",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m5.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m6.cu": {
+      "bytes": 118,
+      "sha256": "1d82fa75e2ee89702b5246441a06b5ae3cb47e3fe3f18dd70635e0d70ffd7f5f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m6.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m7.cu": {
+      "bytes": 118,
+      "sha256": "f2b7f4f1fda129fb5de7d6624c0b1c13ca9b05f05f8fe961c135672f523d3551",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m7.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_m8.cu": {
+      "bytes": 118,
+      "sha256": "2bf22a570c854d975d8598d2d1be39a02901630c51a09e32fb16fe4afb4d9910",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_m8.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_pair_m1.cu": {
+      "bytes": 3923,
+      "sha256": "9eafe516159b90f7572b27d9825d03fb8f5ddc9aa18b69be607e93ccccc5c2ec",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_pair_m1.cu"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_pair_torch.cpp": {
+      "bytes": 4326,
+      "sha256": "c8e79e2dc87b24fedf74da9a6cd8f660e4bb87f78b4e8fef89c504b5048d96ac",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_pair_torch.cpp"
+    },
+    "glc_serve/miv_tbe_csrc/miv_tbe_torch.cpp": {
+      "bytes": 5385,
+      "sha256": "4ed2eaf5427b0fdc4263d4fa337257205845384ecaafa0dc4cda84e8f6baa49c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_csrc/miv_tbe_torch.cpp"
+    },
+    "glc_serve/miv_tbe_flat_smb.py": {
+      "bytes": 5705,
+      "sha256": "0eb6f36a2de005ebc52abac2ec0476cb79f2c20aa972ca197f68cabdc8956d35",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_flat_smb.py"
+    },
+    "glc_serve/miv_tbe_pair.py": {
+      "bytes": 8769,
+      "sha256": "ab3098287387d8500d7e2ca9183d6b986e4a6af4ab69e324f666d1cefb618248",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/miv_tbe_pair.py"
+    },
+    "glc_serve/mlx_batch.py": {
+      "bytes": 9235,
+      "sha256": "a9f8d95ea3282ef8334a66e95b9843261d7cabc87a8dc1f034bb18101ae63c75",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_batch.py"
+    },
+    "glc_serve/mlx_digest.py": {
+      "bytes": 1429,
+      "sha256": "d617254a347fc35376b47a5cdb7de4dfd8b4749489c6162d5c71012aa9ab4b95",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_digest.py"
+    },
+    "glc_serve/mlx_engine.py": {
+      "bytes": 16598,
+      "sha256": "d0664ddf70ca98aeff8192ddca901806ea49ac7e83b009edfbc8b957e9a7c79c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_engine.py"
+    },
+    "glc_serve/mlx_qwen.py": {
+      "bytes": 17310,
+      "sha256": "5d0102fa65179afcb918fa7eaf5ae5b110a52bedd0fe34ab34f78afa1e3faff1",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_qwen.py"
+    },
+    "glc_serve/mlx_server.py": {
+      "bytes": 23369,
+      "sha256": "f5ae0fe72ef156f70a3719f5e138d72439db98030f73eefd6f92d5637f7c472a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_server.py"
+    },
+    "glc_serve/mlx_service.py": {
+      "bytes": 6493,
+      "sha256": "9f58e385829712721363b98d91b1ae4aef876d4815b2568ecf4ddbfcf85c3a97",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_service.py"
+    },
+    "glc_serve/mlx_speculative.py": {
+      "bytes": 5276,
+      "sha256": "14fd7e9710ba36b0028fe316d3be3ce986d9df5cd04932f7bd22e306a3355ff8",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_speculative.py"
+    },
+    "glc_serve/mlx_vision.py": {
+      "bytes": 13393,
+      "sha256": "cbf1423889111601ef339708e844909cd4a04935baf38d5704c055e608347976",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mlx_vision.py"
+    },
+    "glc_serve/modules.py": {
+      "bytes": 21764,
+      "sha256": "ef540ef1129c571d9706a6eb78a5e88891aa64ec268312f4b30771b6ff50196b",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/modules.py"
+    },
+    "glc_serve/mtp.py": {
+      "bytes": 13228,
+      "sha256": "bfcdbdb807733a18fc4e4010beed1df8a580a7170211ef9ca00e2f6166b6391c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/mtp.py"
+    },
+    "glc_serve/native_batch_provenance/LICENSE": {
+      "bytes": 656,
+      "sha256": "3370532b65d01a66990f223630471ab84c8b183eeff523368aa18123dc102db4",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/native_batch_provenance/LICENSE"
+    },
+    "glc_serve/pack.py": {
+      "bytes": 18291,
+      "sha256": "99bc98d56ab86a592501396c8e68ef5746c3590a67e4452843484d7074453cdf",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/pack.py"
+    },
+    "glc_serve/predictive_batch.py": {
+      "bytes": 65733,
+      "sha256": "330de3ce7d264334d618035555cae1d1462fdd09ddf4c7c6da0a1bc43928e1aa",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/predictive_batch.py"
+    },
+    "glc_serve/predictive_bhe.py": {
+      "bytes": 18310,
+      "sha256": "547f5ec58fd1ebc6298458e367f5ecf4b4c153036edbbeedeea943d8a2ee690c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/predictive_bhe.py"
+    },
+    "glc_serve/predictive_mlx.py": {
+      "bytes": 28467,
+      "sha256": "056beb5c97093aa94e81fccc5fbdc88f3354a81fdd20ce8e5590aa63ffe8f0b9",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/predictive_mlx.py"
+    },
+    "glc_serve/predictive_mtp.py": {
+      "bytes": 5666,
+      "sha256": "716862083a37443552c49c02096fcb07e10b205b7761f87a43f52d904410bf88",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/predictive_mtp.py"
+    },
+    "glc_serve/predictive_tbe.py": {
+      "bytes": 98897,
+      "sha256": "a5510f6e430418c8f67f61d0d3309e2418a144f095ac4115cbf910ebe13d22eb",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/predictive_tbe.py"
+    },
+    "glc_serve/published_tbe_batch.py": {
+      "bytes": 7036,
+      "sha256": "843396e4fe8799308791bed6a2905df57c4b0bcf0ff41226affae457716c8d52",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/published_tbe_batch.py"
+    },
+    "glc_serve/q8serve.py": {
+      "bytes": 20774,
+      "sha256": "50052d1544d6d9222b1e699904d40ed02421e10caf705d8bcdd69ae3ffd16a81",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/q8serve.py"
+    },
+    "glc_serve/qualification_identity.py": {
+      "bytes": 98863,
+      "sha256": "7de77ba2901c7597acde6a8a100daa8f49e3e3c591ea60f70aeecdd6d7f30da7",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/qualification_identity.py"
+    },
+    "glc_serve/replica_pool.py": {
+      "bytes": 32658,
+      "sha256": "302c4e794de57f02213d3fa1825977aadfced3b3735f58480e5b81f92221bef5",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/replica_pool.py"
+    },
+    "glc_serve/runtime_memory.py": {
+      "bytes": 34368,
+      "sha256": "36e692c56e0b095c2d762a8f51fcf63f6d8fb368ee663ede5e4ec870a24f0234",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/runtime_memory.py"
+    },
+    "glc_serve/server.py": {
+      "bytes": 23975,
+      "sha256": "2f635405933cf011ec70ede5b29375f1461770878763d6e3dc4c06d57644ba6d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/server.py"
+    },
+    "glc_serve/serving_resources.py": {
+      "bytes": 6713,
+      "sha256": "fd950ea4acb7543499dcc9271e21cc35ada2b018de2c30999adf60cf46132b6d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/serving_resources.py"
+    },
+    "glc_serve/spec_calibration.py": {
+      "bytes": 5350,
+      "sha256": "c3c9fdfd1cb76d6538450596cd39090b5b1515b6a2897b02ddcade9fb62c7b97",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/spec_calibration.py"
+    },
+    "glc_serve/startup_mtp_prefetch.py": {
+      "bytes": 5304,
+      "sha256": "dd66f0e0303fbb88e26c8f4cdd2a55b1b6ec8b00ddd42f4f7f3fc9a7df2cbee5",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/startup_mtp_prefetch.py"
+    },
+    "glc_serve/startup_progress.py": {
+      "bytes": 2587,
+      "sha256": "9b8da3cd6ab0d1238aaffa28e9c9d220215c6d1a499cd9838139ebcb6f2eb65d",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/startup_progress.py"
+    },
+    "glc_serve/state_budget.py": {
+      "bytes": 39250,
+      "sha256": "716e2f5a2577bbe7686467d16025b14827f194e7c4ecd130039ee42c64e02465",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/state_budget.py"
+    },
+    "glc_serve/tbe21_metadata.py": {
+      "bytes": 14610,
+      "sha256": "0f5f2a18fafe3ceebfbb4b95b0b8c8dde5048706121306489c2c316f846ea18f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tbe21_metadata.py"
+    },
+    "glc_serve/tbe21_tier_metadata.py": {
+      "bytes": 5091,
+      "sha256": "442f9ccbbb0f63161aa57908624230f88a5c1e8641f8c3572b97f27723fb6a68",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tbe21_tier_metadata.py"
+    },
+    "glc_serve/tbe21_tier_profile.py": {
+      "bytes": 9432,
+      "sha256": "ce22a6009ff11b1ed30834d31fc5c79ed888ee5bf63505694e6450fc6513198f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tbe21_tier_profile.py"
+    },
+    "glc_serve/tbe21_v2_backend.py": {
+      "bytes": 58795,
+      "sha256": "08599cd5f1273b9bd05932d39e8c70b34777e5531a04be92992b92cc1069b470",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tbe21_v2_backend.py"
+    },
+    "glc_serve/tbe2_desc.py": {
+      "bytes": 15007,
+      "sha256": "c6bc3768764992a08fb085eafdac5116c17658f7a5efe313c431a7ef8790b991",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tbe2_desc.py"
+    },
+    "glc_serve/tbe2_load.py": {
+      "bytes": 26551,
+      "sha256": "4182622cf33edb9e59a66de6baf4e3d98bcb3a3efaea7c15df163a33eae21b3c",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tbe2_load.py"
+    },
+    "glc_serve/tbe_desc.py": {
+      "bytes": 12298,
+      "sha256": "28486f70ecbd1ac940d1c416e73bfbdfad983bf3481ad0cb044a886c6de51eaf",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tbe_desc.py"
+    },
+    "glc_serve/transcode_cache.py": {
+      "bytes": 40890,
+      "sha256": "b65565ac4de9d2c75c875c78b0572417fbbe50b577231cbb6737ba98cedeccf0",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/transcode_cache.py"
+    },
+    "glc_serve/tunes/fastdec_sm120.json": {
+      "bytes": 1995,
+      "sha256": "1c5375c91f6fc084a5263f7da9177faafbb17fd4bf2281fc520bca1f74ef8024",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/tunes/fastdec_sm120.json"
+    },
+    "glc_serve/typed_cuda_fastsession.py": {
+      "bytes": 11357,
+      "sha256": "b4afe47c1db853ec12c906ccc8290cffe5a21ef3a686177f6a23830969cb3bc1",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/typed_cuda_fastsession.py"
+    },
+    "glc_serve/typed_predictive_torch.py": {
+      "bytes": 9718,
+      "sha256": "3127616fe00db5b1c94bf467cba8b40b0220386e8446d455aeb5e02bfd3f8262",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/typed_predictive_torch.py"
+    },
+    "glc_serve/vendor.py": {
+      "bytes": 2713,
+      "sha256": "b6dcf3f75f8d10d052d7f74c394980eb764e4bc70556fb7530be5beb6e502c15",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/glc_serve/vendor.py"
+    },
+    "pyproject.toml": {
+      "bytes": 5936,
+      "sha256": "f67b444fd2888bb2eed22bf231fd9dc4bbc1077d39c99e74a0f20f834134a3a8",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/pyproject.toml"
+    },
+    "tests/test_codec_v21_native_pack.py": {
+      "bytes": 10903,
+      "sha256": "d4fcbdd7b9717613eb5ef6786a1cb1c26b754fbc39fb01b3a25ed73d7e7eecdf",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/tests/test_codec_v21_native_pack.py"
+    },
+    "tests/test_compact_rans_lookup.py": {
+      "bytes": 3097,
+      "sha256": "09c77cd64ed7149ae28f7a01f8ac3821404f6eeeac8e24000f30759f793c037e",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/tests/test_compact_rans_lookup.py"
+    },
+    "tests/test_context_exponent_packet.py": {
+      "bytes": 27952,
+      "sha256": "6a777a17f9fa4b304b45461b27e397cd4a7da068e05588114e41a773e0a3ea1a",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/tests/test_context_exponent_packet.py"
+    },
+    "tests/test_generic_tensor_codec.py": {
+      "bytes": 10884,
+      "sha256": "944df8130ceb7dc3fbf9914133160f30dedf71695cc65cc637910a46138f35fd",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/tests/test_generic_tensor_codec.py"
+    },
+    "tests/test_tbe21_pair_vote.py": {
+      "bytes": 1535,
+      "sha256": "4de39e62a8564f476d924af80d52fc13e2d49fd89cd965936e1159e6ce557b1f",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/tests/test_tbe21_pair_vote.py"
+    },
+    "tests/test_tbe21_pair_vote_literal.py": {
+      "bytes": 4172,
+      "sha256": "7572c192c6519c842a0204e0f86a16806910a18670c5ffe9cee3ff0b70071497",
+      "source_archive_path": "georefine_context_fast_runtime-0.1.1+cu129/tests/test_tbe21_pair_vote_literal.py"
+    }
+  },
+  "private_history_exported": false,
+  "public_test_changes": {
+    "tests/test_tbe21_pair_vote_literal.py": {
+      "change": "require C++20 compiler and fail rather than skip the selected public literal proof",
+      "numerical_workload_unchanged": true,
+      "sha256": "99bbe8842675324d826f539a52966eafa4364da74b25a007d32490b14db747aa"
+    }
+  },
+  "runtime_bytes_modified": false,
+  "runtime_manifest_entries": 234,
+  "runtime_manifest_sha256": "49c8e64604bb6209fde937914943b95e87f2eeed1e6c76b9d5da21d7009d50ff",
+  "schema": "georefine.public_linux_codec_source_snapshot.v1",
+  "selected_test_files": [
+    "test_codec_v21_native_pack.py",
+    "test_compact_rans_lookup.py",
+    "test_context_exponent_packet.py",
+    "test_generic_tensor_codec.py",
+    "test_tbe21_pair_vote.py",
+    "test_tbe21_pair_vote_literal.py"
+  ],
+  "source_artifact_sha256": "d45ef9f97ce7366b7c9586021f44422be8441ad6640169ded5d21f95d8e9dce4",
+  "source_date_epoch": 1793253060,
+  "test_harness_note": "The original sdist omitted literal SIMT test support; exact frozen test sources restored for runnable public CPU checks, no runtime changes."
+}

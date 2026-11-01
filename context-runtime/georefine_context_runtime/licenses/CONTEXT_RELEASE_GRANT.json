@@ -1,0 +1,27 @@
+{
+  "approved_on": "2026-10-09",
+  "files": [
+    "georefine_context_runtime/bitexact_context_ans.cpp",
+    "georefine_context_runtime/bitexact_context_codec.py",
+    "georefine_context_runtime/bitexact_context_gpu.py",
+    "georefine_context_runtime/bitexact_context_gpu_index.cpp",
+    "georefine_context_runtime/bitexact_context_gpu_kernels.py",
+    "georefine_context_runtime/bitexact_context_mtp.py",
+    "georefine_context_runtime/bitexact_context_package.py",
+    "georefine_context_runtime/bitexact_context_serving.py",
+    "georefine_context_runtime/bitexact_predictive_ans.cpp",
+    "georefine_context_runtime/bitexact_predictive_codec.py",
+    "georefine_context_runtime/bitexact_predictive_gpu.py",
+    "georefine_context_runtime/bitexact_predictive_gpu_index.cpp",
+    "georefine_context_runtime/bitexact_predictive_gpu_kernels.py",
+    "georefine_context_runtime/bitexact_predictive_mix.py",
+    "georefine_context_runtime/bitexact_predictive_package.py",
+    "georefine_context_runtime/bitexact_predictive_serving.py",
+    "georefine_context_runtime/serve_bitexact_context.py",
+    "georefine_context_runtime/serve_bitexact_predictive.py"
+  ],
+  "license": "Apache-2.0",
+  "private_source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+  "schema": "georefine-context-release-license-v1",
+  "scope": "Public release copies only; private source history unchanged"
+}

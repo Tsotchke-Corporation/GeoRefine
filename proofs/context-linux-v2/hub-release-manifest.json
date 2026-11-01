@@ -1,0 +1,108 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 8431,
+      "sha256": "4b6613ce271e78886223880d39feb9d66071f6482b78aea045add84654fb5605"
+    },
+    "package/decoder/bitexact_context_ans.cpp": {
+      "bytes": 8013,
+      "sha256": "c64416cf8945ff791bc4a68f2b1af4ed4ffaa59ec8bdf8d31767ee82a1f008b7"
+    },
+    "package/decoder/bitexact_context_codec.py": {
+      "bytes": 11794,
+      "sha256": "ad4fcc0a84ad86f6ec85fb65c56cbdb3ab73a2b83a07b5747ea7dbf2d33613eb"
+    },
+    "package/decoder/bitexact_context_package.py": {
+      "bytes": 40172,
+      "sha256": "3b9c8a323f4641ba971c9cbbaf0add5ac56ebca3aebbf86bc85bdbc6a5e984b0"
+    },
+    "package/decoder/bitexact_predictive_ans.cpp": {
+      "bytes": 3767,
+      "sha256": "069e429a5c37c2bb6d671dd5b68cdf7688f99a4127847f46c15da87d78d0b33e"
+    },
+    "package/decoder/bitexact_predictive_codec.py": {
+      "bytes": 13267,
+      "sha256": "c393070b56e9b539b5a3082287c89d7579e285409193f18b52e333869b039e1c"
+    },
+    "package/decoder/bitexact_predictive_gpu.py": {
+      "bytes": 10853,
+      "sha256": "9c151c915ee1c972be0ce191d85f05a254d1ec2ee01d68d36823e1be00bc68ef"
+    },
+    "package/decoder/bitexact_predictive_gpu_index.cpp": {
+      "bytes": 1866,
+      "sha256": "919d2c70ce64933e550b46864363a27b67fc6ce1df2455008579473ccb61e35d"
+    },
+    "package/decoder/bitexact_predictive_gpu_kernels.py": {
+      "bytes": 3811,
+      "sha256": "1102730e786264c3355c1072b74ed5d35f551ed6dff00cb4b0950ddcffb99c9b"
+    },
+    "package/decoder/bitexact_predictive_mix.py": {
+      "bytes": 6099,
+      "sha256": "363a8f69b93931584934a9db0d48764e34d90760d77a19a019dd8d9122a42c44"
+    },
+    "package/decoder/predictor_package.py": {
+      "bytes": 48942,
+      "sha256": "d1f248599a9484ea00271cdb803761b82204fadbb2da57551ac341e7f43dcc50"
+    },
+    "package/manifest.json": {
+      "bytes": 571879,
+      "sha256": "bbac23fdeba3020f8951d7a0a005016985c40add08979f37a85df2f22ccbacee"
+    },
+    "qualification/linux-cuda-v2/benchmark-config.json": {
+      "bytes": 1849,
+      "sha256": "f54284a6539255d53de1296a9cd2220fbc86eaf0cc971412043835ccc775100c"
+    },
+    "qualification/linux-cuda-v2/summary.json": {
+      "bytes": 7535,
+      "sha256": "1c7168066594e7de5c246c9dfb5ab9545ebd756e48eee6d2d23785c3dfcf229e"
+    },
+    "runtime/linux-cuda-v2/SHA256SUMS": {
+      "bytes": 490,
+      "sha256": "052d886f0c8bcb35b1ae8d55439fd24fb05eba527ade79d6fd8280e657032d75"
+    },
+    "runtime/linux-cuda-v2/SOURCE_MANIFEST.json": {
+      "bytes": 122929,
+      "sha256": "49c8e64604bb6209fde937914943b95e87f2eeed1e6c76b9d5da21d7009d50ff"
+    },
+    "runtime/linux-cuda-v2/georefine_context_fast_runtime-0.1.1+cu129-py3-none-any.whl": {
+      "bytes": 1265973,
+      "sha256": "e64de51241c387efbdbc63f7185985b6106e5310350eb9540415dc3a6339e752"
+    },
+    "runtime/linux-cuda-v2/georefine_context_fast_runtime-0.1.1+cu129.tar.gz": {
+      "bytes": 1461423,
+      "sha256": "d45ef9f97ce7366b7c9586021f44422be8441ad6640169ded5d21f95d8e9dce4"
+    },
+    "runtime/linux-cuda-v2/serve_blackwell.py": {
+      "bytes": 4364,
+      "sha256": "479f05309fa6de430cc5043451192b4fa4899b26bd38118516317ada7c2c0799"
+    },
+    "runtime/linux-cuda-v2/tune.json": {
+      "bytes": 1995,
+      "sha256": "1c5375c91f6fc084a5263f7da9177faafbb17fd4bf2281fc520bca1f74ef8024"
+    }
+  },
+  "four_platform_matrix_pass_claimed": false,
+  "package_source_revision": "4c906d290aa5f6a3a06045710a6111d483768467",
+  "parent_HF_main": "76fbf10cdf84c783b2ffce412aab836acb90ba14",
+  "release_tag": "v2-linux-20261101",
+  "runtime_source_revision": "6e24ede1489fa1061c9a435cbc66d5987f1762b7",
+  "schema": "georefine.linux_codec_release.v1",
+  "scope": "Linux x86_64 CUDA, bounded measurements stated in README",
+  "unqualified_platforms": [
+    "Windows",
+    "macOS Metal"
+  ],
+  "validation": {
+    "changed_package_entries": 4,
+    "launcher_plan_only_check_pass": true,
+    "main_card_before": "old0.1.0reference; newermeasuredartifactsnotpromoted",
+    "new_GPU_tests_needed_for_reported_measurements": false,
+    "no_tensor_weight_changes": true,
+    "package_manifest_entries": 1291,
+    "predictor_CLI_help_pass": true,
+    "runtime_manifest_entries": 234,
+    "runtime_reproduced_twice": true,
+    "unchanged_package_entries": 1287
+  },
+  "weight_files_modified": false
+}

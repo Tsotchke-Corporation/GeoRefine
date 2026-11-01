@@ -1,0 +1,2350 @@
+{
+  "candidate_status": "unqualified",
+  "candidate_tree_sha256": "4d32d5882a5e025734627455795296bb9ddce8eaf078090c25102b6c23a1648e",
+  "candidate_version": "0.1.1",
+  "private_native_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+  "public_runtime_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+  "schema": "georefine-context-fast-runtime-sources-v1",
+  "sources": [
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/__init__.py",
+      "installed_sha256": "662b309ff33f5292d14795196cc7954e6b32394f7644a2143db02e9653a590da",
+      "local_modifications": true,
+      "source_path": "generated namespace initializer",
+      "source_repo": "generated",
+      "source_revision": null,
+      "source_sha256": null
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_context_ans.cpp",
+      "installed_sha256": "d05e7efa7ca46167196f5d23c03088d91fa4f59ad13577c039e2004c751de417",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_context_ans.cpp",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "c64416cf8945ff791bc4a68f2b1af4ed4ffaa59ec8bdf8d31767ee82a1f008b7"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_context_codec.py",
+      "installed_sha256": "43391d513fa96532121294fa96525f7180b78a122f97ea779ca07ce5e5646855",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_context_codec.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "078a32fe7397e92990ea3519154403e0dca8ee76f3839db90fe5bf48fefe9361"
+    },
+    {
+      "import_rewritten": true,
+      "installed_path": "georefine_context_runtime/bitexact_context_gpu.py",
+      "installed_sha256": "d5b7530d73e9b5855c9ceb8a52eaeb67801952fc7cb2df29c3a0011b3f036615",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_context_gpu.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "6a190d1143e274b845965e9cfce1e657982fc1e461356e9a7e44038998ee1fe1"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_context_gpu_index.cpp",
+      "installed_sha256": "997b74f5a900251293584e6554067c2cd3b6950e46f31f2e390df7a4b8403f9e",
+      "local_modifications": false,
+      "source_path": "scripts/bitexact_context_gpu_index.cpp",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "997b74f5a900251293584e6554067c2cd3b6950e46f31f2e390df7a4b8403f9e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_context_gpu_kernels.py",
+      "installed_sha256": "042be32bd7da8c3c5269e767655684ff2718d8caa4530b8cd917b36c1efa9c30",
+      "local_modifications": false,
+      "source_path": "scripts/bitexact_context_gpu_kernels.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "042be32bd7da8c3c5269e767655684ff2718d8caa4530b8cd917b36c1efa9c30"
+    },
+    {
+      "import_rewritten": true,
+      "installed_path": "georefine_context_runtime/bitexact_context_mtp.py",
+      "installed_sha256": "c4e638b0b5bb829e78b7b92d32c4ebbb4cd391786937c2386b51ac0e00d7fc18",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_context_mtp.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "74fc059584285cf15e8cddd826c70556783a1c5a7e6ef4cacb592aea30a81573"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_context_package.py",
+      "installed_sha256": "3b9c8a323f4641ba971c9cbbaf0add5ac56ebca3aebbf86bc85bdbc6a5e984b0",
+      "local_modifications": false,
+      "source_path": "scripts/bitexact_context_package.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "3b9c8a323f4641ba971c9cbbaf0add5ac56ebca3aebbf86bc85bdbc6a5e984b0"
+    },
+    {
+      "import_rewritten": true,
+      "installed_path": "georefine_context_runtime/bitexact_context_serving.py",
+      "installed_sha256": "73aacbeb5fee3e4b53c1e97cc8efa569ad13fef18ac5b83c531d8f4be6ff2791",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_context_serving.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "dded7698d3963ddb489e16fc6b8c4a73d0aeec56e256bb54420f01ede03760b4"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_ans.cpp",
+      "installed_sha256": "069e429a5c37c2bb6d671dd5b68cdf7688f99a4127847f46c15da87d78d0b33e",
+      "local_modifications": false,
+      "source_path": "scripts/bitexact_predictive_ans.cpp",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "069e429a5c37c2bb6d671dd5b68cdf7688f99a4127847f46c15da87d78d0b33e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_codec.py",
+      "installed_sha256": "db6be9268b680d52265a4f70d6ded4e7b7a2ad42fec9552e9214b63fd80204aa",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_predictive_codec.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "8e5f40a11e4fb9d415ed9f4dcaf5d8a35d324624da198ff8c877e10bf95499f7"
+    },
+    {
+      "import_rewritten": true,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_gpu.py",
+      "installed_sha256": "72e8c3b85c109da1ef4854408301bad620b48556b06f8277daf286b3711d7a18",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_predictive_gpu.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "3dda3030df0d4647c0034c4bc642c96121dec2c5f0acfe1866dd9e19831eac5f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_gpu_index.cpp",
+      "installed_sha256": "4d260e850e957f125d1cb1c70f16eaceb41342ee5348ccb17e3a77454cb0722b",
+      "local_modifications": false,
+      "source_path": "scripts/bitexact_predictive_gpu_index.cpp",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "4d260e850e957f125d1cb1c70f16eaceb41342ee5348ccb17e3a77454cb0722b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_gpu_kernels.py",
+      "installed_sha256": "1102730e786264c3355c1072b74ed5d35f551ed6dff00cb4b0950ddcffb99c9b",
+      "local_modifications": false,
+      "source_path": "scripts/bitexact_predictive_gpu_kernels.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "1102730e786264c3355c1072b74ed5d35f551ed6dff00cb4b0950ddcffb99c9b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_mix.py",
+      "installed_sha256": "9632dfad6d4034eabbafd179f5e0cde2cd64f0aa4f0650f9798a4f6a34e729e3",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_predictive_mix.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "363a8f69b93931584934a9db0d48764e34d90760d77a19a019dd8d9122a42c44"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_package.py",
+      "installed_sha256": "34b8014715a28f72a29ab7fdf6bbf4ff8e6764ee7f92e2c43a904bd44e15d360",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_predictive_package.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "4d9efe0cfa310aaf37f0476ae2144c3ef19adbb7f5f85cb2385b218dbb831de8"
+    },
+    {
+      "import_rewritten": true,
+      "installed_path": "georefine_context_runtime/bitexact_predictive_serving.py",
+      "installed_sha256": "b028b07ace232a7ca5ff993b19ee18345293350dba74d304287d063bb7855a4b",
+      "local_modifications": true,
+      "source_path": "scripts/bitexact_predictive_serving.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "ff7509469d644fee772311e8c6c0315c78a2e6e6cdc1e69f94531af1309bae1d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_ans.py",
+      "installed_sha256": "2d21615f5b925a1e9a74e143d1691890db6163c2698f3c439faa6b3d81a4eeaa",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_ans.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ece95f321d134ef5cf137dc91703f7c6c8a463033e88db15ca156440e0bfc7d2",
+      "source_sha256": "ece95f321d134ef5cf137dc91703f7c6c8a463033e88db15ca156440e0bfc7d2"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_ans_native.cpp",
+      "installed_sha256": "c546881c98b46835e16824d2771ba7a9ce6e4a84b9280562ce3a0bec1fff5ad9",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_ans_native.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:c546881c98b46835e16824d2771ba7a9ce6e4a84b9280562ce3a0bec1fff5ad9",
+      "source_sha256": "c546881c98b46835e16824d2771ba7a9ce6e4a84b9280562ce3a0bec1fff5ad9"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_ans_native.py",
+      "installed_sha256": "bd1af06b51440c12aa9957c682a68df26ea51c88fc51c7f896efcb890f3af4aa",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_ans_native.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:28d37ccd5c99135ba26b15fd44bd999e8fac58910f959ea301aea662b2d6c303",
+      "source_sha256": "28d37ccd5c99135ba26b15fd44bd999e8fac58910f959ea301aea662b2d6c303"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_gemm.cpp",
+      "installed_sha256": "25f2e7c2d8bafe6319680d802e36cc9d19d3e6cbd93eb9e7dfc64a3082c15fa9",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_gemm.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:0585f84ba64d7c9baf4fb4b222bc75023bab104b03e3d7d8d97cfed4d63364d2",
+      "source_sha256": "0585f84ba64d7c9baf4fb4b222bc75023bab104b03e3d7d8d97cfed4d63364d2"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_gemm.cu",
+      "installed_sha256": "614de17cddefbf2b0363044781cfee0806d54a531d97a95adb734d260178d9ff",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_gemm.cu",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:257c6fa8882baff2c136859755a2704ce67969d702ffb1b4c86c5b7fff3ddd85",
+      "source_sha256": "257c6fa8882baff2c136859755a2704ce67969d702ffb1b4c86c5b7fff3ddd85"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_gemm.py",
+      "installed_sha256": "91d223b9e6594a3995d6981bba14680eb32556df5e6cc865bf0e83f0d4ecd1a7",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_gemm.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:1aee1fe0778d2ec470afbfd4f27bbbc2b9efee2bd1d0bd955979b73f725dd046",
+      "source_sha256": "1aee1fe0778d2ec470afbfd4f27bbbc2b9efee2bd1d0bd955979b73f725dd046"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_packet.cuh",
+      "installed_sha256": "daeea6ff92f9bc019a59d8e8c3f55ecd951a7051b6e04e44a868159f4b9e5b9e",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_packet.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:f76fa8c9b2c6e38b30d5e978c88d4a58f267a9c4acafe5fd47b82fea830fb9e5",
+      "source_sha256": "f76fa8c9b2c6e38b30d5e978c88d4a58f267a9c4acafe5fd47b82fea830fb9e5"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_alias_packet.py",
+      "installed_sha256": "ccf9b4bc1a06a0fd07e63859206f5d455ee63215b8b03c5d628f436557d4573a",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_alias_packet.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:d2f668973b758e9fb80afa5869ad63bdc20a3aec8b577c0de5d0497016169540",
+      "source_sha256": "d2f668973b758e9fb80afa5869ad63bdc20a3aec8b577c0de5d0497016169540"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_cdf_lookup.py",
+      "installed_sha256": "37e0d7e8d2900f8262c26632c66215ac5521b6634950bce86c3fd550636fb5af",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_cdf_lookup.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:37e0d7e8d2900f8262c26632c66215ac5521b6634950bce86c3fd550636fb5af",
+      "source_sha256": "37e0d7e8d2900f8262c26632c66215ac5521b6634950bce86c3fd550636fb5af"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_gemm.cpp",
+      "installed_sha256": "fa48328ddf0626ac51b6563a4bddcb427682c01e863db6c694864fabf600ccf0",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_gemm.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:5ea204986d47b2d5e24f50732e17db093095f90bc387395f19e9286645545ab9",
+      "source_sha256": "5ea204986d47b2d5e24f50732e17db093095f90bc387395f19e9286645545ab9"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_gemm.cu",
+      "installed_sha256": "8e279dfacbc1dd3fa9d011974b3242f9562f02f576cf80aa5282d4857b0862f6",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_gemm.cu",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:526e5a843568859b2e0d0c18d1e6ab62ad9cd568105111ca90efd2dc636ab128",
+      "source_sha256": "526e5a843568859b2e0d0c18d1e6ab62ad9cd568105111ca90efd2dc636ab128"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_gemm.py",
+      "installed_sha256": "38de5e319213a6862698ae1675593cfff11a349a808b970c9edbe5dee4a15de8",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_gemm.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:7fea85c1bc6590e108bc3fff54836837f2ae9e9e25a1a5422e6c19b0ce69d81b",
+      "source_sha256": "7fea85c1bc6590e108bc3fff54836837f2ae9e9e25a1a5422e6c19b0ce69d81b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_metal.py",
+      "installed_sha256": "3591862f99d1c92d0ee397da6454eab73e1f2a29af8f54207495c4ec63eb758f",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_metal.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:e760d70d0d7d9746d848bb0b45d13f3d01fe1988374ebe568090c6899a31989e",
+      "source_sha256": "e760d70d0d7d9746d848bb0b45d13f3d01fe1988374ebe568090c6899a31989e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_metal_fused.py",
+      "installed_sha256": "5fe8396cea0b99176f880621df4af892faf64aeff77715e9d74a029079d8b812",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_metal_fused.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:cb1c08fb4d2058fe0f7b3b80b0c2fb45b08bf5cabe1e3fadd69d48a173a83100",
+      "source_sha256": "cb1c08fb4d2058fe0f7b3b80b0c2fb45b08bf5cabe1e3fadd69d48a173a83100"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_metal_gemv_exact.py",
+      "installed_sha256": "55aedc6ef5729d5f99a8e45050732ee983bea1e901afc84e835c9e77df9f7d5d",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_metal_gemv_exact.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:55aedc6ef5729d5f99a8e45050732ee983bea1e901afc84e835c9e77df9f7d5d",
+      "source_sha256": "55aedc6ef5729d5f99a8e45050732ee983bea1e901afc84e835c9e77df9f7d5d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_native.cpp",
+      "installed_sha256": "11c72d4a0ba6a639d9fd3a20c99fbcc2829e5a5e53e08e25faa77a90137550bc",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_native.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:174a340e3d8ab5a610e2c260d313fdbf32cdc624567488e5953f551c9cb73c20",
+      "source_sha256": "174a340e3d8ab5a610e2c260d313fdbf32cdc624567488e5953f551c9cb73c20"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_native.py",
+      "installed_sha256": "b7d453566a46804b0e9a04337dff1de1230145e322539965344d9d5d44126a31",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_native.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:3121f548939163db725b26944a1f98af28ee89a5290dc285675189468268fc6c",
+      "source_sha256": "3121f548939163db725b26944a1f98af28ee89a5290dc285675189468268fc6c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_packet.cuh",
+      "installed_sha256": "d758876fab9cdf97b979508f6529a041a356ddae87898b075e67c307515b1f4a",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_packet.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:01ffc234c9307bc53bf11d97b50057a728ba958f5343033e95eb5b9b4abb9d2e",
+      "source_sha256": "01ffc234c9307bc53bf11d97b50057a728ba958f5343033e95eb5b9b4abb9d2e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_packet.py",
+      "installed_sha256": "274d33522ccbc8ed52844d9b6b4ba05c26777969d97d9ba414d100ec068084e2",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_packet.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:8036fc8333943b59e26094ff208dcbe1ba03a9bf66c8ebd207dbf4ddec9f5836",
+      "source_sha256": "8036fc8333943b59e26094ff208dcbe1ba03a9bf66c8ebd207dbf4ddec9f5836"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_splits.py",
+      "installed_sha256": "f000e8a08e7a57f1cc88d55fc724d128df9f3a46f6e9b760efff086057f04023",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_splits.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:f000e8a08e7a57f1cc88d55fc724d128df9f3a46f6e9b760efff086057f04023",
+      "source_sha256": "f000e8a08e7a57f1cc88d55fc724d128df9f3a46f6e9b760efff086057f04023"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_exponent_tables.py",
+      "installed_sha256": "883e259c8b4dc5ee67c07340d099b3b962037e34486c868f645b4e9a331ef2ff",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_exponent_tables.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:dd8927e5d17d0b649966005cb337a7e41d397c6395082fadb7f7c20d920a9e82",
+      "source_sha256": "dd8927e5d17d0b649966005cb337a7e41d397c6395082fadb7f7c20d920a9e82"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_fused_gemm.cpp",
+      "installed_sha256": "b9e5ac26bebcdbb3b3f4deb963f7f2da39201072f6ff66efe89501a7373a5624",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_fused_gemm.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:3312a1d119a886d5a44839848e65229d7de1fea20e067c943bee530f32204638",
+      "source_sha256": "3312a1d119a886d5a44839848e65229d7de1fea20e067c943bee530f32204638"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_fused_gemm.cu",
+      "installed_sha256": "22e27a8b3a718ed32031060583b82e99edd16cd619ff138ad7f742fceced6f78",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_fused_gemm.cu",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:1c26858c29d7367b6aa9303b8c66a54679680fa11510595f831a0b165648dae2",
+      "source_sha256": "1c26858c29d7367b6aa9303b8c66a54679680fa11510595f831a0b165648dae2"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_fused_gemm.cuh",
+      "installed_sha256": "b5bdf625dbe148ffc87e799e4c725736a4e602893ef6a47619dd810dfd56ec77",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_fused_gemm.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:50ac007108d311324fab3a6b1d30c0a8e4f5ce4806306f8aa6563c80959efb8e",
+      "source_sha256": "50ac007108d311324fab3a6b1d30c0a8e4f5ce4806306f8aa6563c80959efb8e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_fused_gemm.py",
+      "installed_sha256": "68d4942cf786f8bcca5eb68726df8cc6900eb80d49703aeee9b13399da1ccf29",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_fused_gemm.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:46ae9cecab9757edbb00ae5ac0355cfc3e0ee357f1fd82b80a142ab9912353cf",
+      "source_sha256": "46ae9cecab9757edbb00ae5ac0355cfc3e0ee357f1fd82b80a142ab9912353cf"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_interleaved_packet.cpp",
+      "installed_sha256": "8cc5873f3bf0f9e84096fc9afd0334dca3ba6a850ed16e9ce4d80c7f8ad40b3e",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_interleaved_packet.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:8cc5873f3bf0f9e84096fc9afd0334dca3ba6a850ed16e9ce4d80c7f8ad40b3e",
+      "source_sha256": "8cc5873f3bf0f9e84096fc9afd0334dca3ba6a850ed16e9ce4d80c7f8ad40b3e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_interleaved_packet.cu",
+      "installed_sha256": "07d0bae704715f277a0bbce27ae958644b592fee2797eeb6de77237b8bc9ee67",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_interleaved_packet.cu",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:2f5fe0c7811d1c5c8e5d408dfdf26d5897b0bd1efe6a987c931e6f23c6e3c6e7",
+      "source_sha256": "2f5fe0c7811d1c5c8e5d408dfdf26d5897b0bd1efe6a987c931e6f23c6e3c6e7"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_interleaved_packet.cuh",
+      "installed_sha256": "61aa7e9ca6be774e5d828da687c1d88457a747f831b6c2dbcdd9e40f9919933f",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_interleaved_packet.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:61aa7e9ca6be774e5d828da687c1d88457a747f831b6c2dbcdd9e40f9919933f",
+      "source_sha256": "61aa7e9ca6be774e5d828da687c1d88457a747f831b6c2dbcdd9e40f9919933f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_interleaved_packet.py",
+      "installed_sha256": "cd7277bf033d17f2f3515d97e99d441549bde084ef1066c3f181c1ee98d4aa15",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_interleaved_packet.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:3cb5a19eb57a087db26b5f894322867c71abbb553417bc601dfde4f07661b57e",
+      "source_sha256": "3cb5a19eb57a087db26b5f894322867c71abbb553417bc601dfde4f07661b57e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_packet_reference.py",
+      "installed_sha256": "34b9ea57d9fad02add3bbd2141618c9e7732510301fa0f51e886838f2293936d",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_packet_reference.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:34b9ea57d9fad02add3bbd2141618c9e7732510301fa0f51e886838f2293936d",
+      "source_sha256": "34b9ea57d9fad02add3bbd2141618c9e7732510301fa0f51e886838f2293936d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_stream_gemm.cpp",
+      "installed_sha256": "aef4529664badc7e627f937bd2b8e7640d3e9855c848a0af8f30a58c6fe9af50",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_stream_gemm.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:aef4529664badc7e627f937bd2b8e7640d3e9855c848a0af8f30a58c6fe9af50",
+      "source_sha256": "aef4529664badc7e627f937bd2b8e7640d3e9855c848a0af8f30a58c6fe9af50"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_stream_gemm.cu",
+      "installed_sha256": "934be8a7acdb329a33a1aeb600a3e576d39642450d051975591f174eedc18075",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_stream_gemm.cu",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:934be8a7acdb329a33a1aeb600a3e576d39642450d051975591f174eedc18075",
+      "source_sha256": "934be8a7acdb329a33a1aeb600a3e576d39642450d051975591f174eedc18075"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_stream_gemm.py",
+      "installed_sha256": "9182b59d9eb07b85e352e6a6a7e9f11e2b0bde13eaf0b288b5cf1a9895183a30",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_stream_gemm.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:9182b59d9eb07b85e352e6a6a7e9f11e2b0bde13eaf0b288b5cf1a9895183a30",
+      "source_sha256": "9182b59d9eb07b85e352e6a6a7e9f11e2b0bde13eaf0b288b5cf1a9895183a30"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_stream_packet.cuh",
+      "installed_sha256": "93b3d0e7b5e726ec536df83372c2845d2d55f7754e7c6586ab486b68cad5ef8b",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_stream_packet.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:93b3d0e7b5e726ec536df83372c2845d2d55f7754e7c6586ab486b68cad5ef8b",
+      "source_sha256": "93b3d0e7b5e726ec536df83372c2845d2d55f7754e7c6586ab486b68cad5ef8b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_stream_packet.py",
+      "installed_sha256": "90b1d58c7b3932cf5393dd9db94b8f0fb1e1a85e3883257c814e5a29f7d90d85",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_stream_packet.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:90b1d58c7b3932cf5393dd9db94b8f0fb1e1a85e3883257c814e5a29f7d90d85",
+      "source_sha256": "90b1d58c7b3932cf5393dd9db94b8f0fb1e1a85e3883257c814e5a29f7d90d85"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_tiled_packet.cpp",
+      "installed_sha256": "91bed5c7cc0c2afde7bb659cbf5515371999bf3330d953a300b9b210b0ac0eec",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_tiled_packet.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:91bed5c7cc0c2afde7bb659cbf5515371999bf3330d953a300b9b210b0ac0eec",
+      "source_sha256": "91bed5c7cc0c2afde7bb659cbf5515371999bf3330d953a300b9b210b0ac0eec"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_tiled_packet.cu",
+      "installed_sha256": "7cbc378554cd2f8b41531356bd5c3bed446d6d65d2de611a4b0c5cd3a827e83c",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_tiled_packet.cu",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:7cbc378554cd2f8b41531356bd5c3bed446d6d65d2de611a4b0c5cd3a827e83c",
+      "source_sha256": "7cbc378554cd2f8b41531356bd5c3bed446d6d65d2de611a4b0c5cd3a827e83c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_tiled_packet.cuh",
+      "installed_sha256": "4dedc5f2b24beaa3aa29c243e8d8360099d1220e4d119a71e6852f854dcf34ae",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/context_tiled_packet.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:a63257c7eea823e2d9d396ed7f41752469359f5223a8f93277020c3be174dabc",
+      "source_sha256": "a63257c7eea823e2d9d396ed7f41752469359f5223a8f93277020c3be174dabc"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/context_tiled_packet.py",
+      "installed_sha256": "44f55a0298ccb5ed2c2ae7657e4ebbb5f63adae3cb8d4975e1b053792404d962",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/context_tiled_packet.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:44f55a0298ccb5ed2c2ae7657e4ebbb5f63adae3cb8d4975e1b053792404d962",
+      "source_sha256": "44f55a0298ccb5ed2c2ae7657e4ebbb5f63adae3cb8d4975e1b053792404d962"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/generic_tensor_codec.py",
+      "installed_sha256": "34476c69ce6ab6ea7b4958e6eef3879816c7672340d271295adfaa73e7f34651",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/generic_tensor_codec.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:34476c69ce6ab6ea7b4958e6eef3879816c7672340d271295adfaa73e7f34651",
+      "source_sha256": "34476c69ce6ab6ea7b4958e6eef3879816c7672340d271295adfaa73e7f34651"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/licenses/CONTEXT_RELEASE_GRANT.json",
+      "installed_sha256": "7735b4d737ca1a6b60800dfa86c1069986b5738b06f40d7059a6d1dd5f48008b",
+      "local_modifications": true,
+      "source_path": "Owner approval 2026-10-09",
+      "source_repo": "owner-release-grant",
+      "source_revision": null,
+      "source_sha256": null
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/licenses/NATIVE_CODEC_LICENSE.txt",
+      "installed_sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de",
+      "local_modifications": false,
+      "source_path": "LICENSE",
+      "source_repo": "public-release-license",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/licenses/PUBLIC_RUNTIME_LICENSE.txt",
+      "installed_sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de",
+      "local_modifications": false,
+      "source_path": "LICENSE",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "449f4f5e5e39a294f077e8b8bea62d0ef7697430b14566398453d7ab95e659de"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/licenses/PUBLIC_RUNTIME_NOTICE.txt",
+      "installed_sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b",
+      "local_modifications": false,
+      "source_path": "NOTICE",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "45bde7bbb7642ff1531fb4693f2c74c1bfb5de9a137940f59e160af2e4da375b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/metal_steel_0304/LICENSE",
+      "installed_sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/metal_steel_0304/LICENSE",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+      "source_sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/metal_steel_0304/SOURCE.json",
+      "installed_sha256": "511cc135c388c6dec0b2b01ed0d7188e2875a5a267b6af63c1b00563506132a4",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/metal_steel_0304/SOURCE.json",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:511cc135c388c6dec0b2b01ed0d7188e2875a5a267b6af63c1b00563506132a4",
+      "source_sha256": "511cc135c388c6dec0b2b01ed0d7188e2875a5a267b6af63c1b00563506132a4"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/metal_steel_0304/gemm.h",
+      "installed_sha256": "c84af31e2c57154f2a8a24fa7f9fe2449765cce9a66f3f035846ed3c03b6a8b0",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/metal_steel_0304/gemm.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:c84af31e2c57154f2a8a24fa7f9fe2449765cce9a66f3f035846ed3c03b6a8b0",
+      "source_sha256": "c84af31e2c57154f2a8a24fa7f9fe2449765cce9a66f3f035846ed3c03b6a8b0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/metal_steel_0304/loader.h",
+      "installed_sha256": "703cd05158c22625dd636b85f7219bb374c65eeaed03f7b770bf8ac49f2fb16d",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/metal_steel_0304/loader.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:703cd05158c22625dd636b85f7219bb374c65eeaed03f7b770bf8ac49f2fb16d",
+      "source_sha256": "703cd05158c22625dd636b85f7219bb374c65eeaed03f7b770bf8ac49f2fb16d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/metal_steel_0304/mma.h",
+      "installed_sha256": "8a744cee1a1072751b376c276f0419c251547450b2055a3fbf4b227ed381d366",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/metal_steel_0304/mma.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:8a744cee1a1072751b376c276f0419c251547450b2055a3fbf4b227ed381d366",
+      "source_sha256": "8a744cee1a1072751b376c276f0419c251547450b2055a3fbf4b227ed381d366"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/metal_steel_0304/params.h",
+      "installed_sha256": "6711e72e32310eafb088895d5a6d20fcfca814158f5b38eb72b6e69d9d773e43",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/metal_steel_0304/params.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:6711e72e32310eafb088895d5a6d20fcfca814158f5b38eb72b6e69d9d773e43",
+      "source_sha256": "6711e72e32310eafb088895d5a6d20fcfca814158f5b38eb72b6e69d9d773e43"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/metal_steel_0304/transforms.h",
+      "installed_sha256": "aead73fa873184cf7d930fb9d20308f765c52c35a775a9a0131162cc332fa814",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/metal_steel_0304/transforms.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:aead73fa873184cf7d930fb9d20308f765c52c35a775a9a0131162cc332fa814",
+      "source_sha256": "aead73fa873184cf7d930fb9d20308f765c52c35a775a9a0131162cc332fa814"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/safetensors_source.py",
+      "installed_sha256": "167978dbe5b96394ebd39d06a8b23de90226ea490a8eb91d55867ee1a96cf82d",
+      "local_modifications": false,
+      "source_path": "context-runtime/georefine_context_runtime/safetensors_source.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:167978dbe5b96394ebd39d06a8b23de90226ea490a8eb91d55867ee1a96cf82d",
+      "source_sha256": "167978dbe5b96394ebd39d06a8b23de90226ea490a8eb91d55867ee1a96cf82d"
+    },
+    {
+      "import_rewritten": true,
+      "installed_path": "georefine_context_runtime/serve_bitexact_context.py",
+      "installed_sha256": "17dc9b5040ceccf607b2cc510e6a2dac91e4900a49728afc45ed0c2463936b4a",
+      "local_modifications": true,
+      "source_path": "scripts/serve_bitexact_context.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "9f58e87bedb19ccb1256f30c3e5def52029ea362ad5d92f8adb7ac37954dd369"
+    },
+    {
+      "import_rewritten": true,
+      "installed_path": "georefine_context_runtime/serve_bitexact_predictive.py",
+      "installed_sha256": "972b35933645ee9553e41bd67f29e5db24af2a681fe24e9735a69d67a4f11552",
+      "local_modifications": true,
+      "source_path": "scripts/serve_bitexact_predictive.py",
+      "source_repo": "private-native",
+      "source_revision": "5ee84621d20c7f01f2699db350fcc49adc4e3831",
+      "source_sha256": "4034d4d325d9587dd5eb3f4b4363ed29fa5d62caf1ce3e5a98058a746ef1b85d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/typed_context_package.py",
+      "installed_sha256": "f9f2125e01c164b3e4acaea5fbf067480a347d29ad95ca246daed7540f3b4198",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/typed_context_package.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:e102dd644a020cbe47d93976bf2fa6e7d07cf5e6fcd2fdc8004b77fc9e858d6c",
+      "source_sha256": "e102dd644a020cbe47d93976bf2fa6e7d07cf5e6fcd2fdc8004b77fc9e858d6c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "georefine_context_runtime/typed_context_serving.py",
+      "installed_sha256": "e2e4826f68db08d3777309b18668787c0034ab57aac8e586cace557249ed096b",
+      "local_modifications": true,
+      "source_path": "context-runtime/georefine_context_runtime/typed_context_serving.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:e04bb03e17bfe5b644db2903b5ca3280391922edd33903b0cfaeea68614143ea",
+      "source_sha256": "e04bb03e17bfe5b644db2903b5ca3280391922edd33903b0cfaeea68614143ea"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/__init__.py",
+      "installed_sha256": "70a799110858af778dddecfe4208395d975c20f2435ff63f14f9ee989961c4ed",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/__init__.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "70a799110858af778dddecfe4208395d975c20f2435ff63f14f9ee989961c4ed"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/__main__.py",
+      "installed_sha256": "b7c8098745091b4efaa2f19a4be51bba72098315a4f3ad465a0d6d70b05a9b8e",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/__main__.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "d8f56acec244ecf06a2c70bc6577d3296851cbddf0b60d922e0afafc10ecd6d0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/_inspect.py",
+      "installed_sha256": "054b3beb72823b6f188db1877a91115fb76be810b65ec1d577a0db619ce61147",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/_inspect.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "054b3beb72823b6f188db1877a91115fb76be810b65ec1d577a0db619ce61147"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/_jitenv.py",
+      "installed_sha256": "bbbfd742d171f4f3e197dcfa697a95eb3248a47cc8b59ad08280750d0de81352",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/_jitenv.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "bbbfd742d171f4f3e197dcfa697a95eb3248a47cc8b59ad08280750d0de81352"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/artifact.py",
+      "installed_sha256": "6662f868b5c7ae9ea810802864fffcf79a96a7ca7fd6a96326fc519350b71677",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/artifact.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "263046aeb20c5ab96f66af46f49730d4b7cab93801549384311d5efbc93d5b6e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/codec_v2.py",
+      "installed_sha256": "c700ea3499a83b4c1972b827a2565ca23ef7ea619082049ad17886af66b35e36",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/codec_v2.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "c700ea3499a83b4c1972b827a2565ca23ef7ea619082049ad17886af66b35e36"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/codec_v21.py",
+      "installed_sha256": "5b655eb8b3a65d88b7208c1e00399d28c5dc89a68b0afe890c3fbbd6bd9fcc22",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/codec_v21.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "46bb1ff9d10134a3631fee78a4e59567f967cac4d57f6d3b7c54b54af6e61435"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/codec_v21_fullpack.py",
+      "installed_sha256": "c3852b45f31619103f266595a50b4583eecce2ee0cd6c12c931baacb4f2a1614",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_loader/codec_v21_fullpack.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:c3852b45f31619103f266595a50b4583eecce2ee0cd6c12c931baacb4f2a1614",
+      "source_sha256": "c3852b45f31619103f266595a50b4583eecce2ee0cd6c12c931baacb4f2a1614"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/codec_v21_native.cpp",
+      "installed_sha256": "ce9f37a206a06754e100f366e9d2ec6c649237c7b770370c159988389377f9e1",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_loader/codec_v21_native.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:e5c39285d106b1634a6b1d0f507ddcfb28f8d2bed02bcd2c28059a4adecafd1e",
+      "source_sha256": "e5c39285d106b1634a6b1d0f507ddcfb28f8d2bed02bcd2c28059a4adecafd1e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/codec_v21_native.py",
+      "installed_sha256": "77f717fc1f921aa9f1ed61cd9b30e55946b9621830e604d1f1c8c78ce52e72a5",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_loader/codec_v21_native.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:0d114a93dce154a2d4921bca76cf796da2a8ba8e3adc8a6801abd13309309899",
+      "source_sha256": "0d114a93dce154a2d4921bca76cf796da2a8ba8e3adc8a6801abd13309309899"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/codec_v2_artifact.py",
+      "installed_sha256": "7a5c6e98113ffc0e1f53462aeccb4ec07c7831fc074ca25392fbc1e024828458",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/codec_v2_artifact.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "07594ba01675ee35078271b6e2746a192308b9919fc055fcafa40bb5a8a0086c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/container.py",
+      "installed_sha256": "197cdff41b1407339f0bd9091383cf4bfaf383e58f792df0c0c4c25f8e03f5d3",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/container.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "4a21e3c682767ca7a5e41d94bda2cee03e7a1c24e1bb5af20c5d268d06a902d4"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/loader.py",
+      "installed_sha256": "55f6dce9ac3711e555de3a1d5226f3f1c41c8ac2267efdf265a743986628afde",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/loader.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "5c16a9a078ee3c63d25e24eb12a1cdbb0bb49e57592b4e9dbdcfcbf4e9aa5cc4"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/__init__.py",
+      "installed_sha256": "46f182802f55f76bb2c50668c806776a194b7d47f5dd3baa6231187ae2349391",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/__init__.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "6b6de7a6c711cd2a61cbaa3190707ceda4e4d95fd30f6e3bf9a4b0ee609a2e4b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/ple_gather_mlx.py",
+      "installed_sha256": "3e398a67c23fa50a5a9677cecb1a9b2213992dfc7a44349607a3db1407fc7556",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/metal/ple_gather_mlx.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "3e398a67c23fa50a5a9677cecb1a9b2213992dfc7a44349607a3db1407fc7556"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/status_guard.py",
+      "installed_sha256": "ca19879b573d2b325eb252ffd9d83c014b1586dc5218a6e34504ca1a0273bc46",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_loader/metal/status_guard.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ca19879b573d2b325eb252ffd9d83c014b1586dc5218a6e34504ca1a0273bc46",
+      "source_sha256": "ca19879b573d2b325eb252ffd9d83c014b1586dc5218a6e34504ca1a0273bc46"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_backbone_batched_mlx.py",
+      "installed_sha256": "446f65768712d109353ec93a22dde66062e6e83081ee5bac663f8e897101a759",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_backbone_batched_mlx.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "5ba711c22c59605b36635b756bbe9bcb56d8bc9c4eb2bab8de47b8134e49aef0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_decode_mlx.py",
+      "installed_sha256": "dbf81b02b50067c851e21e196bd447383d5dccde94e71b3ea435a38cc12ce886",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_decode_mlx.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "643382c08376ae74a2c0e766d8676f22df5a8ad3acef0bc5176a86905cce61c9"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_decode_mlx_v2.py",
+      "installed_sha256": "c508a9fd2ef0a3dedb4765d44d511b328a502d3f6d842509d3366b66571849d5",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_decode_mlx_v2.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "e053adaec866ca9b4d3734ec66510d03c21fc44fb7f18df454c7fc421248a2ce"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_decode_mlx_v3.py",
+      "installed_sha256": "a40fc19f1ab428ee35d882f473b8977de6b57d14c8ee01d9a4d622537c736b03",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_decode_mlx_v3.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "3da68a733aea6c283281cd3670df0166cdb577bca0869803f6cabcf9015110fe"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_decode_mlx_v4.py",
+      "installed_sha256": "b09e3eadfe6c8ffa077396dcb3de77a9a8c24bb7589685d697f7e88dd5d64d9d",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_decode_mlx_v4.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "b74b083afee990243098db649362ad5efdd74c36304b7b02e4c9863541bbd2bd"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_gemv_fused_lut_mlx.py",
+      "installed_sha256": "a4f9f80d21ea335696e68f07e642f6be827c6514f92502c83b1e114fefcc6a29",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_gemv_fused_lut_mlx.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "78fdaaa4d04c5b1dd5adb211ee7007b4f20b38be0909285d7a01b07211ab7793"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_gemv_fused_mlx.py",
+      "installed_sha256": "9cbc5589a4f2b24608290103b9adf21983bc6f05faabefc8488d6d3bef905d9a",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_gemv_fused_mlx.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "a82ebb4004c9c3d86b4c9c62747eea2e057ad8dcebcb1b046e20274cdd56f93f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_linear_mlx.py",
+      "installed_sha256": "eb7693a1020e090327191f5208b6027095a37873184b3ff555382e0ff76de4e9",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/metal/tbe_linear_mlx.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "eb7693a1020e090327191f5208b6027095a37873184b3ff555382e0ff76de4e9"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_linear_mlx_v2.py",
+      "installed_sha256": "fb33d33358a4ede70d7a8e2973772e6524f765e138591fee33dbe46e0d1cdcf9",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/metal/tbe_linear_mlx_v2.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "fb33d33358a4ede70d7a8e2973772e6524f765e138591fee33dbe46e0d1cdcf9"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_linear_mlx_v3.py",
+      "installed_sha256": "765d435e21495ed8cfb23e601058fcbd214bbd15f0c6853e1d62d3d3271ac27b",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/metal/tbe_linear_mlx_v3.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "765d435e21495ed8cfb23e601058fcbd214bbd15f0c6853e1d62d3d3271ac27b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_linear_mlx_v4.py",
+      "installed_sha256": "a042022e534d13dfc6d8dabb6e1fc2273ba2369d741c59ae0c25930ff830ba2b",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/metal/tbe_linear_mlx_v4.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "a042022e534d13dfc6d8dabb6e1fc2273ba2369d741c59ae0c25930ff830ba2b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_mlx_model.py",
+      "installed_sha256": "1e2a34c6d4bff91c4e402914f7cee32e00e9e1415c264215821f93b66f7ccaeb",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/metal/tbe_mlx_model.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "1e2a34c6d4bff91c4e402914f7cee32e00e9e1415c264215821f93b66f7ccaeb"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/metal/tbe_moe_batched_mlx.py",
+      "installed_sha256": "cedd9b3321e9982185109d4e2afe54439cadbe618553c81282f60ee32a502422",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/metal/tbe_moe_batched_mlx.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "52179b4ef38723b039fc3a9a6d213db313a808f95634705ac27897c0e7f27aa4"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/modules.py",
+      "installed_sha256": "1f140b4454de2dc3d9084dea6cf021a2dddb2a8d71f927dd28ae21b322719fb6",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/modules.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "1f140b4454de2dc3d9084dea6cf021a2dddb2a8d71f927dd28ae21b322719fb6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_anyrank.py",
+      "installed_sha256": "fb98965111575236122efab3e5ce735235face1ecc812c32d8b64680da520ffd",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_anyrank.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "fb98965111575236122efab3e5ce735235face1ecc812c32d8b64680da520ffd"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_artifact.py",
+      "installed_sha256": "2b39114dfaf2abf9288426770b945f326d3731ea24de1236c855b0b113caccbf",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_artifact.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "2b39114dfaf2abf9288426770b945f326d3731ea24de1236c855b0b113caccbf"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_container.py",
+      "installed_sha256": "76726158def3f5727c724086ab56395bac9a4462348d82ef55a65c44a5064e84",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_container.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "76726158def3f5727c724086ab56395bac9a4462348d82ef55a65c44a5064e84"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_cpu_numpy.py",
+      "installed_sha256": "8814228b0e1eaab105600508baea0cb94de699ce583344f9cf305375953c607e",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_cpu_numpy.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "8814228b0e1eaab105600508baea0cb94de699ce583344f9cf305375953c607e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_cpu_process.py",
+      "installed_sha256": "2650ad0c3705cd27ad7c2c164f51d1f6b92e42d0bd3f89a14c753aa952396402",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_cpu_process.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "2650ad0c3705cd27ad7c2c164f51d1f6b92e42d0bd3f89a14c753aa952396402"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_device_map.py",
+      "installed_sha256": "8cb3d8695beca932513b02ff8de87bfb8231824194c4a6414f5106f8d6235795",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_device_map.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "8cb3d8695beca932513b02ff8de87bfb8231824194c4a6414f5106f8d6235795"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_gather.py",
+      "installed_sha256": "358a63f598eeec3189ad92a967ddd53bd1543f00101a06be64ff454ee7da9726",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_gather.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "358a63f598eeec3189ad92a967ddd53bd1543f00101a06be64ff454ee7da9726"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_mma.py",
+      "installed_sha256": "acb678ebd7978d86c26a66b4a272957dde5f71558ef0825d9ea4a68947823c3f",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/tbe_mma.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "20bde33e160498fe84b35095bf10c54dbebdfc0327a06557b7fd209e31ba9503"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_mma_kernel.cu",
+      "installed_sha256": "d63d78a9a4e38bb0cf597f7b9604a09c9fcc932723f2a7737e5ac8d3b2b066f8",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_mma_kernel.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "d63d78a9a4e38bb0cf597f7b9604a09c9fcc932723f2a7737e5ac8d3b2b066f8"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_mma_kernels.py",
+      "installed_sha256": "7485879845380942ba3ece55caf43e578c52508d30a3242228d5a7388161a0b3",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/tbe_mma_kernels.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "c0de437e0b02115875b393aa01556c8e017b2940bef8ee6e4f8048feb7e44bfd"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_modules.py",
+      "installed_sha256": "5287b4e657a8a4ac800579ea02f7ca9a1b0b764cee111a934968bcd79c8de02b",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_modules.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "5287b4e657a8a4ac800579ea02f7ca9a1b0b764cee111a934968bcd79c8de02b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_serve_portable.py",
+      "installed_sha256": "ed6e7104ab54f2a95400b7da75a86c11df5162e8452a4c8b756a162ff0cd968a",
+      "local_modifications": true,
+      "source_path": "release/glc_loader/tbe_serve_portable.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "938b730e78feb86925e526a5b3cfca3bcae2cc30cf38047f81bdb591b07d8f75"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_serving.py",
+      "installed_sha256": "61076980db9d1910c8d480e59a2983dd6670d5f2449b8db8b15c3fa57f53e059",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_serving.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "61076980db9d1910c8d480e59a2983dd6670d5f2449b8db8b15c3fa57f53e059"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_loader/tbe_stream_loader.py",
+      "installed_sha256": "7d6e5b4f50b106ea7ca515636b26b7c98d5ce74d7f10780dc70847a798e274e3",
+      "local_modifications": false,
+      "source_path": "release/glc_loader/tbe_stream_loader.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "7d6e5b4f50b106ea7ca515636b26b7c98d5ce74d7f10780dc70847a798e274e3"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/CONTEXT_BUILD.json",
+      "installed_sha256": "28c9f4323c828c6115a139680edd99ff64022a19b0abdb4762ce5d5acb63bf8c",
+      "local_modifications": true,
+      "source_path": "generated Context distribution scope",
+      "source_repo": "generated",
+      "source_revision": null,
+      "source_sha256": null
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/NATIVE_BATCH_SOURCES.json",
+      "installed_sha256": "c9eadf83f9eeb40f8b531a4c6703aa686ec1d3e13eb077f55c28dcbbb5ccc8bb",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/NATIVE_BATCH_SOURCES.json",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "179622d152bf8319f767123ba59ce848839f675b4700f1e58924957e3bfd4915"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/__init__.py",
+      "installed_sha256": "d3d52c47790811cd6064523dc0bf06c1bd4c0ea1e1df54462faae843799e15da",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/__init__.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "4b8566f77e31fdf05f7db292fdcc6b9bc8edd1dc4ce78d9592609094ad2bebf0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/__main__.py",
+      "installed_sha256": "801b6c2ba7488992e656cc153792a3924893f86eb424f68b37494d107ab4bb46",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/__main__.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "801b6c2ba7488992e656cc153792a3924893f86eb424f68b37494d107ab4bb46"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/_startup_limits.py",
+      "installed_sha256": "7bf665ab4f7b27dadbf657d3cfa9f09f97d163e05e96d42f02eff4848f80d70d",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/_startup_limits.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "7bf665ab4f7b27dadbf657d3cfa9f09f97d163e05e96d42f02eff4848f80d70d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/_winenv.py",
+      "installed_sha256": "41f7668e276f089b8bdc343a9861cced87f17a200be5505133c314ed30b0149c",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/_winenv.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "41f7668e276f089b8bdc343a9861cced87f17a200be5505133c314ed30b0149c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bctx_v21_cache.py",
+      "installed_sha256": "cc5e98c18cd4e8ba3944a355a83521fea444b069acdcbc061d5b7d271a06e455",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bctx_v21_cache.py",
+      "source_repo": "attention",
+      "source_revision": "fcefaf2f01923a07cf4046648e9fb25da367c596",
+      "source_sha256": "d7dcbaa6623d3528eb3a560ab89dd7e69405137be0a2865269635eacdeb49c0a"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bctx_v21_transcode.py",
+      "installed_sha256": "234a9db9d2027c8d18ad9ac82b67213e9f5540b7bf590dca949e7edd576ec4aa",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bctx_v21_transcode.py",
+      "source_repo": "attention",
+      "source_revision": "bed02807496ac07cdf9448acb223d718baa0aace",
+      "source_sha256": "af72c15ad90a7e2466ea5536d7f0cffa5e9f47930e4cf6384fcfd4f4c9470145"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bctx_v21_typed.py",
+      "installed_sha256": "91cde94c420a824378a4d88613b51e3353a640127879b31070dba1c743261c97",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/bctx_v21_typed.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:91cde94c420a824378a4d88613b51e3353a640127879b31070dba1c743261c97",
+      "source_sha256": "91cde94c420a824378a4d88613b51e3353a640127879b31070dba1c743261c97"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bench.py",
+      "installed_sha256": "5baffb5c4528c147ffd46869d471541465317e4c77ed02b93113f59f1f9f8180",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/bench.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "5baffb5c4528c147ffd46869d471541465317e4c77ed02b93113f59f1f9f8180"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bhe_desc.py",
+      "installed_sha256": "2fe207bfc3f4bce6635bb381df5dcef4790e78d416e650a9e811fc8a3c4577b7",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bhe_desc.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:1d93fd63b65fc090727f93e3ff8b404ac21d4a817e5d2c00fc5010e4855bc141",
+      "source_sha256": "1d93fd63b65fc090727f93e3ff8b404ac21d4a817e5d2c00fc5010e4855bc141"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_csrc/bi_api.h",
+      "installed_sha256": "a59bbba90155ff8f651573d5ec82522158889b63e8705f78986b97f7240eaf4b",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bi_csrc/bi_api.h",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "5ff5df2757e33b9b7f2d410af0e890a0ce65108af196d1331032426563b59614"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_csrc/bi_gemm.cuh",
+      "installed_sha256": "10640f86efbe92e5bb5e5de3f36cc9486f03ea975469481754ee6e563963fcd5",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm.cuh",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "82a0d2e137f06f66af6720c594f2b61e8ee1407f9ec8f8a57fd293829ca9fce7"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_csrc/bi_gemm_dense.cu",
+      "installed_sha256": "6873e12c39556cef6aa517a139c7534c51d33d81455507276af8825302a5492a",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bi_csrc/bi_gemm_dense.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "d81cb68cf2c909a82c6b9ef2a069d48dea23960b71760eef11d7a5d7b9192198"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_csrc/bi_tbe2_opt.cuh",
+      "installed_sha256": "143b7983c71a0a35d75bff27d723d4dcfe3db39ac4456ad063d3bd3e3d372a61",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bi_csrc/bi_tbe2_opt.cuh",
+      "source_repo": "attention",
+      "source_revision": "932e6d91a031db0a5191e2ecfba99109647e0e0a",
+      "source_sha256": "58b6219241f490157789290fbb6a8f32c76199dd129b63e0d8730bdb60e49809"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_csrc/bi_tbe2_opt_dense.cu",
+      "installed_sha256": "b7bdd4a8fc998d7e7da2fedf1eda5e84d66d9d8fbbd696890e1112b5fa782401",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bi_csrc/bi_tbe2_opt_dense.cu",
+      "source_repo": "attention",
+      "source_revision": "932e6d91a031db0a5191e2ecfba99109647e0e0a",
+      "source_sha256": "25234a0658108d6d7225f1963c91092e140741210858f9afffadd446f1f8b8ac"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_csrc/bi_torch.cpp",
+      "installed_sha256": "d1f62f2a8e0568d086d909d761f69b9a2a56f4adb974ad64c7e6d04a238e0a2b",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bi_csrc/bi_torch.cpp",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "397f0f0c4a43661b67d579255a66fe69392ca1e037227966f8a9a8309924e0be"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/PROVENANCE.md",
+      "installed_sha256": "9ba6a107ee9cdd205f25e17973305cb4eca634ce68567a4cf1d816c29550c295",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/PROVENANCE.md",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:1c852965171b354de3e34eab9b26a73a7252165104fafa21c0fa352a41d6701f",
+      "source_sha256": "1c852965171b354de3e34eab9b26a73a7252165104fafa21c0fa352a41d6701f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/bi_api.h",
+      "installed_sha256": "77ab7ca156cf25132f7edf39599f584237b17ce3ae71253b4082a4f6b199df6e",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/bi_api.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:14ab400bf087b65b5d3cc167d529eca9270e5dc5f87e81da4dc425ec8d6aff48",
+      "source_sha256": "14ab400bf087b65b5d3cc167d529eca9270e5dc5f87e81da4dc425ec8d6aff48"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/bi_gemm.cuh",
+      "installed_sha256": "4886a597c5dfa6dff698564e508c3cbc2bdc541b35183b1ecc071a59b0056b38",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/bi_gemm.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ca93a7fde5c01ae20d3bdf6f6f5b1a2038b4e946609d11d3eaa21bff3960eecd",
+      "source_sha256": "ca93a7fde5c01ae20d3bdf6f6f5b1a2038b4e946609d11d3eaa21bff3960eecd"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/bi_gemm_v2.cu",
+      "installed_sha256": "59dc0216dfdc87fa3d469a39211e3aca5e0e791b3a8bd566c6b0acb60c84bf81",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/bi_gemm_v2.cu",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:3730db6ded09c88b73c5413ef7e2f80e9c043801524d06aa850440f284f4ae5e",
+      "source_sha256": "3730db6ded09c88b73c5413ef7e2f80e9c043801524d06aa850440f284f4ae5e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/bi_tbe21_v2_api.h",
+      "installed_sha256": "c7a26b17b06836692f0159052f6f2729d446810b8a22d4ae9f6d4a8892418773",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/bi_tbe21_v2_api.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:93396577cdc831c7586e9704fb136b75a6d60b30a9d6e946f612451313b68ee4",
+      "source_sha256": "93396577cdc831c7586e9704fb136b75a6d60b30a9d6e946f612451313b68ee4"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/bi_torch.cpp",
+      "installed_sha256": "3003844b653b0592a3d90029505248c6122ca915b6ccd56cbe15533bce400b7e",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/bi_torch.cpp",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:6d4e52b043d0b6c928739d082d313df1eabe95b5d3f72d25e281467b5eb42f83",
+      "source_sha256": "6d4e52b043d0b6c928739d082d313df1eabe95b5d3f72d25e281467b5eb42f83"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/miv_tbe.h",
+      "installed_sha256": "0aa9cde196788768920b5b941799e210ef29a40e4e797597f0599e8d62ffd486",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/miv_tbe.h",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:0aa9cde196788768920b5b941799e210ef29a40e4e797597f0599e8d62ffd486",
+      "source_sha256": "0aa9cde196788768920b5b941799e210ef29a40e4e797597f0599e8d62ffd486"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/miv_tbe_kernels.cuh",
+      "installed_sha256": "eaba6073abde4adcd549df0f095bf11a6bddfaf3901ea40a842a0ffbe2844fb6",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/miv_tbe_kernels.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:eaba6073abde4adcd549df0f095bf11a6bddfaf3901ea40a842a0ffbe2844fb6",
+      "source_sha256": "eaba6073abde4adcd549df0f095bf11a6bddfaf3901ea40a842a0ffbe2844fb6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/pair_vote.cuh",
+      "installed_sha256": "25d45d7f3765ee5ccb073dd4515f652b673cbf4fac3a2436f71adfd1a362b886",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/pair_vote.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:25d45d7f3765ee5ccb073dd4515f652b673cbf4fac3a2436f71adfd1a362b886",
+      "source_sha256": "25d45d7f3765ee5ccb073dd4515f652b673cbf4fac3a2436f71adfd1a362b886"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/tier_prefix_cursor.cuh",
+      "installed_sha256": "2af6b52b557c9f2f3b61767ff85de4e4bf5be95ba6660bda4f5858899d99195d",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/tier_prefix_cursor.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:2af6b52b557c9f2f3b61767ff85de4e4bf5be95ba6660bda4f5858899d99195d",
+      "source_sha256": "2af6b52b557c9f2f3b61767ff85de4e4bf5be95ba6660bda4f5858899d99195d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bi_tbe21_v2_csrc/tier_prefix_literal.cuh",
+      "installed_sha256": "1fc8eac50a16bbe342b09a721cae99c8bf4774743e6ec057fea01532a172c6dc",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bi_tbe21_v2_csrc/tier_prefix_literal.cuh",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:757e95d2f0089e74171bc90d8f3e5528f1b33ddf6e4e78f43e450c9e789fe4cd",
+      "source_sha256": "757e95d2f0089e74171bc90d8f3e5528f1b33ddf6e4e78f43e450c9e789fe4cd"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bidec.py",
+      "installed_sha256": "398f6aa100c4591170c09548eb8ba3fd560e87956ad6c64553f5778baf39c61a",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bidec.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "18c079088d17c0d3e150f5a0e3e636bfe25efdf76687930ca6fdf35f7328b9ba"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bidec_kernels.cu",
+      "installed_sha256": "78eb9cd9b7eed7ef2aa4b1065b57a9030f781c4cdd8be01999b33065e664bbc3",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bidec_kernels.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "80364de152840c3f299891d934797bd574e6dee2439300ed6e7a3feb3bb7cdb5"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bidec_load.py",
+      "installed_sha256": "db4d494060a02fb9ba79cb18388abf210ce19b9ba8d0c08f3092e7cdd5e98e29",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/bidec_load.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ba3033c1258caf0427a7f0c4cc1e559a9b53381d892d8013b9cf8ee02773f35f",
+      "source_sha256": "ba3033c1258caf0427a7f0c4cc1e559a9b53381d892d8013b9cf8ee02773f35f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bidec_mm.py",
+      "installed_sha256": "f9e7183de2bd4b73afc9e197d2f9a342424eaeac7c24d7aa4b73edfbc9cdd48f",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bidec_mm.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "62657bbbfec6d65e262da1f9badabf535126ecdec385f7b1ed9850dd1e7711ee"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bidec_policy.py",
+      "installed_sha256": "f2ab1a4295626ac9d7a00f747d7dc378746184310e23dd947f1dd0b3a132bb53",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/bidec_policy.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "f2ab1a4295626ac9d7a00f747d7dc378746184310e23dd947f1dd0b3a132bb53"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bidec_spec.py",
+      "installed_sha256": "e83e083f4057bdff0398487b3ced48c78eb767079fbfaa5c07ccbbbd040cd566",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bidec_spec.py",
+      "source_repo": "attention",
+      "source_revision": "50d1f4f6ebe4aac3820d47281c2b9d9a5c2c8be9",
+      "source_sha256": "233f55a655939e083a2443273ebd26830db0f76ad7788d7656e8d9efed3b4d0d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bigemm.py",
+      "installed_sha256": "5aba89ca4aca2ae980e5a8483504426d7f2b47f73485323eb15b5339e96ea2ec",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bigemm.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "26615bc93cb2d17b3ebbc6718980cd5dd1c38143fdd2be5c62d5ec7cdf63fe4b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bigemm_measured_tiles.py",
+      "installed_sha256": "ec9e9a900fd25f9143b7f15457ee1b77a1f85f0768c9ca63bad71f577589704d",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/bigemm_measured_tiles.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ec9e9a900fd25f9143b7f15457ee1b77a1f85f0768c9ca63bad71f577589704d",
+      "source_sha256": "ec9e9a900fd25f9143b7f15457ee1b77a1f85f0768c9ca63bad71f577589704d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bigemm_tbe21_ref.py",
+      "installed_sha256": "a4d089600b7e184f282b8fb31459c3c5628eb4c95b293c26cfddbb7a51b331b2",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/bigemm_tbe21_ref.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "a4d089600b7e184f282b8fb31459c3c5628eb4c95b293c26cfddbb7a51b331b2"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bigemm_tbe2_opt.py",
+      "installed_sha256": "f176f1b3b332b8c0c663da80e15cb07b15022c82066d117eb01134e58398e543",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/bigemm_tbe2_opt.py",
+      "source_repo": "attention",
+      "source_revision": "932e6d91a031db0a5191e2ecfba99109647e0e0a",
+      "source_sha256": "ef5e77cea75db1a42ab927e2f0a0f667e9862815a715eb96bc9c891505be2676"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bigemm_tbe2_ref.py",
+      "installed_sha256": "6f22cb78afc4b46f20308794a724ae5cc09d9c6bbe8b74d5700d323e9fc21ef6",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/bigemm_tbe2_ref.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "6f22cb78afc4b46f20308794a724ae5cc09d9c6bbe8b74d5700d323e9fc21ef6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bigemm_tune.py",
+      "installed_sha256": "36bb0c64fd13c77e3b99a6a656299d037c29618aafda86c354ece3ebb4e85a31",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/bigemm_tune.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "36bb0c64fd13c77e3b99a6a656299d037c29618aafda86c354ece3ebb4e85a31"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/bundle.py",
+      "installed_sha256": "62f9747cadee6905b2325956dc236947211e5da5b8143d8499d6f0ac846facf0",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/bundle.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "62f9747cadee6905b2325956dc236947211e5da5b8143d8499d6f0ac846facf0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/context_batch_server.py",
+      "installed_sha256": "2a4a58d1235c5cb4169a05a355df0cf4b80e4d130e17b20e45565bf4a89f1b3a",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/context_batch_server.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:1045daa480b317fe57a38946b27ced608d1a179bd7248d8c85b39ce871fd9ddf",
+      "source_sha256": "1045daa480b317fe57a38946b27ced608d1a179bd7248d8c85b39ce871fd9ddf"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/context_fast_server.py",
+      "installed_sha256": "169f80e92032fbcfe34866f488d0a6bf6178f6af1110724a48d436b7439e84d3",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/context_fast_server.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "6ee4cbac2c8658061a0b174d7246b8ae29a5b165a977290e33981f9ed982a11d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/context_parallel_startup.py",
+      "installed_sha256": "28d66e02cde34720e28da8d59aec3f609691f324a8dd5faace02fbb34944644a",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/context_parallel_startup.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:4a3ef79779ec6d096a312a3ab8440c1bfeab72043dc22ce319a94740d921e114",
+      "source_sha256": "4a3ef79779ec6d096a312a3ab8440c1bfeab72043dc22ce319a94740d921e114"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/context_source.py",
+      "installed_sha256": "6e1ae391e460de5b86a2ab67d727bc90d0a3b9986ba398c38586e5edf66cd2f2",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/context_source.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:3cb4600867e652f1941f3a123a10750a56cb41b40ef5e4c6a40b36888613b06c",
+      "source_sha256": "3cb4600867e652f1941f3a123a10750a56cb41b40ef5e4c6a40b36888613b06c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/engine.py",
+      "installed_sha256": "e77375bd21c6eaa958e151ed5fdecfae893888befaa50a3a95efeb2c5d5777d6",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/engine.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "e77375bd21c6eaa958e151ed5fdecfae893888befaa50a3a95efeb2c5d5777d6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/espec.py",
+      "installed_sha256": "65e0fb2879c648fcafa447bf2f0eb5ac29f40b361e2fd51182aa0a6663cd375e",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/espec.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "65e0fb2879c648fcafa447bf2f0eb5ac29f40b361e2fd51182aa0a6663cd375e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/fastdec.py",
+      "installed_sha256": "14fb69f9ae5e9e687106b00e04100e3f16b8694c8dbf2bb32a3efd8c94273b43",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/fastdec.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "bf1308586ca1921f03ae0953ec0be228ec7c57177643f7fced14734e6717ab2f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/fastdec_kernels.cu",
+      "installed_sha256": "45cb8528e3fb663a89a7c9b1a4f3e416e298da5c514fa2131865b1c36f26a373",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/fastdec_kernels.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "a9ed48e1d62dde89dbdb716e47251efc3d9649a5579d11ab1acef6d910d4995c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/fastserve.py",
+      "installed_sha256": "9bc2b2c9d60d5c3b10afe72861e148235d8db238afff58a2e650314a6f148ca4",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/fastserve.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "719043acce8e5a4ecdea9ff5e8faeec706912fd6784c665a855374212da0a73d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/gate.py",
+      "installed_sha256": "7dce6c0a833c0ce6c5b9e6af2af58d62410ed47beab4d0eb31f3346a7f22ba8d",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/gate.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "7dce6c0a833c0ce6c5b9e6af2af58d62410ed47beab4d0eb31f3346a7f22ba8d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/kernel_cache.py",
+      "installed_sha256": "3d0f591704fd490db18e91e9fcae9c941232ed1b652167448863b52bb6600d83",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/kernel_cache.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:3d0f591704fd490db18e91e9fcae9c941232ed1b652167448863b52bb6600d83",
+      "source_sha256": "3d0f591704fd490db18e91e9fcae9c941232ed1b652167448863b52bb6600d83"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/linear_layout.py",
+      "installed_sha256": "f73654ebb2be23f5740e4b2814f7bc5f2ce2f57d5aef5cc1392dc43b8b8deea6",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/linear_layout.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:f73654ebb2be23f5740e4b2814f7bc5f2ce2f57d5aef5cc1392dc43b8b8deea6",
+      "source_sha256": "f73654ebb2be23f5740e4b2814f7bc5f2ce2f57d5aef5cc1392dc43b8b8deea6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/loader.py",
+      "installed_sha256": "cabf8f0a6ad6a0641990bc37a1876a927b7075e4a45fa4cfd63199aca4f53721",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/loader.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "cabf8f0a6ad6a0641990bc37a1876a927b7075e4a45fa4cfd63199aca4f53721"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/memcap.py",
+      "installed_sha256": "8b6a214a124329a84a7364e95fa2be592e597a06bee5fd691f3f063bbb03ce30",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/memcap.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "8b6a214a124329a84a7364e95fa2be592e597a06bee5fd691f3f063bbb03ce30"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_gemv.py",
+      "installed_sha256": "d4e8a2adb095a1592bdac115fb6a20632a420cab3358fa41679f0b942a9c1c54",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/miv_gemv.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "7c0f16d869f9152a0ce261bc02ce140865e810055b61a347e68e844cb5c583d6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe.py",
+      "installed_sha256": "a4c247b1b3c82dd9886624d9435c812ee4e3550c9fd6057f0f15fcf581ae52d8",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/miv_tbe.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "6c5fab6d47ea394df8786898c72d365c28ec9f7ea70a1f29ca94a468ffbd4013"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_configs/miv_wpr_rtxpro6000.json",
+      "installed_sha256": "d019083404878c69175bb2ba0c7c2e872d30b321c4a0123ddfe563a2eb5c7369",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_configs/miv_wpr_rtxpro6000.json",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "d019083404878c69175bb2ba0c7c2e872d30b321c4a0123ddfe563a2eb5c7369"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe.h",
+      "installed_sha256": "95c3753f81a58498a5893ea7cbb2bc89d0dcf0e8f59a8e0cce3ce9c430688f4d",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe.h",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "95c3753f81a58498a5893ea7cbb2bc89d0dcf0e8f59a8e0cce3ce9c430688f4d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_api.cu",
+      "installed_sha256": "057db07147509302502ce74683920a5e6c0b47b5780520e6d72419326f4b1f61",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_api.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "057db07147509302502ce74683920a5e6c0b47b5780520e6d72419326f4b1f61"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cu",
+      "installed_sha256": "102692802b6886575c89fd3ae1c47c55e5a9d509fc27e645ad733583668d6f37",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "102692802b6886575c89fd3ae1c47c55e5a9d509fc27e645ad733583668d6f37"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cuh",
+      "installed_sha256": "ba0c9b1994be8bd6c55e64b12921889b0862fe72690bfd4f582cdb432f2ed7f2",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_flat_smb.cuh",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "ba0c9b1994be8bd6c55e64b12921889b0862fe72690bfd4f582cdb432f2ed7f2"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_flat_smb_torch.cpp",
+      "installed_sha256": "323439ab4765cf37b2f727e89696c29a1af7253623d54c1ff004526293c88639",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_flat_smb_torch.cpp",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "323439ab4765cf37b2f727e89696c29a1af7253623d54c1ff004526293c88639"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_kernels.cuh",
+      "installed_sha256": "325f0fac49647dc6dd750d87d3dd967ab7180bb56a01e108a61cd6a3f612fbf5",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_kernels.cuh",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "325f0fac49647dc6dd750d87d3dd967ab7180bb56a01e108a61cd6a3f612fbf5"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m1.cu",
+      "installed_sha256": "a2a00dffb2e548cc79074aa3143351bbcae7c7e5558217485d12fd2dc465ec7b",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m1.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "a2a00dffb2e548cc79074aa3143351bbcae7c7e5558217485d12fd2dc465ec7b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m2.cu",
+      "installed_sha256": "5a4051a1ce170cb867896841351ee3b20f66ae9de9be9611fe85ec67d465ddcc",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m2.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "5a4051a1ce170cb867896841351ee3b20f66ae9de9be9611fe85ec67d465ddcc"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m3.cu",
+      "installed_sha256": "570e9a99372a115c099c3213b93a9cd30f191fecaf7bcfb612d58b280d48a0b6",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m3.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "570e9a99372a115c099c3213b93a9cd30f191fecaf7bcfb612d58b280d48a0b6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m4.cu",
+      "installed_sha256": "b3379a006592beb4780c294b1b092fc5c4c9286338374ab215e879dd53aa00c6",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m4.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "b3379a006592beb4780c294b1b092fc5c4c9286338374ab215e879dd53aa00c6"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m5.cu",
+      "installed_sha256": "6e9eabf5f56171182543be6411a1486af2331b6ca398e60273dabd2029843206",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m5.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "6e9eabf5f56171182543be6411a1486af2331b6ca398e60273dabd2029843206"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m6.cu",
+      "installed_sha256": "1d82fa75e2ee89702b5246441a06b5ae3cb47e3fe3f18dd70635e0d70ffd7f5f",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m6.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "1d82fa75e2ee89702b5246441a06b5ae3cb47e3fe3f18dd70635e0d70ffd7f5f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m7.cu",
+      "installed_sha256": "f2b7f4f1fda129fb5de7d6624c0b1c13ca9b05f05f8fe961c135672f523d3551",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m7.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "f2b7f4f1fda129fb5de7d6624c0b1c13ca9b05f05f8fe961c135672f523d3551"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_m8.cu",
+      "installed_sha256": "2bf22a570c854d975d8598d2d1be39a02901630c51a09e32fb16fe4afb4d9910",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_m8.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "2bf22a570c854d975d8598d2d1be39a02901630c51a09e32fb16fe4afb4d9910"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_pair_m1.cu",
+      "installed_sha256": "9eafe516159b90f7572b27d9825d03fb8f5ddc9aa18b69be607e93ccccc5c2ec",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_pair_m1.cu",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "9eafe516159b90f7572b27d9825d03fb8f5ddc9aa18b69be607e93ccccc5c2ec"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_pair_torch.cpp",
+      "installed_sha256": "c8e79e2dc87b24fedf74da9a6cd8f660e4bb87f78b4e8fef89c504b5048d96ac",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_pair_torch.cpp",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "c8e79e2dc87b24fedf74da9a6cd8f660e4bb87f78b4e8fef89c504b5048d96ac"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_csrc/miv_tbe_torch.cpp",
+      "installed_sha256": "4ed2eaf5427b0fdc4263d4fa337257205845384ecaafa0dc4cda84e8f6baa49c",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/miv_tbe_csrc/miv_tbe_torch.cpp",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "4ed2eaf5427b0fdc4263d4fa337257205845384ecaafa0dc4cda84e8f6baa49c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_flat_smb.py",
+      "installed_sha256": "0eb6f36a2de005ebc52abac2ec0476cb79f2c20aa972ca197f68cabdc8956d35",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/miv_tbe_flat_smb.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "354d7b405414889584f63fdb2dc217334781fe977c9d5b5d043beb61e9da83c1"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/miv_tbe_pair.py",
+      "installed_sha256": "ab3098287387d8500d7e2ca9183d6b986e4a6af4ab69e324f666d1cefb618248",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/miv_tbe_pair.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "1ab4a9922298b880ca2569553e9b7fb56d137890136f881bb4155eef6dd3d153"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_batch.py",
+      "installed_sha256": "a9f8d95ea3282ef8334a66e95b9843261d7cabc87a8dc1f034bb18101ae63c75",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/mlx_batch.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:280d425cf622eb64a86fe2d07b47fa8ac718820d7800c7472fe2b6fa13adbeaa",
+      "source_sha256": "280d425cf622eb64a86fe2d07b47fa8ac718820d7800c7472fe2b6fa13adbeaa"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_digest.py",
+      "installed_sha256": "d617254a347fc35376b47a5cdb7de4dfd8b4749489c6162d5c71012aa9ab4b95",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/mlx_digest.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:d617254a347fc35376b47a5cdb7de4dfd8b4749489c6162d5c71012aa9ab4b95",
+      "source_sha256": "d617254a347fc35376b47a5cdb7de4dfd8b4749489c6162d5c71012aa9ab4b95"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_engine.py",
+      "installed_sha256": "d0664ddf70ca98aeff8192ddca901806ea49ac7e83b009edfbc8b957e9a7c79c",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/mlx_engine.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:383d040b9067fb276b251dbb9ce943532f0586e2c62223705f490d88ecf9047a",
+      "source_sha256": "383d040b9067fb276b251dbb9ce943532f0586e2c62223705f490d88ecf9047a"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_qwen.py",
+      "installed_sha256": "5d0102fa65179afcb918fa7eaf5ae5b110a52bedd0fe34ab34f78afa1e3faff1",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/mlx_qwen.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ac20518bc55f2dabbecddbd12f1f5256c78797ff3061081d32a588615ffc349e",
+      "source_sha256": "ac20518bc55f2dabbecddbd12f1f5256c78797ff3061081d32a588615ffc349e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_server.py",
+      "installed_sha256": "f5ae0fe72ef156f70a3719f5e138d72439db98030f73eefd6f92d5637f7c472a",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/mlx_server.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:1ee8de4d32eb5b0c218e838f71d6a609991aaf7ea253e537a0b295c17c976d68",
+      "source_sha256": "1ee8de4d32eb5b0c218e838f71d6a609991aaf7ea253e537a0b295c17c976d68"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_service.py",
+      "installed_sha256": "9f58e385829712721363b98d91b1ae4aef876d4815b2568ecf4ddbfcf85c3a97",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/mlx_service.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:e023bf2aa5d9b06dcd76060812e32575c53dd2daae50933a84a538ce9530a6c0",
+      "source_sha256": "e023bf2aa5d9b06dcd76060812e32575c53dd2daae50933a84a538ce9530a6c0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_speculative.py",
+      "installed_sha256": "14fd7e9710ba36b0028fe316d3be3ce986d9df5cd04932f7bd22e306a3355ff8",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/mlx_speculative.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:14fd7e9710ba36b0028fe316d3be3ce986d9df5cd04932f7bd22e306a3355ff8",
+      "source_sha256": "14fd7e9710ba36b0028fe316d3be3ce986d9df5cd04932f7bd22e306a3355ff8"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mlx_vision.py",
+      "installed_sha256": "cbf1423889111601ef339708e844909cd4a04935baf38d5704c055e608347976",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/mlx_vision.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:cbf1423889111601ef339708e844909cd4a04935baf38d5704c055e608347976",
+      "source_sha256": "cbf1423889111601ef339708e844909cd4a04935baf38d5704c055e608347976"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/modules.py",
+      "installed_sha256": "ef540ef1129c571d9706a6eb78a5e88891aa64ec268312f4b30771b6ff50196b",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/modules.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "ef540ef1129c571d9706a6eb78a5e88891aa64ec268312f4b30771b6ff50196b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/mtp.py",
+      "installed_sha256": "bfcdbdb807733a18fc4e4010beed1df8a580a7170211ef9ca00e2f6166b6391c",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/mtp.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "bfcdbdb807733a18fc4e4010beed1df8a580a7170211ef9ca00e2f6166b6391c"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/native_batch_provenance/LICENSE",
+      "installed_sha256": "3370532b65d01a66990f223630471ab84c8b183eeff523368aa18123dc102db4",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/native_batch_provenance/LICENSE",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "3370532b65d01a66990f223630471ab84c8b183eeff523368aa18123dc102db4"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/pack.py",
+      "installed_sha256": "99bc98d56ab86a592501396c8e68ef5746c3590a67e4452843484d7074453cdf",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/pack.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "99bc98d56ab86a592501396c8e68ef5746c3590a67e4452843484d7074453cdf"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/predictive_batch.py",
+      "installed_sha256": "330de3ce7d264334d618035555cae1d1462fdd09ddf4c7c6da0a1bc43928e1aa",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/predictive_batch_private.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "fe15c22af517f34bed78e00086ee9e1f898f2eab064ccf99d267c11a32bd644d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/predictive_bhe.py",
+      "installed_sha256": "547f5ec58fd1ebc6298458e367f5ecf4b4c153036edbbeedeea943d8a2ee690c",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/predictive_bhe.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:116842e4995a5f33c31e3cb4720694ee20befa43a5700d8704bb8d0a5712bc47",
+      "source_sha256": "116842e4995a5f33c31e3cb4720694ee20befa43a5700d8704bb8d0a5712bc47"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/predictive_mlx.py",
+      "installed_sha256": "056beb5c97093aa94e81fccc5fbdc88f3354a81fdd20ce8e5590aa63ffe8f0b9",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/predictive_mlx.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:5fb5ab5dc9340b8aa65c8e3cd8b2d85f54691ce15479e2ee06b0992b3c0728b3",
+      "source_sha256": "5fb5ab5dc9340b8aa65c8e3cd8b2d85f54691ce15479e2ee06b0992b3c0728b3"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/predictive_mtp.py",
+      "installed_sha256": "716862083a37443552c49c02096fcb07e10b205b7761f87a43f52d904410bf88",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/predictive_mtp.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:10fa710829d3c56d2d2cb7aaf56e3aa55175b61c7c4093606690f63b9f0e9c26",
+      "source_sha256": "10fa710829d3c56d2d2cb7aaf56e3aa55175b61c7c4093606690f63b9f0e9c26"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/predictive_tbe.py",
+      "installed_sha256": "a5510f6e430418c8f67f61d0d3309e2418a144f095ac4115cbf910ebe13d22eb",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/predictive_tbe_private.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "e837969d1f349065f38e248d6404fbafee61b56a8db9c205c9e04677542d08fa"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/published_tbe_batch.py",
+      "installed_sha256": "843396e4fe8799308791bed6a2905df57c4b0bcf0ff41226affae457716c8d52",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/published_tbe_batch.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:843396e4fe8799308791bed6a2905df57c4b0bcf0ff41226affae457716c8d52",
+      "source_sha256": "843396e4fe8799308791bed6a2905df57c4b0bcf0ff41226affae457716c8d52"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/q8serve.py",
+      "installed_sha256": "50052d1544d6d9222b1e699904d40ed02421e10caf705d8bcdd69ae3ffd16a81",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/q8serve.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "50052d1544d6d9222b1e699904d40ed02421e10caf705d8bcdd69ae3ffd16a81"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/qualification_identity.py",
+      "installed_sha256": "7de77ba2901c7597acde6a8a100daa8f49e3e3c591ea60f70aeecdd6d7f30da7",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/qualification_identity.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:8248d4c87bc791dbeb35096ed4f4ca01fcdc54fcb3bbb1c8e5442ed2eaa3534b",
+      "source_sha256": "8248d4c87bc791dbeb35096ed4f4ca01fcdc54fcb3bbb1c8e5442ed2eaa3534b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/replica_pool.py",
+      "installed_sha256": "302c4e794de57f02213d3fa1825977aadfced3b3735f58480e5b81f92221bef5",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/replica_pool.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:302c4e794de57f02213d3fa1825977aadfced3b3735f58480e5b81f92221bef5",
+      "source_sha256": "302c4e794de57f02213d3fa1825977aadfced3b3735f58480e5b81f92221bef5"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/runtime_memory.py",
+      "installed_sha256": "36e692c56e0b095c2d762a8f51fcf63f6d8fb368ee663ede5e4ec870a24f0234",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/runtime_memory.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:27c49385f360baaab3de9267990a1517812c4ddb7d13247a2c6a66dbaeff7719",
+      "source_sha256": "27c49385f360baaab3de9267990a1517812c4ddb7d13247a2c6a66dbaeff7719"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/server.py",
+      "installed_sha256": "2f635405933cf011ec70ede5b29375f1461770878763d6e3dc4c06d57644ba6d",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/server.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "2f635405933cf011ec70ede5b29375f1461770878763d6e3dc4c06d57644ba6d"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/serving_resources.py",
+      "installed_sha256": "fd950ea4acb7543499dcc9271e21cc35ada2b018de2c30999adf60cf46132b6d",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/serving_resources.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:aada6c20d1b9c878c8fed28c294e1c71837d4f2530f528c91b9fef515df33f6b",
+      "source_sha256": "aada6c20d1b9c878c8fed28c294e1c71837d4f2530f528c91b9fef515df33f6b"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/spec_calibration.py",
+      "installed_sha256": "c3c9fdfd1cb76d6538450596cd39090b5b1515b6a2897b02ddcade9fb62c7b97",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/spec_calibration.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:339bd7308dd1a206cdb459447b1db471ec87cc2848948d5bb6b4c7670db02091",
+      "source_sha256": "339bd7308dd1a206cdb459447b1db471ec87cc2848948d5bb6b4c7670db02091"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/startup_mtp_prefetch.py",
+      "installed_sha256": "dd66f0e0303fbb88e26c8f4cdd2a55b1b6ec8b00ddd42f4f7f3fc9a7df2cbee5",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/startup_mtp_prefetch.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:dd66f0e0303fbb88e26c8f4cdd2a55b1b6ec8b00ddd42f4f7f3fc9a7df2cbee5",
+      "source_sha256": "dd66f0e0303fbb88e26c8f4cdd2a55b1b6ec8b00ddd42f4f7f3fc9a7df2cbee5"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/startup_progress.py",
+      "installed_sha256": "9b8da3cd6ab0d1238aaffa28e9c9d220215c6d1a499cd9838139ebcb6f2eb65d",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/startup_progress.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:a1681ac7c6f8f879f36b5acbb2b6ce4b7e3d81815e8b831b89a9b92cf891777e",
+      "source_sha256": "a1681ac7c6f8f879f36b5acbb2b6ce4b7e3d81815e8b831b89a9b92cf891777e"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/state_budget.py",
+      "installed_sha256": "716e2f5a2577bbe7686467d16025b14827f194e7c4ecd130039ee42c64e02465",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/state_budget.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "ef9512391e1657295cf1830cd59a17f887a567bf1ec5567df41cc2e66fd055a0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tbe21_metadata.py",
+      "installed_sha256": "0f5f2a18fafe3ceebfbb4b95b0b8c8dde5048706121306489c2c316f846ea18f",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/tbe21_metadata.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:0f5f2a18fafe3ceebfbb4b95b0b8c8dde5048706121306489c2c316f846ea18f",
+      "source_sha256": "0f5f2a18fafe3ceebfbb4b95b0b8c8dde5048706121306489c2c316f846ea18f"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tbe21_tier_metadata.py",
+      "installed_sha256": "442f9ccbbb0f63161aa57908624230f88a5c1e8641f8c3572b97f27723fb6a68",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/tbe21_tier_metadata.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:442f9ccbbb0f63161aa57908624230f88a5c1e8641f8c3572b97f27723fb6a68",
+      "source_sha256": "442f9ccbbb0f63161aa57908624230f88a5c1e8641f8c3572b97f27723fb6a68"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tbe21_tier_profile.py",
+      "installed_sha256": "ce22a6009ff11b1ed30834d31fc5c79ed888ee5bf63505694e6450fc6513198f",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/tbe21_tier_profile.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:ad3aa7e60f7aea6864583f23536fb77226109fe89c26f3a623f138898db843bc",
+      "source_sha256": "ad3aa7e60f7aea6864583f23536fb77226109fe89c26f3a623f138898db843bc"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tbe21_v2_backend.py",
+      "installed_sha256": "08599cd5f1273b9bd05932d39e8c70b34777e5531a04be92992b92cc1069b470",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/tbe21_v2_backend.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:5a3c9582589e0830d54f8f7f7919a7553c4fc77b07531958a3a2f5d89dcb2402",
+      "source_sha256": "5a3c9582589e0830d54f8f7f7919a7553c4fc77b07531958a3a2f5d89dcb2402"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tbe2_desc.py",
+      "installed_sha256": "c6bc3768764992a08fb085eafdac5116c17658f7a5efe313c431a7ef8790b991",
+      "local_modifications": true,
+      "source_path": "release/glc_serve/tbe2_desc.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "c40473da3a315e9df69ccfc245ed86de5dac6a5e6595cb9d7643c6732c758fe8"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tbe2_load.py",
+      "installed_sha256": "4182622cf33edb9e59a66de6baf4e3d98bcb3a3efaea7c15df163a33eae21b3c",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/tbe2_load.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:c262d91d355b843c205297dee5667955050c0721bdc44aab0cb40b7501a72cc0",
+      "source_sha256": "c262d91d355b843c205297dee5667955050c0721bdc44aab0cb40b7501a72cc0"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tbe_desc.py",
+      "installed_sha256": "28486f70ecbd1ac940d1c416e73bfbdfad983bf3481ad0cb044a886c6de51eaf",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/tbe_desc.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "28486f70ecbd1ac940d1c416e73bfbdfad983bf3481ad0cb044a886c6de51eaf"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/transcode_cache.py",
+      "installed_sha256": "b65565ac4de9d2c75c875c78b0572417fbbe50b577231cbb6737ba98cedeccf0",
+      "local_modifications": true,
+      "source_path": "context-runtime/glc_serve/transcode_cache.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:e817ec906b6f6afc98cfe49715e5487711f6fc1384eb7e8b60073dc4237eedb8",
+      "source_sha256": "e817ec906b6f6afc98cfe49715e5487711f6fc1384eb7e8b60073dc4237eedb8"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/tunes/fastdec_sm120.json",
+      "installed_sha256": "1c5375c91f6fc084a5263f7da9177faafbb17fd4bf2281fc520bca1f74ef8024",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/tunes/fastdec_sm120.json",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "1c5375c91f6fc084a5263f7da9177faafbb17fd4bf2281fc520bca1f74ef8024"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/typed_cuda_fastsession.py",
+      "installed_sha256": "b4afe47c1db853ec12c906ccc8290cffe5a21ef3a686177f6a23830969cb3bc1",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/typed_cuda_fastsession.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:b4afe47c1db853ec12c906ccc8290cffe5a21ef3a686177f6a23830969cb3bc1",
+      "source_sha256": "b4afe47c1db853ec12c906ccc8290cffe5a21ef3a686177f6a23830969cb3bc1"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/typed_predictive_torch.py",
+      "installed_sha256": "3127616fe00db5b1c94bf467cba8b40b0220386e8446d455aeb5e02bfd3f8262",
+      "local_modifications": false,
+      "source_path": "context-runtime/glc_serve/typed_predictive_torch.py",
+      "source_repo": "context-runtime",
+      "source_revision": "content-sha256:3127616fe00db5b1c94bf467cba8b40b0220386e8446d455aeb5e02bfd3f8262",
+      "source_sha256": "3127616fe00db5b1c94bf467cba8b40b0220386e8446d455aeb5e02bfd3f8262"
+    },
+    {
+      "import_rewritten": false,
+      "installed_path": "glc_serve/vendor.py",
+      "installed_sha256": "b6dcf3f75f8d10d052d7f74c394980eb764e4bc70556fb7530be5beb6e502c15",
+      "local_modifications": false,
+      "source_path": "release/glc_serve/vendor.py",
+      "source_repo": "public-runtime",
+      "source_revision": "bccc5fa8415857ad05791163128b7cedd5ff2896",
+      "source_sha256": "b6dcf3f75f8d10d052d7f74c394980eb764e4bc70556fb7530be5beb6e502c15"
+    }
+  ]
+}
